@@ -25,7 +25,7 @@ async function verifyPassword(password, encoded) {
 
 function sign(user) {
   const now = Math.floor(Date.now() / 1000);
-  const payload = Buffer.from(JSON.stringify({ sub: user._id.toString(), username: user.username, iat: now, exp: now + WEEK })).toString('base64url');
+  const payload = Buffer.from(JSON.stringify({ sub: user._id.toString(), username: user.username, email: user.email, iat: now, exp: now + WEEK })).toString('base64url');
   const signature = createHmac('sha256', secret()).update(payload).digest('base64url');
   return `${payload}.${signature}`;
 }

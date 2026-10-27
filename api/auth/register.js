@@ -21,7 +21,7 @@ module.exports = async function handler(req, res) {
     user._id = result.insertedId;
     const data = { lists: [{ id: 'perfect', name: '100 IV', kind: 'perfect', emoji: '💯', shiny: false }, { id: 'shiny', name: 'Shiny', kind: 'shiny', emoji: '✨', shiny: true }], owned: {} };
     await db.collection('collections').insertOne({ userId: result.insertedId, data, updatedAt: new Date() });
-    return send(res, 201, { user: { username: user.username } }, { 'Set-Cookie': cookieHeader(sign(user)) });
+    return send(res, 201, { user: { username: user.username, email: user.email } }, { 'Set-Cookie': cookieHeader(sign(user)) });
   } catch (error) {
     if (error.code === 11000) return send(res, 409, { error: error.keyPattern?.usernameNormalized ? 'Ese nombre de usuario ya está ocupado.' : 'Ya existe una cuenta con ese correo.' });
     if (error.status) return send(res, error.status, { error: error.message });

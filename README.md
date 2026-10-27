@@ -10,10 +10,13 @@ Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. I
 - Las cuentas se registran con nombre de usuario único (no distingue mayúsculas), correo y contraseña. El inicio de sesión se hace con el nombre de usuario y la contraseña.
 - Las contraseñas se guardan con scrypt. La sesión usa una cookie firmada, `HttpOnly`, `SameSite=Lax` y `Secure` en producción.
 - `data/pokemon.json` contiene 1.025 especies; `data/costumes.json`, 307 disfraces.
+- La sesión iniciada muestra el nombre de usuario y los controles de cuenta; las cuentas sin sesión solo ven la landing. En móvil, las listas se abren en un panel lateral.
+- Cada lista incluye filtros para ver todos, los marcados o los pendientes. Las listas personalizadas se pueden editar y borrar; las predefinidas 100 IV y Shiny no se borran.
+- El perfil permite cambiar usuario, correo y contraseña. Las listas guardan una marca `isPublic`; mostrar o compartir listas públicamente queda pendiente de una función posterior.
 
 ## Ejecutar en local
 
-Requiere Node.js 20 o superior y una cuenta/base de datos de MongoDB Atlas.
+Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. También necesitas iniciar sesión en Vercel CLI la primera vez.
 
 1. Instala dependencias:
 
@@ -25,6 +28,7 @@ Requiere Node.js 20 o superior y una cuenta/base de datos de MongoDB Atlas.
 3. Inicia el servidor de Vercel:
 
    ```bash
+   npx vercel login
    npm run dev
    ```
 

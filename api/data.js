@@ -10,6 +10,7 @@ function validData(data) {
   for (const list of data.lists) {
     if (!list || typeof list.id !== 'string' || list.id.length > 80 || ids.has(list.id)) return false;
     if (typeof list.name !== 'string' || !list.name.trim() || list.name.length > 32) return false;
+    if (list.isPublic !== undefined && typeof list.isPublic !== 'boolean') return false;
     ids.add(list.id);
   }
   return Object.keys(data.owned).length <= 100;
