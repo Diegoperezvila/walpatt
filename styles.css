@@ -11,3 +11,5 @@
 .profile-modal>p{margin:8px 0 18px;color:var(--muted);font-size:11px;line-height:1.6}.profile-details-heading{margin-top:30px}.manage-list-action{font-size:10px;padding:8px 11px}.manage-list-action.danger{border-color:#f0d9d4}.manage-list-action:hover{background:#f7f8f4}.manage-list-action.danger:hover{background:#fff3f0}
 
 #manageListsButton{white-space:nowrap;font-size:11px;padding:12px 14px}@media(max-width:640px){#manageListsButton,#newListButton{flex:1;white-space:nowrap;padding:12px 10px;font-size:11px}.collection-tools select{min-width:140px;flex:1}}
+
+.pokemon-tile.unavailable{cursor:not-allowed;opacity:.55}.pokemon-tile:disabled{pointer-events:none}
