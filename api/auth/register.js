@@ -25,7 +25,7 @@ module.exports = async function handler(req, res) {
   } catch (error) {
     if (error.code === 11000) return send(res, 409, { error: error.keyPattern?.usernameNormalized ? 'Ese nombre de usuario ya está ocupado.' : 'Ya existe una cuenta con ese correo.' });
     if (error.status) return send(res, error.status, { error: error.message });
-    console.error('Error de registro:', error.message);
-    return send(res, 500, { error: 'No se pudo crear la cuenta. Revisa la conexión de MongoDB.' });
+    console.error('Error de registro:', error);
+    return send(res, 500, { error: 'No se pudo crear la cuenta. Comprueba MONGODB_URI y el acceso de red de Atlas.' });
   }
 };
