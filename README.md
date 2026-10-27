@@ -12,7 +12,7 @@ Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. I
 - `data/pokemon.json` contiene 1.025 especies; `data/costumes.json`, 307 disfraces.
 - La sesión iniciada muestra el nombre de usuario y los controles de cuenta; las cuentas sin sesión solo ven la landing. En móvil, las listas se abren en un panel lateral.
 - Cada lista incluye filtros para ver todos, los marcados o los pendientes. Las listas personalizadas se pueden editar y borrar; las predefinidas 100 IV y Shiny no se borran.
-- El perfil permite cambiar usuario, correo y contraseña. Las listas guardan una marca `isPublic`; mostrar o compartir listas públicamente queda pendiente de una función posterior.
+- El perfil permite cambiar usuario, correo y contraseña. El apartado Amigos permite buscar usuarios, enviar y responder solicitudes, y consultar solo las listas marcadas como públicas de amistades aceptadas.
 
 ## Ejecutar en local
 
@@ -48,7 +48,7 @@ Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. Tamb
 
 - `available: false` excluye un Pokémon o disfraz de las listas.
 - `shinyAvailable: false` lo excluye de las listas que tienen activado el filtro shiny.
-- El progreso de cada cuenta se guarda en la colección `collections`; las cuentas están en `users`.
+- El progreso de cada cuenta se guarda en la colección `collections`; las cuentas están en `users`; las solicitudes y amistades aceptadas están en `friendships`.
 - Las imágenes requieren internet. Las especies usan sprites de PokeAPI y los disfraces usan el espejo público de imágenes de Pogo data; si falta una imagen de disfraz, la tarjeta muestra el sprite normal de esa especie.
 
 ## Seguridad de credenciales
