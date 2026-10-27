@@ -1,4 +1,4 @@
-# Pokélist
+# Walpatt
 
 Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. Incluye landing page, registro e inicio de sesión, listas 100 IV y shiny, listas personalizadas, búsqueda por nombre y filtro por región.
 
