@@ -9,7 +9,8 @@ Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. I
 - MongoDB Atlas guarda cuentas y colecciones por usuario.
 - Las cuentas se registran con nombre de usuario único (no distingue mayúsculas), correo y contraseña. El inicio de sesión se hace con el nombre de usuario y la contraseña.
 - Las contraseñas se guardan con scrypt. La sesión usa una cookie firmada, `HttpOnly`, `SameSite=Lax` y `Secure` en producción.
-- `data/pokemon.json` contiene 1.025 especies; `data/costumes.json`, 307 disfraces.
+- `data/pokemon.json` contiene las 1.025 especies y sus formas predeterminadas; `data/pokemon-forms.json` añade 561 formas alternativas con identificador, región, disponibilidad e imagen propia; `data/costumes.json` contiene 307 disfraces.
+- El catálogo de formas se generó con los datos públicos de PokéAPI y añade manualmente los nueve patrones de Spinda de Pokémon GO. Las formas indicadas como disponibles en GO están activadas; el resto se conserva con `available: false` y `shinyAvailable: false` para incorporarlas en el futuro.
 - La sesión iniciada muestra el nombre de usuario y los controles de cuenta; las cuentas sin sesión solo ven la landing. En móvil, las listas se abren en un panel lateral.
 - Cada lista incluye filtros para ver todos, los marcados o los pendientes. Las listas personalizadas se pueden editar y borrar; las predefinidas 100 IV y Shiny no se borran.
 - El perfil permite cambiar usuario, correo y contraseña. El apartado Amigos permite buscar usuarios, enviar y responder solicitudes, y consultar solo las listas marcadas como públicas de amistades aceptadas.
@@ -49,7 +50,7 @@ Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. Tamb
 - `available: false` excluye un Pokémon o disfraz de las listas.
 - `shinyAvailable: false` lo excluye de las listas que tienen activado el filtro shiny.
 - El progreso de cada cuenta se guarda en la colección `collections`; las cuentas están en `users`; las solicitudes y amistades aceptadas están en `friendships`.
-- Las imágenes requieren internet. Las especies usan sprites de PokeAPI y los disfraces usan el espejo público de imágenes de Pogo data; si falta una imagen de disfraz, la tarjeta muestra el sprite normal de esa especie.
+- Las imágenes requieren internet. Las especies y sus formas usan sprites de [PokeAPI](https://github.com/PokeAPI/sprites); los patrones de Spinda usan imágenes específicas por patrón. Los disfraces usan el espejo público de imágenes de Pogo data; si falta una imagen de disfraz, la tarjeta muestra el sprite normal de esa especie.
 
 ## Seguridad de credenciales
 

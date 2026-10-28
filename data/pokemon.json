@@ -145,19 +145,25 @@
   },
   {
     "id": 19,
-    "name": "Rattata",
+    "name": "Rattata · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "pokemonName": "Rattata",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 20,
-    "name": "Raticate",
+    "name": "Raticate · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "pokemonName": "Raticate",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 21,
@@ -201,27 +207,36 @@
   },
   {
     "id": 26,
-    "name": "Raichu",
+    "name": "Raichu · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+    "pokemonName": "Raichu",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 27,
-    "name": "Sandshrew",
+    "name": "Sandshrew · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "pokemonName": "Sandshrew",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 28,
-    "name": "Sandslash",
+    "name": "Sandslash · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+    "pokemonName": "Sandslash",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 29,
@@ -289,19 +304,25 @@
   },
   {
     "id": 37,
-    "name": "Vulpix",
+    "name": "Vulpix · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "pokemonName": "Vulpix",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 38,
-    "name": "Ninetales",
+    "name": "Ninetales · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+    "pokemonName": "Ninetales",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 39,
@@ -393,35 +414,47 @@
   },
   {
     "id": 50,
-    "name": "Diglett",
+    "name": "Diglett · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+    "pokemonName": "Diglett",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 51,
-    "name": "Dugtrio",
+    "name": "Dugtrio · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "pokemonName": "Dugtrio",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 52,
-    "name": "Meowth",
+    "name": "Meowth · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+    "pokemonName": "Meowth",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 53,
-    "name": "Persian",
+    "name": "Persian · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+    "pokemonName": "Persian",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 54,
@@ -457,19 +490,25 @@
   },
   {
     "id": 58,
-    "name": "Growlithe",
+    "name": "Growlithe · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "pokemonName": "Growlithe",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 59,
-    "name": "Arcanine",
+    "name": "Arcanine · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "pokemonName": "Arcanine",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 60,
@@ -585,59 +624,80 @@
   },
   {
     "id": 74,
-    "name": "Geodude",
+    "name": "Geodude · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+    "pokemonName": "Geodude",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 75,
-    "name": "Graveler",
+    "name": "Graveler · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "pokemonName": "Graveler",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 76,
-    "name": "Golem",
+    "name": "Golem · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+    "pokemonName": "Golem",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 77,
-    "name": "Ponyta",
+    "name": "Ponyta · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+    "pokemonName": "Ponyta",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 78,
-    "name": "Rapidash",
+    "name": "Rapidash · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "pokemonName": "Rapidash",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 79,
-    "name": "Slowpoke",
+    "name": "Slowpoke · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+    "pokemonName": "Slowpoke",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 80,
-    "name": "Slowbro",
+    "name": "Slowbro · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+    "pokemonName": "Slowbro",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 81,
@@ -657,11 +717,14 @@
   },
   {
     "id": 83,
-    "name": "Farfetch’d",
+    "name": "Farfetch’d · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+    "pokemonName": "Farfetch’d",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 84,
@@ -697,19 +760,25 @@
   },
   {
     "id": 88,
-    "name": "Grimer",
+    "name": "Grimer · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+    "pokemonName": "Grimer",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 89,
-    "name": "Muk",
+    "name": "Muk · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+    "pokemonName": "Muk",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 90,
@@ -793,19 +862,25 @@
   },
   {
     "id": 100,
-    "name": "Voltorb",
+    "name": "Voltorb · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+    "pokemonName": "Voltorb",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 101,
-    "name": "Electrode",
+    "name": "Electrode · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+    "pokemonName": "Electrode",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 102,
@@ -817,11 +892,14 @@
   },
   {
     "id": 103,
-    "name": "Exeggutor",
+    "name": "Exeggutor · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+    "pokemonName": "Exeggutor",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 104,
@@ -833,11 +911,14 @@
   },
   {
     "id": 105,
-    "name": "Marowak",
+    "name": "Marowak · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "pokemonName": "Marowak",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 106,
@@ -873,11 +954,14 @@
   },
   {
     "id": 110,
-    "name": "Weezing",
+    "name": "Weezing · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+    "pokemonName": "Weezing",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 111,
@@ -969,11 +1053,14 @@
   },
   {
     "id": 122,
-    "name": "Mr. Mime",
+    "name": "Mr. Mime · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+    "pokemonName": "Mr. Mime",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 123,
@@ -1017,11 +1104,14 @@
   },
   {
     "id": 128,
-    "name": "Tauros",
+    "name": "Tauros · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+    "pokemonName": "Tauros",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 129,
@@ -1145,27 +1235,36 @@
   },
   {
     "id": 144,
-    "name": "Articuno",
+    "name": "Articuno · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "pokemonName": "Articuno",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 145,
-    "name": "Zapdos",
+    "name": "Zapdos · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "pokemonName": "Zapdos",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 146,
-    "name": "Moltres",
+    "name": "Moltres · Kanto",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "pokemonName": "Moltres",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 147,
@@ -1249,11 +1348,14 @@
   },
   {
     "id": 157,
-    "name": "Typhlosion",
+    "name": "Typhlosion · Kanto",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+    "pokemonName": "Typhlosion",
+    "formName": "Kanto",
+    "formIdentifier": "default"
   },
   {
     "id": 158,
@@ -1545,11 +1647,14 @@
   },
   {
     "id": 194,
-    "name": "Wooper",
+    "name": "Wooper · Johto",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+    "pokemonName": "Wooper",
+    "formName": "Johto",
+    "formIdentifier": "default"
   },
   {
     "id": 195,
@@ -1585,11 +1690,14 @@
   },
   {
     "id": 199,
-    "name": "Slowking",
+    "name": "Slowking · Johto",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
+    "pokemonName": "Slowking",
+    "formName": "Johto",
+    "formIdentifier": "default"
   },
   {
     "id": 200,
@@ -1601,11 +1709,14 @@
   },
   {
     "id": 201,
-    "name": "Unown",
+    "name": "Unown · A",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+    "pokemonName": "Unown",
+    "formName": "A",
+    "formIdentifier": "default"
   },
   {
     "id": 202,
@@ -1681,11 +1792,14 @@
   },
   {
     "id": 211,
-    "name": "Qwilfish",
+    "name": "Qwilfish · Johto",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+    "pokemonName": "Qwilfish",
+    "formName": "Johto",
+    "formIdentifier": "default"
   },
   {
     "id": 212,
@@ -1713,11 +1827,14 @@
   },
   {
     "id": 215,
-    "name": "Sneasel",
+    "name": "Sneasel · Johto",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+    "pokemonName": "Sneasel",
+    "formName": "Johto",
+    "formIdentifier": "default"
   },
   {
     "id": 216,
@@ -1769,11 +1886,14 @@
   },
   {
     "id": 222,
-    "name": "Corsola",
+    "name": "Corsola · Johto",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
+    "pokemonName": "Corsola",
+    "formName": "Johto",
+    "formIdentifier": "default"
   },
   {
     "id": 223,
@@ -2097,19 +2217,25 @@
   },
   {
     "id": 263,
-    "name": "Zigzagoon",
+    "name": "Zigzagoon · Hoenn",
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png",
+    "pokemonName": "Zigzagoon",
+    "formName": "Hoenn",
+    "formIdentifier": "default"
   },
   {
     "id": 264,
-    "name": "Linoone",
+    "name": "Linoone · Hoenn",
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png",
+    "pokemonName": "Linoone",
+    "formName": "Hoenn",
+    "formIdentifier": "default"
   },
   {
     "id": 265,
@@ -2609,11 +2735,14 @@
   },
   {
     "id": 327,
-    "name": "Spinda",
+    "name": "Spinda · Patrón 1",
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
+    "image": "https://www.p337.info/pokemongo/pages/img/spinda_1n.png",
+    "pokemonName": "Spinda",
+    "formName": "Patrón 1",
+    "formIdentifier": "pattern-1"
   },
   {
     "id": 328,
@@ -2801,11 +2930,14 @@
   },
   {
     "id": 351,
-    "name": "Castform",
+    "name": "Castform · Normal",
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png",
+    "pokemonName": "Castform",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 352,
@@ -3081,11 +3213,14 @@
   },
   {
     "id": 386,
-    "name": "Deoxys",
+    "name": "Deoxys · Normal",
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png",
+    "pokemonName": "Deoxys",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 387,
@@ -3289,19 +3424,25 @@
   },
   {
     "id": 412,
-    "name": "Burmy",
+    "name": "Burmy · Tronco planta",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png",
+    "pokemonName": "Burmy",
+    "formName": "Tronco planta",
+    "formIdentifier": "default"
   },
   {
     "id": 413,
-    "name": "Wormadam",
+    "name": "Wormadam · Tronco planta",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png",
+    "pokemonName": "Wormadam",
+    "formName": "Tronco planta",
+    "formIdentifier": "default"
   },
   {
     "id": 414,
@@ -3361,27 +3502,36 @@
   },
   {
     "id": 421,
-    "name": "Cherrim",
+    "name": "Cherrim · Encapotado",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png",
+    "pokemonName": "Cherrim",
+    "formName": "Encapotado",
+    "formIdentifier": "default"
   },
   {
     "id": 422,
-    "name": "Shellos",
+    "name": "Shellos · Oeste",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png",
+    "pokemonName": "Shellos",
+    "formName": "Oeste",
+    "formIdentifier": "default"
   },
   {
     "id": 423,
-    "name": "Gastrodon",
+    "name": "Gastrodon · Oeste",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png",
+    "pokemonName": "Gastrodon",
+    "formName": "Oeste",
+    "formIdentifier": "default"
   },
   {
     "id": 424,
@@ -3825,11 +3975,14 @@
   },
   {
     "id": 479,
-    "name": "Rotom",
+    "name": "Rotom · Normal",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
+    "pokemonName": "Rotom",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 480,
@@ -3857,19 +4010,25 @@
   },
   {
     "id": 483,
-    "name": "Dialga",
+    "name": "Dialga · Normal",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
+    "pokemonName": "Dialga",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 484,
-    "name": "Palkia",
+    "name": "Palkia · Normal",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png",
+    "pokemonName": "Palkia",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 485,
@@ -3889,11 +4048,14 @@
   },
   {
     "id": 487,
-    "name": "Giratina",
+    "name": "Giratina · Modificada",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png",
+    "pokemonName": "Giratina",
+    "formName": "Modificada",
+    "formIdentifier": "default"
   },
   {
     "id": 488,
@@ -3929,19 +4091,25 @@
   },
   {
     "id": 492,
-    "name": "Shaymin",
+    "name": "Shaymin · Tierra",
     "region": "Sinnoh",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png",
+    "pokemonName": "Shaymin",
+    "formName": "Tierra",
+    "formIdentifier": "default"
   },
   {
     "id": 493,
-    "name": "Arceus",
+    "name": "Arceus · Normal",
     "region": "Sinnoh",
     "available": false,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png",
+    "pokemonName": "Arceus",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 494,
@@ -4161,11 +4329,14 @@
   },
   {
     "id": 521,
-    "name": "Unfezant",
+    "name": "Unfezant · Macho",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png",
+    "pokemonName": "Unfezant",
+    "formName": "Macho",
+    "formIdentifier": "male"
   },
   {
     "id": 522,
@@ -4393,11 +4564,14 @@
   },
   {
     "id": 550,
-    "name": "Basculin",
+    "name": "Basculin · Raya roja",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png",
+    "pokemonName": "Basculin",
+    "formName": "Raya roja",
+    "formIdentifier": "default"
   },
   {
     "id": 551,
@@ -4433,11 +4607,14 @@
   },
   {
     "id": 555,
-    "name": "Darmanitan",
+    "name": "Darmanitan · Normal",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
+    "pokemonName": "Darmanitan",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 556,
@@ -4673,19 +4850,25 @@
   },
   {
     "id": 585,
-    "name": "Deerling",
+    "name": "Deerling · Primavera",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
+    "pokemonName": "Deerling",
+    "formName": "Primavera",
+    "formIdentifier": "default"
   },
   {
     "id": 586,
-    "name": "Sawsbuck",
+    "name": "Sawsbuck · Primavera",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
+    "pokemonName": "Sawsbuck",
+    "formName": "Primavera",
+    "formIdentifier": "default"
   },
   {
     "id": 587,
@@ -4729,19 +4912,25 @@
   },
   {
     "id": 592,
-    "name": "Frillish",
+    "name": "Frillish · Macho",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png",
+    "pokemonName": "Frillish",
+    "formName": "Macho",
+    "formIdentifier": "default"
   },
   {
     "id": 593,
-    "name": "Jellicent",
+    "name": "Jellicent · Macho",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+    "pokemonName": "Jellicent",
+    "formName": "Macho",
+    "formIdentifier": "default"
   },
   {
     "id": 594,
@@ -5121,19 +5310,25 @@
   },
   {
     "id": 641,
-    "name": "Tornadus",
+    "name": "Tornadus · Avatar",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
+    "pokemonName": "Tornadus",
+    "formName": "Avatar",
+    "formIdentifier": "default"
   },
   {
     "id": 642,
-    "name": "Thundurus",
+    "name": "Thundurus · Avatar",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
+    "pokemonName": "Thundurus",
+    "formName": "Avatar",
+    "formIdentifier": "default"
   },
   {
     "id": 643,
@@ -5153,27 +5348,36 @@
   },
   {
     "id": 645,
-    "name": "Landorus",
+    "name": "Landorus · Avatar",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
+    "pokemonName": "Landorus",
+    "formName": "Avatar",
+    "formIdentifier": "default"
   },
   {
     "id": 646,
-    "name": "Kyurem",
+    "name": "Kyurem · Normal",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png",
+    "pokemonName": "Kyurem",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 647,
-    "name": "Keldeo",
+    "name": "Keldeo · Habitual",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png",
+    "pokemonName": "Keldeo",
+    "formName": "Habitual",
+    "formIdentifier": "default"
   },
   {
     "id": 648,
@@ -5185,11 +5389,14 @@
   },
   {
     "id": 649,
-    "name": "Genesect",
+    "name": "Genesect · Normal",
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png",
+    "pokemonName": "Genesect",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 650,
@@ -5321,11 +5528,14 @@
   },
   {
     "id": 666,
-    "name": "Vivillon",
+    "name": "Vivillon · Motivo pradera",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png",
+    "pokemonName": "Vivillon",
+    "formName": "Motivo pradera",
+    "formIdentifier": "default"
   },
   {
     "id": 667,
@@ -5337,35 +5547,47 @@
   },
   {
     "id": 668,
-    "name": "Pyroar",
+    "name": "Pyroar · Macho",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
+    "pokemonName": "Pyroar",
+    "formName": "Macho",
+    "formIdentifier": "default"
   },
   {
     "id": 669,
-    "name": "Flabebe",
+    "name": "Flabebe · Flor roja",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png",
+    "pokemonName": "Flabebe",
+    "formName": "Flor roja",
+    "formIdentifier": "default"
   },
   {
     "id": 670,
-    "name": "Floette",
+    "name": "Floette · Flor roja",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png",
+    "pokemonName": "Floette",
+    "formName": "Flor roja",
+    "formIdentifier": "default"
   },
   {
     "id": 671,
-    "name": "Florges",
+    "name": "Florges · Flor roja",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
+    "pokemonName": "Florges",
+    "formName": "Flor roja",
+    "formIdentifier": "default"
   },
   {
     "id": 672,
@@ -5401,11 +5623,14 @@
   },
   {
     "id": 676,
-    "name": "Furfrou",
+    "name": "Furfrou · Normal",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png",
+    "pokemonName": "Furfrou",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 677,
@@ -5417,11 +5642,14 @@
   },
   {
     "id": 678,
-    "name": "Meowstic",
+    "name": "Meowstic · Macho",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+    "pokemonName": "Meowstic",
+    "formName": "Macho",
+    "formIdentifier": "default"
   },
   {
     "id": 679,
@@ -5673,19 +5901,25 @@
   },
   {
     "id": 710,
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo · Normal",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png",
+    "pokemonName": "Pumpkaboo",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 711,
-    "name": "Gourgeist",
+    "name": "Gourgeist · Normal",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
+    "pokemonName": "Gourgeist",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 712,
@@ -5737,11 +5971,14 @@
   },
   {
     "id": 718,
-    "name": "Zygarde",
+    "name": "Zygarde · 50%",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png",
+    "pokemonName": "Zygarde",
+    "formName": "50%",
+    "formIdentifier": "default"
   },
   {
     "id": 719,
@@ -5753,11 +5990,14 @@
   },
   {
     "id": 720,
-    "name": "Hoopa",
+    "name": "Hoopa · Contenido",
     "region": "Kalos",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png",
+    "pokemonName": "Hoopa",
+    "formName": "Contenido",
+    "formIdentifier": "default"
   },
   {
     "id": 721,
@@ -5921,11 +6161,14 @@
   },
   {
     "id": 741,
-    "name": "Oricorio",
+    "name": "Oricorio · Estilo apasionado",
     "region": "Alola",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
+    "pokemonName": "Oricorio",
+    "formName": "Estilo apasionado",
+    "formIdentifier": "default"
   },
   {
     "id": 742,
@@ -5953,11 +6196,14 @@
   },
   {
     "id": 745,
-    "name": "Lycanroc",
+    "name": "Lycanroc · Diurno",
     "region": "Alola",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
+    "pokemonName": "Lycanroc",
+    "formName": "Diurno",
+    "formIdentifier": "default"
   },
   {
     "id": 746,
@@ -6185,11 +6431,14 @@
   },
   {
     "id": 774,
-    "name": "Minior",
+    "name": "Minior · Meteorito",
     "region": "Alola",
     "available": false,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
+    "pokemonName": "Minior",
+    "formName": "Meteorito",
+    "formIdentifier": "default"
   },
   {
     "id": 775,
@@ -6393,11 +6642,14 @@
   },
   {
     "id": 800,
-    "name": "Necrozma",
+    "name": "Necrozma · Normal",
     "region": "Alola",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png",
+    "pokemonName": "Necrozma",
+    "formName": "Normal",
+    "formIdentifier": "default"
   },
   {
     "id": 801,
@@ -6785,11 +7037,14 @@
   },
   {
     "id": 849,
-    "name": "Toxtricity",
+    "name": "Toxtricity · Forma aguda",
     "region": "Galar",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png",
+    "pokemonName": "Toxtricity",
+    "formName": "Forma aguda",
+    "formIdentifier": "default"
   },
   {
     "id": 850,
@@ -6825,19 +7080,25 @@
   },
   {
     "id": 854,
-    "name": "Sinistea",
+    "name": "Sinistea · Falsificada",
     "region": "Galar",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png",
+    "pokemonName": "Sinistea",
+    "formName": "Falsificada",
+    "formIdentifier": "default"
   },
   {
     "id": 855,
-    "name": "Polteageist",
+    "name": "Polteageist · Falsificada",
     "region": "Galar",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png",
+    "pokemonName": "Polteageist",
+    "formName": "Falsificada",
+    "formIdentifier": "default"
   },
   {
     "id": 856,
@@ -7001,11 +7262,14 @@
   },
   {
     "id": 876,
-    "name": "Indeedee",
+    "name": "Indeedee · Macho",
     "region": "Galar",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png",
+    "pokemonName": "Indeedee",
+    "formName": "Macho",
+    "formIdentifier": "default"
   },
   {
     "id": 877,
@@ -7209,11 +7473,14 @@
   },
   {
     "id": 902,
-    "name": "Basculegion",
+    "name": "Basculegion · Macho",
     "region": "Hisui",
     "available": false,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png",
+    "pokemonName": "Basculegion",
+    "formName": "Macho",
+    "formIdentifier": "default"
   },
   {
     "id": 903,
@@ -7233,11 +7500,14 @@
   },
   {
     "id": 905,
-    "name": "Enamorus",
+    "name": "Enamorus · Avatar",
     "region": "Hisui",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png",
+    "pokemonName": "Enamorus",
+    "formName": "Avatar",
+    "formIdentifier": "default"
   },
   {
     "id": 906,
@@ -7321,11 +7591,14 @@
   },
   {
     "id": 916,
-    "name": "Oinkologne",
+    "name": "Oinkologne · Macho",
     "region": "Paldea",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png",
+    "pokemonName": "Oinkologne",
+    "formName": "Macho",
+    "formIdentifier": "default"
   },
   {
     "id": 917,
@@ -7393,11 +7666,14 @@
   },
   {
     "id": 925,
-    "name": "Maushold",
+    "name": "Maushold · Familia de 4",
     "region": "Paldea",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png",
+    "pokemonName": "Maushold",
+    "formName": "Familia de 4",
+    "formIdentifier": "default"
   },
   {
     "id": 926,
@@ -7441,11 +7717,14 @@
   },
   {
     "id": 931,
-    "name": "Squawkabilly",
+    "name": "Squawkabilly · Verde",
     "region": "Paldea",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png",
+    "pokemonName": "Squawkabilly",
+    "formName": "Verde",
+    "formIdentifier": "default"
   },
   {
     "id": 932,
@@ -7817,11 +8096,14 @@
   },
   {
     "id": 978,
-    "name": "Tatsugiri",
+    "name": "Tatsugiri · Curvada",
     "region": "Paldea",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
+    "pokemonName": "Tatsugiri",
+    "formName": "Curvada",
+    "formIdentifier": "default"
   },
   {
     "id": 979,
@@ -7849,11 +8131,14 @@
   },
   {
     "id": 982,
-    "name": "Dudunsparce",
+    "name": "Dudunsparce · Binodular",
     "region": "Paldea",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png",
+    "pokemonName": "Dudunsparce",
+    "formName": "Binodular",
+    "formIdentifier": "default"
   },
   {
     "id": 983,
@@ -8089,19 +8374,25 @@
   },
   {
     "id": 1012,
-    "name": "Poltchageist",
+    "name": "Poltchageist · Fraudulenta",
     "region": "Paldea",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png",
+    "pokemonName": "Poltchageist",
+    "formName": "Fraudulenta",
+    "formIdentifier": "default"
   },
   {
     "id": 1013,
-    "name": "Sinistcha",
+    "name": "Sinistcha · Mediocre",
     "region": "Paldea",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png",
+    "pokemonName": "Sinistcha",
+    "formName": "Mediocre",
+    "formIdentifier": "default"
   },
   {
     "id": 1014,
