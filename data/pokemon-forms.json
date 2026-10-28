@@ -1725,7 +1725,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_2n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-spinda-pattern-3",
@@ -1737,7 +1737,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_3n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-spinda-pattern-4",
@@ -1749,7 +1749,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_4n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-spinda-pattern-5",
@@ -1761,7 +1761,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_5n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-spinda-pattern-6",
@@ -1773,7 +1773,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_6n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-spinda-pattern-7",
@@ -1785,7 +1785,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_7n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-spinda-pattern-8",
@@ -1797,7 +1797,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_8n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-spinda-pattern-9",
@@ -1809,7 +1809,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_9n.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
     "id": "form-10169",
@@ -2613,7 +2613,7 @@
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521-female.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/521.png"
   },
   {
     "id": "form-10512",

@@ -50,7 +50,7 @@ Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. Tamb
 - `available: false` excluye un Pokémon o disfraz de las listas.
 - `shinyAvailable: false` lo excluye de las listas que tienen activado el filtro shiny.
 - El progreso de cada cuenta se guarda en la colección `collections`; las cuentas están en `users`; las solicitudes y amistades aceptadas están en `friendships`.
-- Las imágenes requieren internet. Las especies y sus formas usan sprites de [PokeAPI](https://github.com/PokeAPI/sprites); los patrones de Spinda usan imágenes específicas por patrón. Los disfraces usan el espejo público de imágenes de Pogo data; si falta una imagen de disfraz, la tarjeta muestra el sprite normal de esa especie.
+- Las imágenes requieren internet. Las especies y sus formas usan sprites de [PokeAPI](https://github.com/PokeAPI/sprites); todos los patrones de Spinda usan su sprite genérico. En una lista shiny se cambia automáticamente a la ruta de sprite shiny. Los disfraces usan el espejo público de imágenes de Pogo data; si falta una imagen de disfraz, la tarjeta muestra el sprite normal de esa especie.
 
 ## Seguridad de credenciales
 

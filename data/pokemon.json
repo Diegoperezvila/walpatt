@@ -2739,7 +2739,7 @@
     "region": "Hoenn",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.p337.info/pokemongo/pages/img/spinda_1n.png",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png",
     "pokemonName": "Spinda",
     "formName": "Patrón 1",
     "formIdentifier": "pattern-1"

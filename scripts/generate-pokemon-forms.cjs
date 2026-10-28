@@ -208,7 +208,7 @@ if (spinda) {
   spinda.formName = 'Patrón 1';
   spinda.formIdentifier = 'pattern-1';
   spinda.name = `${spinda.pokemonName} · Patrón 1`;
-  spinda.image = 'https://www.p337.info/pokemongo/pages/img/spinda_1n.png';
+  spinda.image = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png';
   for (let number = 1; number <= 9; number++) {
     if (number === 1) continue;
     variants.push({
@@ -221,7 +221,7 @@ if (spinda) {
       region: spinda.region,
       available: true,
       shinyAvailable: ![4, 9].includes(number),
-      image: `https://www.p337.info/pokemongo/pages/img/spinda_${number}n.png`
+      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png'
     });
   }
 }
@@ -237,7 +237,7 @@ if (!seen.has('unfezant-female') && catalogById.has(521)) {
     id: 'form-unfezant-female', pokemonId: 521, pokemonName: 'Unfezant', formName: 'Hembra',
     formIdentifier: 'unfezant-female', name: 'Unfezant · Hembra', region: base.region,
     available: true, shinyAvailable: !!base.shinyAvailable,
-    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521-female.png'
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/521.png'
   });
 }
 
