@@ -261,7 +261,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm8.cSUMMER_2023.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/wartortle03.png"
   },
   {
     "id": "costume-8-22",
@@ -272,7 +272,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm8.cSUMMER_2024.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/wartortle04.png"
   },
   {
     "id": "costume-8-23",
@@ -305,7 +305,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm9.cSUMMER_2023.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/blastoise03.png"
   },
   {
     "id": "costume-9-26",
@@ -316,7 +316,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm9.cSUMMER_2024.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/blastoise04.png"
   },
   {
     "id": "costume-9-27",
@@ -1823,7 +1823,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm104.cFALL_2023_NOEVOLVE.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/cubone01.png"
   },
   {
     "id": "costume-105-162",
@@ -1834,7 +1834,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm105.cFALL_2023_NOEVOLVE.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/marowak01.png"
   },
   {
     "id": "costume-113-163",
@@ -1889,7 +1889,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/ditto01.png"
   },
   {
     "id": "costume-132-168",
@@ -1900,7 +1900,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/ditto02.png"
   },
   {
     "id": "costume-133-169",
@@ -2175,7 +2175,7 @@
     "region": "Kanto",
     "available": true,
     "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/mewtwo-armored.png"
   },
   {
     "id": "costume-163-194",
@@ -3044,7 +3044,7 @@
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm546.cROYAL_NOEVOLVE.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/cottonee01.png"
   },
   {
     "id": "costume-547-272",
@@ -3055,7 +3055,7 @@
     "region": "Unova",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm547.cROYAL_NOEVOLVE.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/whimsicott01.png"
   },
   {
     "id": "costume-572-273",
@@ -3110,7 +3110,7 @@
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm656.cHALLOWEEN_2025.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/froakie01.png"
   },
   {
     "id": "costume-657-278",
@@ -3121,7 +3121,7 @@
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm657.cHALLOWEEN_2025.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/frogadier01.png"
   },
   {
     "id": "costume-658-279",
@@ -3132,7 +3132,7 @@
     "region": "Kalos",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm658.cHALLOWEEN_2025.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/greninja01.png"
   },
   {
     "id": "costume-700-280",
@@ -3308,7 +3308,7 @@
     "region": "Alola",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm722.cHALLOWEEN_2025.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/rowlet01.png"
   },
   {
     "id": "costume-723-296",
@@ -3319,7 +3319,7 @@
     "region": "Alola",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm723.cHALLOWEEN_2025.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/dartrix01.png"
   },
   {
     "id": "costume-724-297",
@@ -3330,7 +3330,7 @@
     "region": "Alola",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm724.cHALLOWEEN_2025.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/decidueye01.png"
   },
   {
     "id": "costume-737-298",
