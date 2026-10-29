@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-let pokemon=[],costumes=[],events=[],user=null,store={lists:[],owned:{}},view='pokemon',selectedList='perfect',selectedEventId='',filterMode='all',eventFilterMode='all',authMode='register',toastTimer,saveQueue=Promise.resolve(),editingListId=null,returnToProfile=false;
+let pokemon=[],costumes=[],events=[],user=null,store={lists:[],owned:{}},view='pokemon',selectedList='perfect',selectedEventId='',selectedEventListId='shiny',filterMode='all',authMode='register',toastTimer,saveQueue=Promise.resolve(),editingListId=null,returnToProfile=false;
 const initialLists=[{id:'perfect',name:'100 IV',kind:'perfect',emoji:'💯',shiny:false,isPublic:false},{id:'shiny',name:'Shiny',kind:'shiny',emoji:'✨',shiny:true,isPublic:false}];
 
 async function api(path,options={}){
@@ -31,15 +31,21 @@ function eventDay(value){const match=String(value||'').match(/^(\d{4})-(\d{1,2})
 function formatEventDate(value){const match=String(value||'').match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(match)return `${match[3].padStart(2,'0')}-${match[2].padStart(2,'0')}-${match[1]}`;const parsed=Date.parse(value);return Number.isFinite(parsed)?new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(parsed)):String(value||'')}
 function eventDateRange(event){const start=formatEventDate(event.startDate),end=formatEventDate(event.endDate);if(start&&end)return `${start} — ${end}`;return start||end||'Fechas pendientes de confirmar'}
 function renderEvents(){
-  const overview=$('#eventsOverview'),detail=$('#eventDetail'),empty=$('#eventsEmpty');
+  const overview=$('#eventsOverview'),detail=$('#eventDetail'),empty=$('#eventsEmpty'),chooser=$('#eventListChooser');
   overview.replaceChildren();
-  if(!events.length){selectedEventId='';overview.classList.add('hidden');detail.classList.add('hidden');empty.classList.remove('hidden');return}
-  empty.classList.add('hidden');
-  const catalog=new Map([...pokemon,...costumes].map(item=>[String(item.id),item])),owned=new Set();
-  Object.values(userData().owned||{}).forEach(group=>Object.keys(group||{}).forEach(id=>owned.add(String(id))));
+  chooser.replaceChildren();
+  const lists=userData().lists||[];
+  if(!lists.some(list=>list.id===selectedEventListId))selectedEventListId=lists.find(list=>list.id==='shiny')?.id||lists[0]?.id||'';
+  const eventList=lists.find(list=>list.id===selectedEventListId);
+  if(eventList){const label=document.createElement('span');label.className='event-list-chooser-label';label.textContent='Comprobar con mi lista';chooser.append(label);const buttons=document.createElement('div');buttons.className='event-list-chooser-buttons';lists.forEach(list=>{const button=document.createElement('button');button.type='button';button.className='event-list-choice'+(list.id===selectedEventListId?' active':'');button.textContent=`${list.emoji||'✦'} ${list.name}`;button.addEventListener('click',()=>{selectedEventListId=list.id;renderEvents()});buttons.append(button)});chooser.append(buttons)}
+  if(!events.length){selectedEventId='';chooser.classList.add('hidden');overview.classList.add('hidden');detail.classList.add('hidden');empty.classList.remove('hidden');return}
+  chooser.classList.remove('hidden');empty.classList.add('hidden');
+  const catalog=new Map([...pokemon,...costumes].map(item=>[String(item.id),item]));
+  const itemOwned=item=>!!userData().owned[`${String(item.id).startsWith('costume-')?'costumes':'pokemon'}:${eventList?.id}`]?.[String(item.id)];
+  const itemEligible=item=>!eventList?.shiny||!!item.shinyAvailable;
   const now=new Date(),today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
-  const getIds=event=>new Set((event.sources||[]).flatMap(source=>Array.isArray(source.pokemonIds)?source.pokemonIds.map(String):[]).filter(id=>catalog.has(id)));
-  const stats=event=>{const ids=getIds(event);return{total:ids.size,missing:[...ids].filter(id=>!owned.has(id)).length}};
+  const getIds=event=>new Set((event.sources||[]).flatMap(source=>Array.isArray(source.pokemonIds)?source.pokemonIds.map(String):[]).filter(id=>catalog.has(id)&&itemEligible(catalog.get(id))));
+  const stats=event=>{const ids=getIds(event);return{total:ids.size,missing:[...ids].filter(id=>!itemOwned(catalog.get(id))).length}};
   if(!selectedEventId||!events.some((event,index)=>String(event.id??index)===selectedEventId)){
     selectedEventId='';detail.classList.add('hidden');overview.classList.remove('hidden');
     const groups={current:[],upcoming:[],expired:[]};
@@ -56,12 +62,12 @@ function renderEvents(){
   $('#eventName').textContent=event.name||event.title||'Evento';
   $('#eventDescription').textContent=event.description||'';
   $('#eventDates').textContent=eventDateRange(event);
-  const eventIds=getIds(event),missing=[...eventIds].filter(id=>!owned.has(id)).length;
+  const eventIds=getIds(event),missing=[...eventIds].filter(id=>!itemOwned(catalog.get(id))).length;
   $('#eventProgress').textContent=`Te faltan ${missing} de ${eventIds.size} Pokémon`;
   const holder=$('#eventSources');holder.replaceChildren();
   (event.sources||[]).forEach(source=>{
     const ids=[...new Set((Array.isArray(source.pokemonIds)?source.pokemonIds:[]).map(String))];
-    const missingItems=ids.map(id=>catalog.get(id)).filter(item=>item&&!owned.has(String(item.id)));
+    const missingItems=ids.map(id=>catalog.get(id)).filter(item=>item&&itemEligible(item)&&!itemOwned(item));
     if(!missingItems.length)return;
     const section=document.createElement('section');section.className='event-source';
     const heading=document.createElement('div');heading.className='event-source-heading';const title=document.createElement('h3');title.textContent=source.name||source.label||'Otros';
@@ -96,7 +102,7 @@ $('#authSwitch').addEventListener('click',()=>{authMode=authMode==='register'?'l
 $$('[data-close]').forEach(b=>b.addEventListener('click',()=>{const modal=b.dataset.close;$('#'+modal).classList.add('hidden');if(modal==='friendsModal')stopFriendsPolling();if(modal==='listModal'&&returnToProfile){$('#listManagerModal').classList.remove('hidden');returnToProfile=false}}));
 $$('.modal-backdrop').forEach(m=>m.addEventListener('click',e=>{if(e.target===m){m.classList.add('hidden');if(m.id==='friendsModal')stopFriendsPolling();if(m.id==='listModal'&&returnToProfile){$('#listManagerModal').classList.remove('hidden');returnToProfile=false}}}));
 $('#newListSide').addEventListener('click',()=>openListModal());$('#listForm').addEventListener('submit',e=>{e.preventDefault();submitList()});
-$$('.side-item[data-view]').forEach(b=>b.addEventListener('click',()=>{showAppView(b.dataset.view);setSidebarOpen(false)}));$('#searchInput').addEventListener('input',render);$('#eventsBack').addEventListener('click',()=>{selectedEventId='';renderEvents()});$('#eventsOpen').addEventListener('click',()=>{selectedEventId='';showAppView('events')});$('#regionFilter').addEventListener('change',render);$$('#ownershipFilters [data-filter]').forEach(b=>b.addEventListener('click',()=>{filterMode=b.dataset.filter;render()}));
+$$('.side-item[data-view]').forEach(b=>b.addEventListener('click',()=>{showAppView(b.dataset.view);setSidebarOpen(false)}));$('#searchInput').addEventListener('input',render);$('#eventsBack').addEventListener('click',()=>{selectedEventId='';renderEvents()});$('#eventsOpen').addEventListener('click',()=>{selectedEventId='';selectedEventListId='shiny';showAppView('events')});$('#regionFilter').addEventListener('change',render);$$('#ownershipFilters [data-filter]').forEach(b=>b.addEventListener('click',()=>{filterMode=b.dataset.filter;render()}));
 $('#logoutButton').addEventListener('click',sessionEnd);$('#profileOpen').addEventListener('click',openProfile);$('#friendsOpen').addEventListener('click',openFriends);$('#manageListsSide').addEventListener('click',openListManager);$('#listsToggle').addEventListener('click',()=>setSidebarOpen(true));$('#sidebarBackdrop').addEventListener('click',()=>setSidebarOpen(false));$('#managerNewList').addEventListener('click',()=>openListModal(null,true));
 $('#friendSearchForm').addEventListener('submit',e=>{e.preventDefault();searchFriend($('#friendSearchInput').value.trim())});$('#backToFriends').addEventListener('click',()=>{$('#sharedListsModal').classList.add('hidden');openFriends()});$$('[data-shared-view]').forEach(button=>button.addEventListener('click',()=>{sharedView=button.dataset.sharedView;$$('[data-shared-view]').forEach(item=>item.classList.toggle('active',item===button));renderSharedLists()}));
 $('#profileForm').addEventListener('submit',async e=>{e.preventDefault();const button=e.currentTarget.querySelector('button[type="submit"],button:not([type])');button.disabled=true;$('#profileError').textContent='';try{const payload={username:$('#profileUsername').value.trim(),email:$('#profileEmail').value.trim()};const newPassword=$('#newPassword').value;if(newPassword){payload.currentPassword=$('#currentPassword').value;payload.newPassword=newPassword}const result=await api('/api/profile',{method:'PATCH',body:JSON.stringify(payload)});user=result.user;$('#topUsername').textContent=user.username;$('#currentPassword').value='';$('#newPassword').value='';$('#profileModal').classList.add('hidden');notify('Perfil actualizado.')}catch(error){$('#profileError').textContent=error.message}finally{button.disabled=false}});
