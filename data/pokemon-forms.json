@@ -7,21 +7,9 @@
     "formIdentifier": "venusaur-gmax",
     "name": "Venusaur · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10195.png"
-  },
-  {
-    "id": "form-10133",
-    "pokemonId": 3,
-    "pokemonName": "Venusaur",
-    "formName": "Mega-Venusaur",
-    "formIdentifier": "venusaur-mega",
-    "name": "Venusaur · Mega-Venusaur",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10033.png"
   },
   {
     "id": "form-10365",
@@ -31,33 +19,9 @@
     "formIdentifier": "charizard-gmax",
     "name": "Charizard · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10196.png"
-  },
-  {
-    "id": "form-10134",
-    "pokemonId": 6,
-    "pokemonName": "Charizard",
-    "formName": "Mega-Charizard X",
-    "formIdentifier": "charizard-mega-x",
-    "name": "Charizard · Mega-Charizard X",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10034.png"
-  },
-  {
-    "id": "form-10135",
-    "pokemonId": 6,
-    "pokemonName": "Charizard",
-    "formName": "Mega-Charizard Y",
-    "formIdentifier": "charizard-mega-y",
-    "name": "Charizard · Mega-Charizard Y",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10035.png"
   },
   {
     "id": "form-10366",
@@ -67,21 +31,9 @@
     "formIdentifier": "blastoise-gmax",
     "name": "Blastoise · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10197.png"
-  },
-  {
-    "id": "form-10136",
-    "pokemonId": 9,
-    "pokemonName": "Blastoise",
-    "formName": "Mega-Blastoise",
-    "formIdentifier": "blastoise-mega",
-    "name": "Blastoise · Mega-Blastoise",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10036.png"
   },
   {
     "id": "form-10367",
@@ -91,33 +43,9 @@
     "formIdentifier": "butterfree-gmax",
     "name": "Butterfree · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10198.png"
-  },
-  {
-    "id": "form-10192",
-    "pokemonId": 15,
-    "pokemonName": "Beedrill",
-    "formName": "Mega-Beedrill",
-    "formIdentifier": "beedrill-mega",
-    "name": "Beedrill · Mega-Beedrill",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10090.png"
-  },
-  {
-    "id": "form-10175",
-    "pokemonId": 18,
-    "pokemonName": "Pidgeot",
-    "formName": "Mega-Pidgeot",
-    "formIdentifier": "pidgeot-mega",
-    "name": "Pidgeot · Mega-Pidgeot",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10073.png"
   },
   {
     "id": "form-10193",
@@ -156,30 +84,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10093.png"
   },
   {
-    "id": "form-10183",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Belle",
-    "formIdentifier": "pikachu-belle",
-    "name": "Pikachu · Belle",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10081.png"
-  },
-  {
-    "id": "form-10187",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Cosplay",
-    "formIdentifier": "pikachu-cosplay",
-    "name": "Pikachu · Cosplay",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10085.png"
-  },
-  {
     "id": "form-10368",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
@@ -187,165 +91,9 @@
     "formIdentifier": "pikachu-gmax",
     "name": "Pikachu · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10199.png"
-  },
-  {
-    "id": "form-10201",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Alola",
-    "formIdentifier": "pikachu-alola-cap",
-    "name": "Pikachu · Gorra Alola",
-    "region": "Alola",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10099.png"
-  },
-  {
-    "id": "form-10267",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Compañero",
-    "formIdentifier": "pikachu-partner-cap",
-    "name": "Pikachu · Gorra Compañero",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10148.png"
-  },
-  {
-    "id": "form-10197",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Hoenn",
-    "formIdentifier": "pikachu-hoenn-cap",
-    "name": "Pikachu · Gorra Hoenn",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10095.png"
-  },
-  {
-    "id": "form-10200",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Kalos",
-    "formIdentifier": "pikachu-kalos-cap",
-    "name": "Pikachu · Gorra Kalos",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10098.png"
-  },
-  {
-    "id": "form-10196",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Original",
-    "formIdentifier": "pikachu-original-cap",
-    "name": "Pikachu · Gorra Original",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10094.png"
-  },
-  {
-    "id": "form-10198",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Sinnoh",
-    "formIdentifier": "pikachu-sinnoh-cap",
-    "name": "Pikachu · Gorra Sinnoh",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10096.png"
-  },
-  {
-    "id": "form-10199",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Teselia",
-    "formIdentifier": "pikachu-unova-cap",
-    "name": "Pikachu · Gorra Teselia",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10097.png"
-  },
-  {
-    "id": "form-10319",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Gorra Trotamundos",
-    "formIdentifier": "pikachu-world-cap",
-    "name": "Pikachu · Gorra Trotamundos",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10160.png"
-  },
-  {
-    "id": "form-10186",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Libre",
-    "formIdentifier": "pikachu-libre",
-    "name": "Pikachu · Libre",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10084.png"
-  },
-  {
-    "id": "form-10185",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Phd",
-    "formIdentifier": "pikachu-phd",
-    "name": "Pikachu · Phd",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10083.png"
-  },
-  {
-    "id": "form-10184",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Pop Star",
-    "formIdentifier": "pikachu-pop-star",
-    "name": "Pikachu · Pop Star",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10082.png"
-  },
-  {
-    "id": "form-10182",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Rock Star",
-    "formIdentifier": "pikachu-rock-star",
-    "name": "Pikachu · Rock Star",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10080.png"
-  },
-  {
-    "id": "form-10317",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "formName": "Starter",
-    "formIdentifier": "pikachu-starter",
-    "name": "Pikachu · Starter",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10158.png"
   },
   {
     "id": "form-10202",
@@ -358,30 +106,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10100.png"
-  },
-  {
-    "id": "form-10529",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "formName": "Mega X",
-    "formIdentifier": "raichu-mega-x",
-    "name": "Raichu · Mega X",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10304.png"
-  },
-  {
-    "id": "form-10530",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "formName": "Mega Y",
-    "formIdentifier": "raichu-mega-y",
-    "name": "Raichu · Mega Y",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10305.png"
   },
   {
     "id": "form-10203",
@@ -406,18 +130,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10102.png"
-  },
-  {
-    "id": "form-10503",
-    "pokemonId": 36,
-    "pokemonName": "Clefable",
-    "formName": "Mega",
-    "formIdentifier": "clefable-mega",
-    "name": "Clefable · Mega",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10278.png"
   },
   {
     "id": "form-10205",
@@ -499,8 +211,8 @@
     "formIdentifier": "meowth-gmax",
     "name": "Meowth · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10200.png"
   },
   {
@@ -540,18 +252,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10230.png"
   },
   {
-    "id": "form-10137",
-    "pokemonId": 65,
-    "pokemonName": "Alakazam",
-    "formName": "Mega-Alakazam",
-    "formIdentifier": "alakazam-mega",
-    "name": "Alakazam · Mega-Alakazam",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10037.png"
-  },
-  {
     "id": "form-10370",
     "pokemonId": 68,
     "pokemonName": "Machamp",
@@ -559,21 +259,9 @@
     "formIdentifier": "machamp-gmax",
     "name": "Machamp · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10201.png"
-  },
-  {
-    "id": "form-10504",
-    "pokemonId": 71,
-    "pokemonName": "Victreebel",
-    "formName": "Mega",
-    "formIdentifier": "victreebel-mega",
-    "name": "Victreebel · Mega",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10279.png"
   },
   {
     "id": "form-10211",
@@ -660,18 +348,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10165.png"
   },
   {
-    "id": "form-10173",
-    "pokemonId": 80,
-    "pokemonName": "Slowbro",
-    "formName": "Mega-Slowbro",
-    "formIdentifier": "slowbro-mega",
-    "name": "Slowbro · Mega-Slowbro",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10071.png"
-  },
-  {
     "id": "form-10325",
     "pokemonId": 83,
     "pokemonName": "Farfetch’d",
@@ -715,21 +391,9 @@
     "formIdentifier": "gengar-gmax",
     "name": "Gengar · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10202.png"
-  },
-  {
-    "id": "form-10138",
-    "pokemonId": 94,
-    "pokemonName": "Gengar",
-    "formName": "Mega-Gengar",
-    "formIdentifier": "gengar-mega",
-    "name": "Gengar · Mega-Gengar",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10038.png"
   },
   {
     "id": "form-10372",
@@ -792,18 +456,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10115.png"
   },
   {
-    "id": "form-10268",
-    "pokemonId": 105,
-    "pokemonName": "Marowak",
-    "formName": "Totem",
-    "formIdentifier": "marowak-totem",
-    "name": "Marowak · Totem",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10149.png"
-  },
-  {
     "id": "form-10326",
     "pokemonId": 110,
     "pokemonName": "Weezing",
@@ -814,30 +466,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png"
-  },
-  {
-    "id": "form-10139",
-    "pokemonId": 115,
-    "pokemonName": "Kangaskhan",
-    "formName": "Mega-Kangaskhan",
-    "formIdentifier": "kangaskhan-mega",
-    "name": "Kangaskhan · Mega-Kangaskhan",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10039.png"
-  },
-  {
-    "id": "form-10505",
-    "pokemonId": 121,
-    "pokemonName": "Starmie",
-    "formName": "Mega",
-    "formIdentifier": "starmie-mega",
-    "name": "Starmie · Mega",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10280.png"
   },
   {
     "id": "form-10327",
@@ -852,18 +480,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10168.png"
   },
   {
-    "id": "form-10140",
-    "pokemonId": 127,
-    "pokemonName": "Pinsir",
-    "formName": "Mega-Pinsir",
-    "formIdentifier": "pinsir-mega",
-    "name": "Pinsir · Mega-Pinsir",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10040.png"
-  },
-  {
     "id": "form-10421",
     "pokemonId": 128,
     "pokemonName": "Tauros",
@@ -872,7 +488,7 @@
     "name": "Tauros · Acuática (Paldea)",
     "region": "Paldea",
     "available": true,
-    "shinyAvailable": true,
+    "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10252.png"
   },
   {
@@ -900,18 +516,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10250.png"
   },
   {
-    "id": "form-10141",
-    "pokemonId": 130,
-    "pokemonName": "Gyarados",
-    "formName": "Mega-Gyarados",
-    "formIdentifier": "gyarados-mega",
-    "name": "Gyarados · Mega-Gyarados",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10041.png"
-  },
-  {
     "id": "form-10373",
     "pokemonId": 131,
     "pokemonName": "Lapras",
@@ -919,8 +523,8 @@
     "formIdentifier": "lapras-gmax",
     "name": "Lapras · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10204.png"
   },
   {
@@ -936,30 +540,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10205.png"
   },
   {
-    "id": "form-10318",
-    "pokemonId": 133,
-    "pokemonName": "Eevee",
-    "formName": "Starter",
-    "formIdentifier": "eevee-starter",
-    "name": "Eevee · Starter",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10159.png"
-  },
-  {
-    "id": "form-10142",
-    "pokemonId": 142,
-    "pokemonName": "Aerodactyl",
-    "formName": "Mega-Aerodactyl",
-    "formIdentifier": "aerodactyl-mega",
-    "name": "Aerodactyl · Mega-Aerodactyl",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10042.png"
-  },
-  {
     "id": "form-10375",
     "pokemonId": 143,
     "pokemonName": "Snorlax",
@@ -967,8 +547,8 @@
     "formIdentifier": "snorlax-gmax",
     "name": "Snorlax · Gmax",
     "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10206.png"
   },
   {
@@ -1008,54 +588,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10171.png"
   },
   {
-    "id": "form-10506",
-    "pokemonId": 149,
-    "pokemonName": "Dragonite",
-    "formName": "Mega",
-    "formIdentifier": "dragonite-mega",
-    "name": "Dragonite · Mega",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10281.png"
-  },
-  {
-    "id": "form-10143",
-    "pokemonId": 150,
-    "pokemonName": "Mewtwo",
-    "formName": "Mega-Mewtwo X",
-    "formIdentifier": "mewtwo-mega-x",
-    "name": "Mewtwo · Mega-Mewtwo X",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10043.png"
-  },
-  {
-    "id": "form-10144",
-    "pokemonId": 150,
-    "pokemonName": "Mewtwo",
-    "formName": "Mega-Mewtwo Y",
-    "formIdentifier": "mewtwo-mega-y",
-    "name": "Mewtwo · Mega-Mewtwo Y",
-    "region": "Kanto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10044.png"
-  },
-  {
-    "id": "form-10507",
-    "pokemonId": 154,
-    "pokemonName": "Meganium",
-    "formName": "Mega",
-    "formIdentifier": "meganium-mega",
-    "name": "Meganium · Mega",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10282.png"
-  },
-  {
     "id": "form-10402",
     "pokemonId": 157,
     "pokemonName": "Typhlosion",
@@ -1066,42 +598,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10233.png"
-  },
-  {
-    "id": "form-10508",
-    "pokemonId": 160,
-    "pokemonName": "Feraligatr",
-    "formName": "Mega",
-    "formIdentifier": "feraligatr-mega",
-    "name": "Feraligatr · Mega",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10283.png"
-  },
-  {
-    "id": "form-10065",
-    "pokemonId": 172,
-    "pokemonName": "Pichu",
-    "formName": "Spiky Eared",
-    "formIdentifier": "pichu-spiky-eared",
-    "name": "Pichu · Spiky Eared",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172-spiky-eared.png"
-  },
-  {
-    "id": "form-10145",
-    "pokemonId": 181,
-    "pokemonName": "Ampharos",
-    "formName": "Mega-Ampharos",
-    "formIdentifier": "ampharos-mega",
-    "name": "Ampharos · Mega-Ampharos",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10045.png"
   },
   {
     "id": "form-10422",
@@ -1452,18 +948,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201-z.png"
   },
   {
-    "id": "form-10174",
-    "pokemonId": 208,
-    "pokemonName": "Steelix",
-    "formName": "Mega-Steelix",
-    "formIdentifier": "steelix-mega",
-    "name": "Steelix · Mega-Steelix",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10072.png"
-  },
-  {
     "id": "form-10403",
     "pokemonId": 211,
     "pokemonName": "Qwilfish",
@@ -1474,30 +958,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10234.png"
-  },
-  {
-    "id": "form-10146",
-    "pokemonId": 212,
-    "pokemonName": "Scizor",
-    "formName": "Mega-Scizor",
-    "formIdentifier": "scizor-mega",
-    "name": "Scizor · Mega-Scizor",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10046.png"
-  },
-  {
-    "id": "form-10147",
-    "pokemonId": 214,
-    "pokemonName": "Heracross",
-    "formName": "Mega-Heracross",
-    "formIdentifier": "heracross-mega",
-    "name": "Heracross · Mega-Heracross",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10047.png"
   },
   {
     "id": "form-10404",
@@ -1524,78 +984,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10173.png"
   },
   {
-    "id": "form-10509",
-    "pokemonId": 227,
-    "pokemonName": "Skarmory",
-    "formName": "Mega",
-    "formIdentifier": "skarmory-mega",
-    "name": "Skarmory · Mega",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10284.png"
-  },
-  {
-    "id": "form-10148",
-    "pokemonId": 229,
-    "pokemonName": "Houndoom",
-    "formName": "Mega-Houndoom",
-    "formIdentifier": "houndoom-mega",
-    "name": "Houndoom · Mega-Houndoom",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10048.png"
-  },
-  {
-    "id": "form-10149",
-    "pokemonId": 248,
-    "pokemonName": "Tyranitar",
-    "formName": "Mega-Tyranitar",
-    "formIdentifier": "tyranitar-mega",
-    "name": "Tyranitar · Mega-Tyranitar",
-    "region": "Johto",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10049.png"
-  },
-  {
-    "id": "form-10167",
-    "pokemonId": 254,
-    "pokemonName": "Sceptile",
-    "formName": "Mega-Sceptile",
-    "formIdentifier": "sceptile-mega",
-    "name": "Sceptile · Mega-Sceptile",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10065.png"
-  },
-  {
-    "id": "form-10150",
-    "pokemonId": 257,
-    "pokemonName": "Blaziken",
-    "formName": "Mega-Blaziken",
-    "formIdentifier": "blaziken-mega",
-    "name": "Blaziken · Mega-Blaziken",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10050.png"
-  },
-  {
-    "id": "form-10166",
-    "pokemonId": 260,
-    "pokemonName": "Swampert",
-    "formName": "Mega-Swampert",
-    "formIdentifier": "swampert-mega",
-    "name": "Swampert · Mega-Swampert",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10064.png"
-  },
-  {
     "id": "form-10333",
     "pokemonId": 263,
     "pokemonName": "Zigzagoon",
@@ -1618,102 +1006,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10175.png"
-  },
-  {
-    "id": "form-10151",
-    "pokemonId": 282,
-    "pokemonName": "Gardevoir",
-    "formName": "Mega-Gardevoir",
-    "formIdentifier": "gardevoir-mega",
-    "name": "Gardevoir · Mega-Gardevoir",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10051.png"
-  },
-  {
-    "id": "form-10168",
-    "pokemonId": 302,
-    "pokemonName": "Sableye",
-    "formName": "Mega-Sableye",
-    "formIdentifier": "sableye-mega",
-    "name": "Sableye · Mega-Sableye",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10066.png"
-  },
-  {
-    "id": "form-10152",
-    "pokemonId": 303,
-    "pokemonName": "Mawile",
-    "formName": "Mega-Mawile",
-    "formIdentifier": "mawile-mega",
-    "name": "Mawile · Mega-Mawile",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10052.png"
-  },
-  {
-    "id": "form-10153",
-    "pokemonId": 306,
-    "pokemonName": "Aggron",
-    "formName": "Mega-Aggron",
-    "formIdentifier": "aggron-mega",
-    "name": "Aggron · Mega-Aggron",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10053.png"
-  },
-  {
-    "id": "form-10154",
-    "pokemonId": 308,
-    "pokemonName": "Medicham",
-    "formName": "Mega-Medicham",
-    "formIdentifier": "medicham-mega",
-    "name": "Medicham · Mega-Medicham",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10054.png"
-  },
-  {
-    "id": "form-10155",
-    "pokemonId": 310,
-    "pokemonName": "Manectric",
-    "formName": "Mega-Manectric",
-    "formIdentifier": "manectric-mega",
-    "name": "Manectric · Mega-Manectric",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10055.png"
-  },
-  {
-    "id": "form-10172",
-    "pokemonId": 319,
-    "pokemonName": "Sharpedo",
-    "formName": "Mega-Sharpedo",
-    "formIdentifier": "sharpedo-mega",
-    "name": "Sharpedo · Mega-Sharpedo",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10070.png"
-  },
-  {
-    "id": "form-10189",
-    "pokemonId": 323,
-    "pokemonName": "Camerupt",
-    "formName": "Mega-Camerupt",
-    "formIdentifier": "camerupt-mega",
-    "name": "Camerupt · Mega-Camerupt",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10087.png"
   },
   {
     "id": "form-spinda-pattern-2",
@@ -1812,18 +1104,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png"
   },
   {
-    "id": "form-10169",
-    "pokemonId": 334,
-    "pokemonName": "Altaria",
-    "formName": "Mega-Altaria",
-    "formIdentifier": "altaria-mega",
-    "name": "Altaria · Mega-Altaria",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10067.png"
-  },
-  {
     "id": "form-10029",
     "pokemonId": 351,
     "pokemonName": "Castform",
@@ -1860,150 +1140,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10013.png"
   },
   {
-    "id": "form-10156",
-    "pokemonId": 354,
-    "pokemonName": "Banette",
-    "formName": "Mega-Banette",
-    "formIdentifier": "banette-mega",
-    "name": "Banette · Mega-Banette",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10056.png"
-  },
-  {
-    "id": "form-10531",
-    "pokemonId": 358,
-    "pokemonName": "Chimecho",
-    "formName": "Mega",
-    "formIdentifier": "chimecho-mega",
-    "name": "Chimecho · Mega",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10306.png"
-  },
-  {
-    "id": "form-10532",
-    "pokemonId": 359,
-    "pokemonName": "Absol",
-    "formName": "Mega Z",
-    "formIdentifier": "absol-mega-z",
-    "name": "Absol · Mega Z",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10307.png"
-  },
-  {
-    "id": "form-10157",
-    "pokemonId": 359,
-    "pokemonName": "Absol",
-    "formName": "Mega-Absol",
-    "formIdentifier": "absol-mega",
-    "name": "Absol · Mega-Absol",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10057.png"
-  },
-  {
-    "id": "form-10176",
-    "pokemonId": 362,
-    "pokemonName": "Glalie",
-    "formName": "Mega-Glalie",
-    "formIdentifier": "glalie-mega",
-    "name": "Glalie · Mega-Glalie",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10074.png"
-  },
-  {
-    "id": "form-10191",
-    "pokemonId": 373,
-    "pokemonName": "Salamence",
-    "formName": "Mega-Salamence",
-    "formIdentifier": "salamence-mega",
-    "name": "Salamence · Mega-Salamence",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10089.png"
-  },
-  {
-    "id": "form-10178",
-    "pokemonId": 376,
-    "pokemonName": "Metagross",
-    "formName": "Mega-Metagross",
-    "formIdentifier": "metagross-mega",
-    "name": "Metagross · Mega-Metagross",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10076.png"
-  },
-  {
-    "id": "form-10164",
-    "pokemonId": 380,
-    "pokemonName": "Latias",
-    "formName": "Mega-Latias",
-    "formIdentifier": "latias-mega",
-    "name": "Latias · Mega-Latias",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10062.png"
-  },
-  {
-    "id": "form-10165",
-    "pokemonId": 381,
-    "pokemonName": "Latios",
-    "formName": "Mega-Latios",
-    "formIdentifier": "latios-mega",
-    "name": "Latios · Mega-Latios",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10063.png"
-  },
-  {
-    "id": "form-10179",
-    "pokemonId": 382,
-    "pokemonName": "Kyogre",
-    "formName": "Regresión Primigenia",
-    "formIdentifier": "kyogre-primal",
-    "name": "Kyogre · Regresión Primigenia",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10077.png"
-  },
-  {
-    "id": "form-10180",
-    "pokemonId": 383,
-    "pokemonName": "Groudon",
-    "formName": "Regresión Primigenia",
-    "formIdentifier": "groudon-primal",
-    "name": "Groudon · Regresión Primigenia",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10078.png"
-  },
-  {
-    "id": "form-10181",
-    "pokemonId": 384,
-    "pokemonName": "Rayquaza",
-    "formName": "Mega-Rayquaza",
-    "formIdentifier": "rayquaza-mega",
-    "name": "Rayquaza · Mega-Rayquaza",
-    "region": "Hoenn",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10079.png"
-  },
-  {
     "id": "form-10031",
     "pokemonId": 386,
     "pokemonName": "Deoxys",
@@ -2038,18 +1174,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10003.png"
-  },
-  {
-    "id": "form-10533",
-    "pokemonId": 398,
-    "pokemonName": "Staraptor",
-    "formName": "Mega",
-    "formIdentifier": "staraptor-mega",
-    "name": "Staraptor · Mega",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10308.png"
   },
   {
     "id": "form-10034",
@@ -2136,102 +1260,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423-east.png"
   },
   {
-    "id": "form-10190",
-    "pokemonId": 428,
-    "pokemonName": "Lopunny",
-    "formName": "Mega-Lopunny",
-    "formIdentifier": "lopunny-mega",
-    "name": "Lopunny · Mega-Lopunny",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10088.png"
-  },
-  {
-    "id": "form-10534",
-    "pokemonId": 445,
-    "pokemonName": "Garchomp",
-    "formName": "Mega Z",
-    "formIdentifier": "garchomp-mega-z",
-    "name": "Garchomp · Mega Z",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10309.png"
-  },
-  {
-    "id": "form-10158",
-    "pokemonId": 445,
-    "pokemonName": "Garchomp",
-    "formName": "Mega-Garchomp",
-    "formIdentifier": "garchomp-mega",
-    "name": "Garchomp · Mega-Garchomp",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10058.png"
-  },
-  {
-    "id": "form-10535",
-    "pokemonId": 448,
-    "pokemonName": "Lucario",
-    "formName": "Mega Z",
-    "formIdentifier": "lucario-mega-z",
-    "name": "Lucario · Mega Z",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10310.png"
-  },
-  {
-    "id": "form-10159",
-    "pokemonId": 448,
-    "pokemonName": "Lucario",
-    "formName": "Mega-Lucario",
-    "formIdentifier": "lucario-mega",
-    "name": "Lucario · Mega-Lucario",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10059.png"
-  },
-  {
-    "id": "form-10160",
-    "pokemonId": 460,
-    "pokemonName": "Abomasnow",
-    "formName": "Mega-Abomasnow",
-    "formIdentifier": "abomasnow-mega",
-    "name": "Abomasnow · Mega-Abomasnow",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10060.png"
-  },
-  {
-    "id": "form-10170",
-    "pokemonId": 475,
-    "pokemonName": "Gallade",
-    "formName": "Mega-Gallade",
-    "formIdentifier": "gallade-mega",
-    "name": "Gallade · Mega-Gallade",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10068.png"
-  },
-  {
-    "id": "form-10510",
-    "pokemonId": 478,
-    "pokemonName": "Froslass",
-    "formName": "Mega",
-    "formIdentifier": "froslass-mega",
-    "name": "Froslass · Mega",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10285.png"
-  },
-  {
     "id": "form-10058",
     "pokemonId": 479,
     "pokemonName": "Rotom",
@@ -2316,18 +1344,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10246.png"
   },
   {
-    "id": "form-10536",
-    "pokemonId": 485,
-    "pokemonName": "Heatran",
-    "formName": "Mega",
-    "formIdentifier": "heatran-mega",
-    "name": "Heatran · Mega",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10311.png"
-  },
-  {
     "id": "form-10063",
     "pokemonId": 487,
     "pokemonName": "Giratina",
@@ -2338,18 +1354,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10007.png"
-  },
-  {
-    "id": "form-10537",
-    "pokemonId": 491,
-    "pokemonName": "Darkrai",
-    "formName": "Mega",
-    "formIdentifier": "darkrai-mega",
-    "name": "Darkrai · Mega",
-    "region": "Sinnoh",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10312.png"
   },
   {
     "id": "form-10064",
@@ -2580,18 +1584,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-flying.png"
   },
   {
-    "id": "form-10511",
-    "pokemonId": 500,
-    "pokemonName": "Emboar",
-    "formName": "Mega",
-    "formIdentifier": "emboar-mega",
-    "name": "Emboar · Mega",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10286.png"
-  },
-  {
     "id": "form-10405",
     "pokemonId": 503,
     "pokemonName": "Samurott",
@@ -2614,42 +1606,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/521.png"
-  },
-  {
-    "id": "form-10512",
-    "pokemonId": 530,
-    "pokemonName": "Excadrill",
-    "formName": "Mega",
-    "formIdentifier": "excadrill-mega",
-    "name": "Excadrill · Mega",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10287.png"
-  },
-  {
-    "id": "form-10171",
-    "pokemonId": 531,
-    "pokemonName": "Audino",
-    "formName": "Mega-Audino",
-    "formIdentifier": "audino-mega",
-    "name": "Audino · Mega-Audino",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10069.png"
-  },
-  {
-    "id": "form-10513",
-    "pokemonId": 545,
-    "pokemonName": "Scolipede",
-    "formName": "Mega",
-    "formIdentifier": "scolipede-mega",
-    "name": "Scolipede · Mega",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10288.png"
   },
   {
     "id": "form-10406",
@@ -2736,18 +1692,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10178.png"
   },
   {
-    "id": "form-10514",
-    "pokemonId": 560,
-    "pokemonName": "Scrafty",
-    "formName": "Mega",
-    "formIdentifier": "scrafty-mega",
-    "name": "Scrafty · Mega",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10289.png"
-  },
-  {
     "id": "form-10338",
     "pokemonId": 562,
     "pokemonName": "Yamask",
@@ -2767,8 +1711,8 @@
     "formIdentifier": "garbodor-gmax",
     "name": "Garbodor · Gmax",
     "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10207.png"
   },
   {
@@ -2892,30 +1836,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593-female.png"
   },
   {
-    "id": "form-10515",
-    "pokemonId": 604,
-    "pokemonName": "Eelektross",
-    "formName": "Mega",
-    "formIdentifier": "eelektross-mega",
-    "name": "Eelektross · Mega",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10290.png"
-  },
-  {
-    "id": "form-10516",
-    "pokemonId": 609,
-    "pokemonName": "Chandelure",
-    "formName": "Mega",
-    "formIdentifier": "chandelure-mega",
-    "name": "Chandelure · Mega",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10291.png"
-  },
-  {
     "id": "form-10339",
     "pokemonId": 618,
     "pokemonName": "Stunfisk",
@@ -2926,18 +1846,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10180.png"
-  },
-  {
-    "id": "form-10538",
-    "pokemonId": 623,
-    "pokemonName": "Golurk",
-    "formName": "Mega",
-    "formIdentifier": "golurk-mega",
-    "name": "Golurk · Mega",
-    "region": "Unova",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10313.png"
   },
   {
     "id": "form-10409",
@@ -3084,30 +1992,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649-burn.png"
   },
   {
-    "id": "form-10517",
-    "pokemonId": 652,
-    "pokemonName": "Chesnaught",
-    "formName": "Mega",
-    "formIdentifier": "chesnaught-mega",
-    "name": "Chesnaught · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10292.png"
-  },
-  {
-    "id": "form-10518",
-    "pokemonId": 655,
-    "pokemonName": "Delphox",
-    "formName": "Mega",
-    "formIdentifier": "delphox-mega",
-    "name": "Delphox · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10293.png"
-  },
-  {
     "id": "form-10219",
     "pokemonId": 658,
     "pokemonName": "Greninja",
@@ -3130,18 +2014,6 @@
     "available": false,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10116.png"
-  },
-  {
-    "id": "form-10519",
-    "pokemonId": 658,
-    "pokemonName": "Greninja",
-    "formName": "Mega",
-    "formIdentifier": "greninja-mega",
-    "name": "Greninja · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10294.png"
   },
   {
     "id": "form-10279",
@@ -3840,18 +2712,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668-female.png"
   },
   {
-    "id": "form-10520",
-    "pokemonId": 668,
-    "pokemonName": "Pyroar",
-    "formName": "Mega",
-    "formIdentifier": "pyroar-mega",
-    "name": "Pyroar · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10295.png"
-  },
-  {
     "id": "form-10103",
     "pokemonId": 669,
     "pokemonName": "Flabebe",
@@ -3958,18 +2818,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670-orange.png"
-  },
-  {
-    "id": "form-10521",
-    "pokemonId": 670,
-    "pokemonName": "Floette",
-    "formName": "Mega",
-    "formIdentifier": "floette-mega",
-    "name": "Floette · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10296.png"
   },
   {
     "id": "form-10111",
@@ -4140,30 +2988,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10025.png"
   },
   {
-    "id": "form-10554",
-    "pokemonId": 678,
-    "pokemonName": "Meowstic",
-    "formName": "Mega Female",
-    "formIdentifier": "meowstic-female-mega",
-    "name": "Meowstic · Mega Female",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10326.png"
-  },
-  {
-    "id": "form-10539",
-    "pokemonId": 678,
-    "pokemonName": "Meowstic",
-    "formName": "Mega Male",
-    "formIdentifier": "meowstic-male-mega",
-    "name": "Meowstic · Mega Male",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10314.png"
-  },
-  {
     "id": "form-10125",
     "pokemonId": 681,
     "pokemonName": "Aegislash",
@@ -4174,54 +2998,6 @@
     "available": false,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10026.png"
-  },
-  {
-    "id": "form-10522",
-    "pokemonId": 687,
-    "pokemonName": "Malamar",
-    "formName": "Mega",
-    "formIdentifier": "malamar-mega",
-    "name": "Malamar · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10297.png"
-  },
-  {
-    "id": "form-10523",
-    "pokemonId": 689,
-    "pokemonName": "Barbaracle",
-    "formName": "Mega",
-    "formIdentifier": "barbaracle-mega",
-    "name": "Barbaracle · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10298.png"
-  },
-  {
-    "id": "form-10524",
-    "pokemonId": 691,
-    "pokemonName": "Dragalge",
-    "formName": "Mega",
-    "formIdentifier": "dragalge-mega",
-    "name": "Dragalge · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10299.png"
-  },
-  {
-    "id": "form-10525",
-    "pokemonId": 701,
-    "pokemonName": "Hawlucha",
-    "formName": "Mega",
-    "formIdentifier": "hawlucha-mega",
-    "name": "Hawlucha · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10300.png"
   },
   {
     "id": "form-10410",
@@ -4392,30 +3168,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10120.png"
   },
   {
-    "id": "form-10526",
-    "pokemonId": 718,
-    "pokemonName": "Zygarde",
-    "formName": "Mega",
-    "formIdentifier": "zygarde-mega",
-    "name": "Zygarde · Mega",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10301.png"
-  },
-  {
-    "id": "form-10177",
-    "pokemonId": 719,
-    "pokemonName": "Diancie",
-    "formName": "Mega-Diancie",
-    "formIdentifier": "diancie-mega",
-    "name": "Diancie · Mega-Diancie",
-    "region": "Kalos",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10075.png"
-  },
-  {
     "id": "form-10188",
     "pokemonId": 720,
     "pokemonName": "Hoopa",
@@ -4462,18 +3214,6 @@
     "available": false,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10122.png"
-  },
-  {
-    "id": "form-10540",
-    "pokemonId": 740,
-    "pokemonName": "Crabominable",
-    "formName": "Mega",
-    "formIdentifier": "crabominable-mega",
-    "name": "Crabominable · Mega",
-    "region": "Alola",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10315.png"
   },
   {
     "id": "form-10225",
@@ -4606,18 +3346,6 @@
     "available": false,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10129.png"
-  },
-  {
-    "id": "form-10541",
-    "pokemonId": 768,
-    "pokemonName": "Golisopod",
-    "formName": "Mega",
-    "formIdentifier": "golisopod-mega",
-    "name": "Golisopod · Mega",
-    "region": "Alola",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10316.png"
   },
   {
     "id": "form-10239",
@@ -4963,7 +3691,7 @@
     "formIdentifier": "minior-green",
     "name": "Minior · Núcleo Verde",
     "region": "Alola",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10139.png"
   },
@@ -5028,18 +3756,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10144.png"
   },
   {
-    "id": "form-10527",
-    "pokemonId": 780,
-    "pokemonName": "Drampa",
-    "formName": "Mega",
-    "formIdentifier": "drampa-mega",
-    "name": "Drampa · Mega",
-    "region": "Alola",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10302.png"
-  },
-  {
     "id": "form-10265",
     "pokemonId": 784,
     "pokemonName": "Kommo-o",
@@ -5100,42 +3816,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10147.png"
   },
   {
-    "id": "form-10542",
-    "pokemonId": 801,
-    "pokemonName": "Magearna",
-    "formName": "Mega",
-    "formIdentifier": "magearna-mega",
-    "name": "Magearna · Mega",
-    "region": "Alola",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10317.png"
-  },
-  {
-    "id": "form-10543",
-    "pokemonId": 801,
-    "pokemonName": "Magearna",
-    "formName": "Mega",
-    "formIdentifier": "magearna-original-mega",
-    "name": "Magearna · Mega",
-    "region": "Alola",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10318.png"
-  },
-  {
-    "id": "form-10544",
-    "pokemonId": 807,
-    "pokemonName": "Zeraora",
-    "formName": "Mega",
-    "formIdentifier": "zeraora-mega",
-    "name": "Zeraora · Mega",
-    "region": "Alola",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10319.png"
-  },
-  {
     "id": "form-10377",
     "pokemonId": 809,
     "pokemonName": "Melmetal",
@@ -5155,8 +3835,8 @@
     "formIdentifier": "rillaboom-gmax",
     "name": "Rillaboom · Gmax",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10209.png"
   },
   {
@@ -5167,8 +3847,8 @@
     "formIdentifier": "cinderace-gmax",
     "name": "Cinderace · Gmax",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10210.png"
   },
   {
@@ -5179,8 +3859,8 @@
     "formIdentifier": "inteleon-gmax",
     "name": "Inteleon · Gmax",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10211.png"
   },
   {
@@ -5311,8 +3991,8 @@
     "formIdentifier": "toxtricity-amped-gmax",
     "name": "Toxtricity · Gmax",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10219.png"
   },
   {
@@ -5323,8 +4003,8 @@
     "formIdentifier": "toxtricity-low-key-gmax",
     "name": "Toxtricity · Gmax",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10228.png"
   },
   {
@@ -5383,8 +4063,8 @@
     "formIdentifier": "grimmsnarl-gmax",
     "name": "Grimmsnarl · Gmax",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10222.png"
   },
   {
@@ -6144,18 +4824,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869-vanilla-cream-star-sweet.png"
   },
   {
-    "id": "form-10528",
-    "pokemonId": 870,
-    "pokemonName": "Falinks",
-    "formName": "Mega",
-    "formIdentifier": "falinks-mega",
-    "name": "Falinks · Mega",
-    "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10303.png"
-  },
-  {
     "id": "form-10354",
     "pokemonId": 875,
     "pokemonName": "Eiscue",
@@ -6223,8 +4891,8 @@
     "formIdentifier": "zacian-crowned",
     "name": "Zacian · Espada Suprema",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10188.png"
   },
   {
@@ -6235,8 +4903,8 @@
     "formIdentifier": "zamazenta-crowned",
     "name": "Zamazenta · Escudo Supremo",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10189.png"
   },
   {
@@ -6420,18 +5088,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10262.png"
   },
   {
-    "id": "form-10545",
-    "pokemonId": 952,
-    "pokemonName": "Scovillain",
-    "formName": "Mega",
-    "formIdentifier": "scovillain-mega",
-    "name": "Scovillain · Mega",
-    "region": "Paldea",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10320.png"
-  },
-  {
     "id": "form-10425",
     "pokemonId": 964,
     "pokemonName": "Palafin",
@@ -6444,18 +5100,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10256.png"
   },
   {
-    "id": "form-10546",
-    "pokemonId": 970,
-    "pokemonName": "Glimmora",
-    "formName": "Mega",
-    "formIdentifier": "glimmora-mega",
-    "name": "Glimmora · Mega",
-    "region": "Paldea",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10321.png"
-  },
-  {
     "id": "form-10427",
     "pokemonId": 978,
     "pokemonName": "Tatsugiri",
@@ -6466,42 +5110,6 @@
     "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10258.png"
-  },
-  {
-    "id": "form-10547",
-    "pokemonId": 978,
-    "pokemonName": "Tatsugiri",
-    "formName": "Mega",
-    "formIdentifier": "tatsugiri-curly-mega",
-    "name": "Tatsugiri · Mega",
-    "region": "Paldea",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10322.png"
-  },
-  {
-    "id": "form-10548",
-    "pokemonId": 978,
-    "pokemonName": "Tatsugiri",
-    "formName": "Mega",
-    "formIdentifier": "tatsugiri-droopy-mega",
-    "name": "Tatsugiri · Mega",
-    "region": "Paldea",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10323.png"
-  },
-  {
-    "id": "form-10549",
-    "pokemonId": 978,
-    "pokemonName": "Tatsugiri",
-    "formName": "Mega",
-    "formIdentifier": "tatsugiri-stretchy-mega",
-    "name": "Tatsugiri · Mega",
-    "region": "Paldea",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10324.png"
   },
   {
     "id": "form-10428",
@@ -6526,18 +5134,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10255.png"
-  },
-  {
-    "id": "form-10550",
-    "pokemonId": 998,
-    "pokemonName": "Baxcalibur",
-    "formName": "Mega",
-    "formIdentifier": "baxcalibur-mega",
-    "name": "Baxcalibur · Mega",
-    "region": "Paldea",
-    "available": false,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10325.png"
   },
   {
     "id": "form-10432",

@@ -6433,7 +6433,7 @@
     "id": 774,
     "name": "Minior · Meteorito",
     "region": "Alola",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
     "pokemonName": "Minior",
@@ -6581,7 +6581,7 @@
     "name": "Lunala",
     "region": "Alola",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png"
   },
   {
@@ -6864,7 +6864,7 @@
     "name": "Nickit",
     "region": "Galar",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/827.png"
   },
   {
@@ -6872,7 +6872,7 @@
     "name": "Thievul",
     "region": "Galar",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/828.png"
   },
   {
@@ -6968,7 +6968,7 @@
     "name": "Applin",
     "region": "Galar",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png"
   },
   {
@@ -6976,7 +6976,7 @@
     "name": "Flapple",
     "region": "Galar",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png"
   },
   {
@@ -6984,7 +6984,7 @@
     "name": "Appletun",
     "region": "Galar",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png"
   },
   {
@@ -7007,7 +7007,7 @@
     "id": 845,
     "name": "Cramorant",
     "region": "Galar",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png"
   },
@@ -7015,7 +7015,7 @@
     "id": 846,
     "name": "Arrokuda",
     "region": "Galar",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/846.png"
   },
@@ -7023,7 +7023,7 @@
     "id": 847,
     "name": "Barraskewda",
     "region": "Galar",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png"
   },
@@ -7810,7 +7810,7 @@
     "id": 942,
     "name": "Maschiff",
     "region": "Paldea",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png"
   },
@@ -7818,7 +7818,7 @@
     "id": 943,
     "name": "Mabosstiff",
     "region": "Paldea",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png"
   },
@@ -7842,7 +7842,7 @@
     "id": 946,
     "name": "Bramblin",
     "region": "Paldea",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png"
   },
@@ -7850,7 +7850,7 @@
     "id": 947,
     "name": "Brambleghast",
     "region": "Paldea",
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png"
   },
@@ -8059,7 +8059,7 @@
     "name": "Flamigo",
     "region": "Paldea",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png"
   },
   {
@@ -8150,7 +8150,7 @@
   },
   {
     "id": 984,
-    "name": "Great Tusk",
+    "name": "Colmilargo",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8158,7 +8158,7 @@
   },
   {
     "id": 985,
-    "name": "Scream Tail",
+    "name": " Colagrito",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8166,7 +8166,7 @@
   },
   {
     "id": 986,
-    "name": "Brute Bonnet",
+    "name": "Furioseta",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8174,7 +8174,7 @@
   },
   {
     "id": 987,
-    "name": "Flutter Mane",
+    "name": " Melenaleteo",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8182,7 +8182,7 @@
   },
   {
     "id": 988,
-    "name": "Slither Wing",
+    "name": "Reptalada",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8190,7 +8190,7 @@
   },
   {
     "id": 989,
-    "name": "Sandy Shocks",
+    "name": "Pelarena",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8198,7 +8198,7 @@
   },
   {
     "id": 990,
-    "name": "Iron Treads",
+    "name": "Ferrodada",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8206,7 +8206,7 @@
   },
   {
     "id": 991,
-    "name": "Iron Bundle",
+    "name": "Ferrosaco",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8214,7 +8214,7 @@
   },
   {
     "id": 992,
-    "name": "Iron Hands",
+    "name": "Ferropalmas",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8222,7 +8222,7 @@
   },
   {
     "id": 993,
-    "name": "Iron Jugulis",
+    "name": "Ferrocuello",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8230,7 +8230,7 @@
   },
   {
     "id": 994,
-    "name": "Iron Moth",
+    "name": "Ferropolill",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8238,7 +8238,7 @@
   },
   {
     "id": 995,
-    "name": "Iron Thorns",
+    "name": "Ferropúas",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8318,7 +8318,7 @@
   },
   {
     "id": 1005,
-    "name": "Roaring Moon",
+    "name": "Bramaluna",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8326,7 +8326,7 @@
   },
   {
     "id": 1006,
-    "name": "Iron Valiant",
+    "name": "Ferropaladín",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8350,7 +8350,7 @@
   },
   {
     "id": 1009,
-    "name": "Walking Wake",
+    "name": "Ondulagua",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8358,7 +8358,7 @@
   },
   {
     "id": 1010,
-    "name": "Iron Leaves",
+    "name": "Ferroverdor",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8369,7 +8369,7 @@
     "name": "Dipplin",
     "region": "Paldea",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png"
   },
   {
@@ -8439,12 +8439,12 @@
     "name": "Hydrapple",
     "region": "Paldea",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png"
   },
   {
     "id": 1020,
-    "name": "Gouging Fire",
+    "name": "Flamariete",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8452,7 +8452,7 @@
   },
   {
     "id": 1021,
-    "name": "Raging Bolt",
+    "name": "Electrofuria",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8460,7 +8460,7 @@
   },
   {
     "id": 1022,
-    "name": "Iron Boulder",
+    "name": "Ferromole",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
@@ -8468,7 +8468,7 @@
   },
   {
     "id": 1023,
-    "name": "Iron Crown",
+    "name": "Ferrotesta",
     "region": "Paldea",
     "available": false,
     "shinyAvailable": false,
