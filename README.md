@@ -50,6 +50,7 @@ Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. Tamb
 - `available: false` excluye un Pokémon o disfraz de las listas.
 - `shinyAvailable: false` lo excluye de las listas que tienen activado el filtro shiny.
 - `data/events.json` define los eventos que aparecen en la sección Eventos. Cada evento tiene `id`, `name`, `description` (opcional), fechas opcionales `startDate`/`endDate` y `sources`, un array de grupos de obtención. Cada grupo incluye `id`, `name` y `pokemonIds`: IDs de `data/pokemon.json`, `data/pokemon-forms.json` o `data/costumes.json`. Usa números para Pokémon base y cadenas para formas (`form-...`) y disfraces (`costume-...`). El mismo ID puede aparecer en más de un grupo; el total pendiente del evento lo cuenta una sola vez. La web compara esos IDs con todo lo que la persona ha marcado en cualquiera de sus listas.
+- Eventos se ordena por estado y fechas: en curso por fecha de fin más cercana, próximos por fecha de inicio y expirados en su propio grupo. Al elegir un evento se muestran solo los Pokémon o disfraces pendientes; la fecha se presenta como `DD-MM-YYYY`. Los expirados permanecen visibles hasta que se retiren de `data/events.json`.
 
   ```json
   [

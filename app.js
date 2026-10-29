@@ -27,52 +27,50 @@ function identity(item){return String(item.id)}
 function render(){if(!user)return;if(view==="events"){renderLists();$("#eventsPanel").classList.remove("hidden");renderEvents();return}$("#eventsPanel").classList.add("hidden");renderCollection()}
 function renderCollection(){if(!user)return;renderLists();const owned=selectedOwned(),list=userData().lists.find(l=>l.id===selectedList);let items=currentCatalog().filter(p=>p.available);if(list?.shiny)items=items.filter(p=>p.shinyAvailable);const q=$('#searchInput').value.trim().toLocaleLowerCase('es'),region=$('#regionFilter').value;if(q)items=items.filter(p=>p.name.toLocaleLowerCase('es').startsWith(q)||(p.pokemonName||'').toLocaleLowerCase('es').startsWith(q)||(p.costumeName||'').toLocaleLowerCase('es').startsWith(q));if(region)items=items.filter(p=>p.region===region);if(filterMode==='owned')items=items.filter(p=>!!owned[identity(p)]);if(filterMode==='missing')items=items.filter(p=>!owned[identity(p)]);$('#listHeading').textContent=list?list.name:'Selecciona una lista';$('#countLabel').textContent=`${items.length} ${view==='pokemon'?'Pokémon':'disfraces'}`;$$('#ownershipFilters [data-filter]').forEach(button=>button.classList.toggle('active',button.dataset.filter===filterMode));const grid=$('#pokemonGrid');grid.replaceChildren();items.forEach(p=>{const key=identity(p),isOwned=!!owned[key],dexId=p.pokemonId||p.id;const tile=document.createElement('button');tile.type='button';tile.disabled=!list;tile.className='pokemon-tile'+(isOwned?' owned':'')+(!list?' unavailable':'');tile.setAttribute('aria-label',`${p.name}, ${isOwned?'marcado':'sin marcar'}`);tile.innerHTML=`<span class="tile-check">✓</span><img loading="lazy" src="${safeUrl(displayImage(p,list,view))}" alt=""><span class="dex">${view==='pokemon'?'#'+String(dexId).padStart(3,'0'):'#'+String(p.pokemonId).padStart(3,'0')}</span><b></b>`;const img=tile.querySelector('img');img.alt=p.name;img.referrerPolicy='no-referrer';img.addEventListener('error',()=>{const base=pokemon.find(mon=>Number(mon.id)===Number(p.pokemonId));if(view==='costumes'&&base&&img.src!==base.image)img.src=safeUrl(displayImage(base,list,view))},{once:true});tile.querySelector('b').textContent=p.name;tile.addEventListener('click',()=>toggle(p));grid.append(tile)});$('#emptyState').classList.toggle('hidden',items.length!==0);grid.classList.toggle('hidden',items.length===0);$('#emptyTitle').textContent=filterMode==='owned'?'Aún no tienes Pokémon marcados aquí':filterMode==='missing'?'¡Has completado esta lista!':'Aquí empieza tu colección';$('#emptyMessage').textContent=filterMode==='owned'?'Marca los que ya tienes y aparecerán en esta vista.':filterMode==='missing'?'Ya no quedan Pokémon pendientes en esta lista.':'Marca los Pokémon que ya tienes y verás crecer tu lista.'}
 function safeUrl(url){try{const u=new URL(url,location.href);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
+function eventDay(value){const match=String(value||'').match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(match)return Date.UTC(Number(match[1]),Number(match[2])-1,Number(match[3]));const parsed=Date.parse(value);if(!Number.isFinite(parsed))return null;const date=new Date(parsed);return Date.UTC(date.getFullYear(),date.getMonth(),date.getDate())}
+function formatEventDate(value){const match=String(value||'').match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(match)return `${match[3].padStart(2,'0')}-${match[2].padStart(2,'0')}-${match[1]}`;const parsed=Date.parse(value);return Number.isFinite(parsed)?new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(parsed)):String(value||'')}
+function eventDateRange(event){const start=formatEventDate(event.startDate),end=formatEventDate(event.endDate);if(start&&end)return `${start} — ${end}`;return start||end||'Fechas pendientes de confirmar'}
 function renderEvents(){
-  const select=$('#eventSelect'),content=$('#eventContent'),empty=$('#eventsEmpty'),toolbar=$('#eventsToolbar');
-  select.replaceChildren();
-  if(!events.length){toolbar.classList.add('hidden');content.classList.add('hidden');empty.classList.remove('hidden');return}
-  toolbar.classList.remove('hidden');empty.classList.add('hidden');content.classList.remove('hidden');
-  events.forEach((event,index)=>{const option=document.createElement('option');option.value=String(event.id??index);option.textContent=event.name||event.title||`Evento ${index+1}`;select.append(option)});
-  if(!events.some((event,index)=>String(event.id??index)===selectedEventId))selectedEventId=String(events[0].id??0);
-  select.value=selectedEventId;
-  const event=events.find((item,index)=>String(item.id??index)===selectedEventId)||events[0];
+  const overview=$('#eventsOverview'),detail=$('#eventDetail'),empty=$('#eventsEmpty');
+  overview.replaceChildren();
+  if(!events.length){selectedEventId='';overview.classList.add('hidden');detail.classList.add('hidden');empty.classList.remove('hidden');return}
+  empty.classList.add('hidden');
+  const catalog=new Map([...pokemon,...costumes].map(item=>[String(item.id),item])),owned=new Set();
+  Object.values(userData().owned||{}).forEach(group=>Object.keys(group||{}).forEach(id=>owned.add(String(id))));
+  const now=new Date(),today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
+  const getIds=event=>new Set((event.sources||[]).flatMap(source=>Array.isArray(source.pokemonIds)?source.pokemonIds.map(String):[]).filter(id=>catalog.has(id)));
+  const stats=event=>{const ids=getIds(event);return{total:ids.size,missing:[...ids].filter(id=>!owned.has(id)).length}};
+  if(!selectedEventId||!events.some((event,index)=>String(event.id??index)===selectedEventId)){
+    selectedEventId='';detail.classList.add('hidden');overview.classList.remove('hidden');
+    const groups={current:[],upcoming:[],expired:[]};
+    events.forEach((event,index)=>{const start=eventDay(event.startDate),end=eventDay(event.endDate),entry={event,index,start,end};if(end!==null&&end<today)groups.expired.push(entry);else if(start!==null&&start>today)groups.upcoming.push(entry);else if(start!==null||end!==null)groups.current.push(entry);else groups.upcoming.push(entry)});
+    groups.current.sort((a,b)=>(a.end??Infinity)-(b.end??Infinity));
+    groups.upcoming.sort((a,b)=>(a.start??Infinity)-(b.start??Infinity));
+    groups.expired.sort((a,b)=>(b.end??-Infinity)-(a.end??-Infinity));
+    const groupLabels=[['current','En curso'],['upcoming','Próximos'],['expired','Expirados']];
+    groupLabels.forEach(([key,label])=>{if(!groups[key].length)return;const section=document.createElement('section');section.className=`event-list-section event-list-${key}`;const heading=document.createElement('h2');heading.textContent=label;section.append(heading);const list=document.createElement('div');list.className='event-list';groups[key].forEach(({event,index})=>{const card=document.createElement('button');card.type='button';card.className='event-list-card';card.addEventListener('click',()=>{selectedEventId=String(event.id??index);renderEvents()});const title=document.createElement('b'),dates=document.createElement('span'),progress=document.createElement('strong'),arrow=document.createElement('i'),counts=stats(event);title.textContent=event.name||event.title||`Evento ${index+1}`;dates.textContent=eventDateRange(event);progress.textContent=`Te faltan ${counts.missing} de ${counts.total} Pokémon`;arrow.textContent='↗';card.append(title,dates,progress,arrow);list.append(card)});section.append(list);overview.append(section)});
+    return;
+  }
+  const event=events.find((item,index)=>String(item.id??index)===selectedEventId);if(!event){selectedEventId='';renderEvents();return}
+  overview.classList.add('hidden');detail.classList.remove('hidden');
   $('#eventName').textContent=event.name||event.title||'Evento';
   $('#eventDescription').textContent=event.description||'';
-  $('#eventDates').textContent=[event.startDate,event.endDate].filter(Boolean).join(' — ');
-  const owned=new Set();
-  Object.values(userData().owned||{}).forEach(group=>Object.keys(group||{}).forEach(id=>owned.add(String(id))));
-  const catalog=new Map([...pokemon,...costumes].map(item=>[String(item.id),item]));
-  const sources=Array.isArray(event.sources)?event.sources:[];
-  const eventIds=new Set(sources.flatMap(source=>Array.isArray(source.pokemonIds)?source.pokemonIds.map(String):[]).filter(id=>catalog.has(id)));
-  const missing=[...eventIds].filter(id=>!owned.has(id)).length;
-  $('#eventProgress').textContent=`Te faltan ${missing} de ${eventIds.size} Pokémon o disfraces`;
+  $('#eventDates').textContent=eventDateRange(event);
+  const eventIds=getIds(event),missing=[...eventIds].filter(id=>!owned.has(id)).length;
+  $('#eventProgress').textContent=`Te faltan ${missing} de ${eventIds.size} Pokémon`;
   const holder=$('#eventSources');holder.replaceChildren();
-  $$('[data-event-filter]').forEach(button=>button.classList.toggle('active',button.dataset.eventFilter===eventFilterMode));
-  sources.forEach(source=>{
+  (event.sources||[]).forEach(source=>{
     const ids=[...new Set((Array.isArray(source.pokemonIds)?source.pokemonIds:[]).map(String))];
-    const sourceItems=ids.map(id=>catalog.get(id)).filter(Boolean);
-    const missingHere=sourceItems.filter(item=>!owned.has(String(item.id))).length;
-    const visibleItems=sourceItems.filter(item=>eventFilterMode==='owned'?owned.has(String(item.id)):eventFilterMode==='missing'?!owned.has(String(item.id)):true);
+    const missingItems=ids.map(id=>catalog.get(id)).filter(item=>item&&!owned.has(String(item.id)));
+    if(!missingItems.length)return;
     const section=document.createElement('section');section.className='event-source';
-    const heading=document.createElement('div');heading.className='event-source-heading';
-    const title=document.createElement('h3');title.textContent=source.name||source.label||'Otros';
-    const count=document.createElement('span');count.textContent=`${missingHere} pendientes · ${sourceItems.length} en este grupo`;
-    heading.append(title,count);section.append(heading);
-    if(!visibleItems.length){const note=document.createElement('p');note.className='event-source-empty';note.textContent=!sourceItems.length?'Este grupo no contiene IDs válidos.':eventFilterMode==='owned'?'Aún no tienes marcados Pokémon de este grupo.':eventFilterMode==='missing'?'Ya has marcado todos los de este grupo.':'Este grupo no contiene IDs válidos.';section.append(note)}
-    else{
-      const grid=document.createElement('div');grid.className='event-pokemon-grid';
-      visibleItems.forEach(item=>{
-        const isOwned=owned.has(String(item.id)),card=document.createElement('article');card.className='event-pokemon'+(isOwned?' is-owned':'');
-        const img=document.createElement('img');img.loading='lazy';img.src=safeUrl(item.image);img.alt=item.name;img.referrerPolicy='no-referrer';
-        const details=document.createElement('div'),name=document.createElement('b'),dex=document.createElement('small'),status=document.createElement('span');
-        details.className='event-pokemon-details';name.textContent=item.name;dex.textContent=`#${String(item.pokemonId||item.id).padStart(3,'0')}`;status.className='event-pokemon-status';status.textContent=isOwned?'Lo tienes':'Te falta';
-        details.append(name,dex);card.append(img,details,status);grid.append(card);
-      });
-      section.append(grid);
-    }
-    holder.append(section);
+    const heading=document.createElement('div');heading.className='event-source-heading';const title=document.createElement('h3');title.textContent=source.name||source.label||'Otros';
+    const count=document.createElement('span');count.textContent=`${missingItems.length} pendientes`;heading.append(title,count);section.append(heading);
+    const grid=document.createElement('div');grid.className='event-pokemon-grid';
+    missingItems.forEach(item=>{const card=document.createElement('article');card.className='event-pokemon';const img=document.createElement('img');img.loading='lazy';img.src=safeUrl(item.image);img.alt=item.name;img.referrerPolicy='no-referrer';const details=document.createElement('div'),name=document.createElement('b'),dex=document.createElement('small');details.className='event-pokemon-details';name.textContent=item.name;dex.textContent=`#${String(item.pokemonId||item.id).padStart(3,'0')}`;details.append(name,dex);card.append(img,details);grid.append(card)});
+    section.append(grid);holder.append(section);
   });
-  if(!sources.length){const note=document.createElement('p');note.className='event-source-empty';note.textContent='Este evento aún no tiene grupos de obtención.';holder.append(note)}
+  if(!missing){const note=document.createElement('p');note.className='event-source-empty';note.textContent='Ya tienes marcados todos los Pokémon de este evento.';holder.append(note)}
 }
 function toggle(item){const d=userData();if(!d.lists.some(list=>list.id===selectedList)){notify('Selecciona una lista antes de marcar Pokémon.');return}const id=`${view}:${selectedList}`;if(!d.owned[id])d.owned[id]={};const k=identity(item);if(d.owned[id][k])delete d.owned[id][k];else d.owned[id][k]=true;save();render()}
 function notify(msg){const el=$('#toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3200)}
@@ -98,7 +96,7 @@ $('#authSwitch').addEventListener('click',()=>{authMode=authMode==='register'?'l
 $$('[data-close]').forEach(b=>b.addEventListener('click',()=>{const modal=b.dataset.close;$('#'+modal).classList.add('hidden');if(modal==='friendsModal')stopFriendsPolling();if(modal==='listModal'&&returnToProfile){$('#listManagerModal').classList.remove('hidden');returnToProfile=false}}));
 $$('.modal-backdrop').forEach(m=>m.addEventListener('click',e=>{if(e.target===m){m.classList.add('hidden');if(m.id==='friendsModal')stopFriendsPolling();if(m.id==='listModal'&&returnToProfile){$('#listManagerModal').classList.remove('hidden');returnToProfile=false}}}));
 $('#newListSide').addEventListener('click',()=>openListModal());$('#listForm').addEventListener('submit',e=>{e.preventDefault();submitList()});
-$$('.side-item[data-view]').forEach(b=>b.addEventListener('click',()=>{showAppView(b.dataset.view);setSidebarOpen(false)}));$('#searchInput').addEventListener('input',render);$('#eventSelect').addEventListener('change',()=>{selectedEventId=$('#eventSelect').value;render()});$$('[data-event-filter]').forEach(button=>button.addEventListener('click',()=>{eventFilterMode=button.dataset.eventFilter;render()}));$('#regionFilter').addEventListener('change',render);$$('#ownershipFilters [data-filter]').forEach(b=>b.addEventListener('click',()=>{filterMode=b.dataset.filter;render()}));
+$$('.side-item[data-view]').forEach(b=>b.addEventListener('click',()=>{showAppView(b.dataset.view);setSidebarOpen(false)}));$('#searchInput').addEventListener('input',render);$('#eventsBack').addEventListener('click',()=>{selectedEventId='';renderEvents()});$('#eventsOpen').addEventListener('click',()=>{selectedEventId='';showAppView('events')});$('#regionFilter').addEventListener('change',render);$$('#ownershipFilters [data-filter]').forEach(b=>b.addEventListener('click',()=>{filterMode=b.dataset.filter;render()}));
 $('#logoutButton').addEventListener('click',sessionEnd);$('#profileOpen').addEventListener('click',openProfile);$('#friendsOpen').addEventListener('click',openFriends);$('#manageListsSide').addEventListener('click',openListManager);$('#listsToggle').addEventListener('click',()=>setSidebarOpen(true));$('#sidebarBackdrop').addEventListener('click',()=>setSidebarOpen(false));$('#managerNewList').addEventListener('click',()=>openListModal(null,true));
 $('#friendSearchForm').addEventListener('submit',e=>{e.preventDefault();searchFriend($('#friendSearchInput').value.trim())});$('#backToFriends').addEventListener('click',()=>{$('#sharedListsModal').classList.add('hidden');openFriends()});$$('[data-shared-view]').forEach(button=>button.addEventListener('click',()=>{sharedView=button.dataset.sharedView;$$('[data-shared-view]').forEach(item=>item.classList.toggle('active',item===button));renderSharedLists()}));
 $('#profileForm').addEventListener('submit',async e=>{e.preventDefault();const button=e.currentTarget.querySelector('button[type="submit"],button:not([type])');button.disabled=true;$('#profileError').textContent='';try{const payload={username:$('#profileUsername').value.trim(),email:$('#profileEmail').value.trim()};const newPassword=$('#newPassword').value;if(newPassword){payload.currentPassword=$('#currentPassword').value;payload.newPassword=newPassword}const result=await api('/api/profile',{method:'PATCH',body:JSON.stringify(payload)});user=result.user;$('#topUsername').textContent=user.username;$('#currentPassword').value='';$('#newPassword').value='';$('#profileModal').classList.add('hidden');notify('Perfil actualizado.')}catch(error){$('#profileError').textContent=error.message}finally{button.disabled=false}});
