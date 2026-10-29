@@ -1,0 +1,13 @@
+[
+    {
+      "id": "evento-ejemplo",
+      "name": "Nombre del evento",
+      "description": "Descripción opcional",
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-1",
+      "sources": [
+        { "id": "salvajes", "name": "Salvajes", "pokemonIds": ["costume-40-311", "costume-40-312", "costume-169-313", 355, 356, 477, "costume-393-249", "costume-426-252", 710,"form-10128", "form-10127", "form-10126", 711, "form-10131", "form-10130", "form-10129", "costume-714-293", "costume-715-294"] },
+        { "id": "incursiones", "name": "Incursiones", "pokemonIds": ["costume-25-314", "costume-854-315", "costume-855-316"] }
+      ]
+    }
+]

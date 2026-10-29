@@ -3441,5 +3441,38 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm999.fCOIN_A1.icon.png"
+  },
+  {
+    "id": "costume-25-314",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro y Escavina",
+    "name": "Pikachu · Gorro y Escavina",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu102.png"
+  },
+  {
+    "id": "costume-854-315",
+    "pokemonId": 854,
+    "pokemonName": "Sinistea",
+    "costumeName": "Lazo",
+    "name": "Sinistea · Lazo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/sinistea01.png"
+  },
+  {
+    "id": "costume-855-316",
+    "pokemonId": 855,
+    "pokemonName": "Polteageist",
+    "costumeName": "Lazo",
+    "name": "Polteageist · Lazo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/polteageist01.png"
   }
 ]

@@ -49,6 +49,23 @@ Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. Tamb
 
 - `available: false` excluye un Pokémon o disfraz de las listas.
 - `shinyAvailable: false` lo excluye de las listas que tienen activado el filtro shiny.
+- `data/events.json` define los eventos que aparecen en la sección Eventos. Cada evento tiene `id`, `name`, `description` (opcional), fechas opcionales `startDate`/`endDate` y `sources`, un array de grupos de obtención. Cada grupo incluye `id`, `name` y `pokemonIds`: IDs de `data/pokemon.json`, `data/pokemon-forms.json` o `data/costumes.json`. Usa números para Pokémon base y cadenas para formas (`form-...`) y disfraces (`costume-...`). El mismo ID puede aparecer en más de un grupo; el total pendiente del evento lo cuenta una sola vez. La web compara esos IDs con todo lo que la persona ha marcado en cualquiera de sus listas.
+
+  ```json
+  [
+    {
+      "id": "evento-ejemplo",
+      "name": "Nombre del evento",
+      "description": "Descripción opcional",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-07",
+      "sources": [
+        { "id": "salvajes", "name": "Salvajes", "pokemonIds": [25, "form-10028", "costume-1-2"] },
+        { "id": "incursiones", "name": "Incursiones", "pokemonIds": [25, 150] }
+      ]
+    }
+  ]
+  ```
 - El progreso de cada cuenta se guarda en la colección `collections`; las cuentas están en `users`; las solicitudes y amistades aceptadas están en `friendships`.
 - Las imágenes requieren internet. Las especies y sus formas usan sprites de [PokeAPI](https://github.com/PokeAPI/sprites); todos los patrones de Spinda usan su sprite genérico. En listas shiny, Pokémon y disfraces cambian automáticamente a su ruta shiny según su proveedor de imágenes. Los disfraces usan fuentes de Pogo data y Pokéxperto; si falta una imagen, la tarjeta muestra el sprite de la especie en la variante correspondiente a la lista.
 
