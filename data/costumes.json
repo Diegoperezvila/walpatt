@@ -1530,6 +1530,94 @@
     "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu102.png"
   },
   {
+    "id": "costume-26-129",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Gorro de Navidad",
+    "name": "Raichu · Gorro de Navidad",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cHOLIDAY_2016.icon.png"
+  },
+  {
+    "id": "costume-26-134",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Gorro de fiesta",
+    "name": "Raichu · Gorro de fiesta",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cANNIVERSARY.icon.png"
+  },
+  {
+    "id": "costume-26-126",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Gorra Original",
+    "name": "Raichu · Gorra Original",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/raichu03.png"
+  },
+  {
+    "id": "costume-26-136",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Gorro de Bruja",
+    "name": "Raichu · Gorro de Bruja",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cHALLOWEEN_2017.icon.png"
+  },
+  {
+    "id": "costume-26-135",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Sombrero veraniego",
+    "name": "Raichu · Sombrero veraniego",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cSUMMER_2018.icon.png"
+  },
+  {
+    "id": "costume-26-131",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Gorra de diseño de H. F.",
+    "name": "Raichu · Gorra de diseño de H. F.",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cFALL_2018.icon.png"
+  },
+  {
+    "id": "costume-26-130",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Corona de flores",
+    "name": "Raichu · Corona de flores",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cNOVEMBER_2018.icon.png"
+  },
+  {
+    "id": "costume-26-128",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Gorra de detective",
+    "name": "Raichu · Gorra de detective",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cFEB_2019.icon.png"
+  },
+  {
     "id": "costume-26-124",
     "pokemonId": 26,
     "pokemonName": "Raichu",
@@ -1552,15 +1640,15 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cCOSTUME_1.icon.png"
   },
   {
-    "id": "costume-26-126",
+    "id": "costume-26-133",
     "pokemonId": 26,
     "pokemonName": "Raichu",
-    "costumeName": "añadir",
-    "name": "Raichu · Cap Pikachu (2020 · W)",
+    "costumeName": "Gorro de Año Nuevo",
+    "name": "Raichu · Gorro de Año Nuevo",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cCOSTUME_1.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cCOSTUME_2.icon.png"
   },
   {
     "id": "costume-26-127",
@@ -1574,50 +1662,6 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cSPRING_2023.icon.png"
   },
   {
-    "id": "costume-26-128",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Gorra de detective",
-    "name": "Raichu · Gorra de detective",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cFEB_2019.icon.png"
-  },
-  {
-    "id": "costume-26-129",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Gorro de Navidad",
-    "name": "Raichu · Gorro de Navidad",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cHOLIDAY_2016.icon.png"
-  },
-  {
-    "id": "costume-26-130",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Corona de flores",
-    "name": "Raichu · Corona de flores",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cNOVEMBER_2018.icon.png"
-  },
-  {
-    "id": "costume-26-131",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Gorra de diseño de H. F.",
-    "name": "Raichu · Gorra de diseño de H. F.",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cFALL_2018.icon.png"
-  },
-  {
     "id": "costume-26-132",
     "pokemonId": 26,
     "pokemonName": "Raichu",
@@ -1627,50 +1671,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cHOLIDAY_2023.icon.png"
-  },
-  {
-    "id": "costume-26-133",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Gorro de Año Nuevo",
-    "name": "Raichu · Gorro de Año Nuevo",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cCOSTUME_2.icon.png"
-  },
-  {
-    "id": "costume-26-134",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Gorro de fiesta",
-    "name": "Raichu · Gorro de fiesta",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cANNIVERSARY.icon.png"
-  },
-  {
-    "id": "costume-26-135",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Sombrero veraniego",
-    "name": "Raichu · Sombrero veraniego",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cSUMMER_2018.icon.png"
-  },
-  {
-    "id": "costume-26-136",
-    "pokemonId": 26,
-    "pokemonName": "Raichu",
-    "costumeName": "Gorro de Bruja",
-    "name": "Raichu · Gorro de Bruja",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cHALLOWEEN_2017.icon.png"
   },
   {
     "id": "costume-31-137",
