@@ -2318,7 +2318,7 @@
     "name": "Mewtwo · Mewtwo Acorazado",
     "region": "Kanto",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://www.pokexperto.net/pokemongo/pokemon/mewtwo-armored.png"
   },
   {
