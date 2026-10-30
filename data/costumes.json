@@ -2355,39 +2355,6 @@
     "image": "https://raw.githubusercontent.com/WatWowMap/wwm-uicons/main/pokemon/169_f3364.png"
   },
   {
-    "id": "costume-172-196",
-    "pokemonId": 172,
-    "pokemonName": "Pichu",
-    "costumeName": "Gorro de lana",
-    "name": "Pichu · Gorro de lana",
-    "region": "Johto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cWINTER_2018.icon.png"
-  },
-  {
-    "id": "costume-172-197",
-    "pokemonId": 172,
-    "pokemonName": "Pichu",
-    "costumeName": "añadir",
-    "name": "Pichu · Cap Pikachu",
-    "region": "Johto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cCOSTUME_1.icon.png"
-  },
-  {
-    "id": "costume-172-198",
-    "pokemonId": 172,
-    "pokemonName": "Pichu",
-    "costumeName": "Flores de cerezo",
-    "name": "Pichu · Flores de cerezo",
-    "region": "Johto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cSPRING_2023.icon.png"
-  },
-  {
     "id": "costume-172-199",
     "pokemonId": 172,
     "pokemonName": "Pichu",
@@ -2397,28 +2364,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cHOLIDAY_2016.icon.png"
-  },
-  {
-    "id": "costume-172-200",
-    "pokemonId": 172,
-    "pokemonName": "Pichu",
-    "costumeName": "Corona de flores",
-    "name": "Pichu · Corona de flores",
-    "region": "Johto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cNOVEMBER_2018.icon.png"
-  },
-  {
-    "id": "costume-172-201",
-    "pokemonId": 172,
-    "pokemonName": "Pichu",
-    "costumeName": "Gorro de Año Nuevo",
-    "name": "Pichu · Gorro de Año Nuevo",
-    "region": "Johto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cCOSTUME_2.icon.png"
   },
   {
     "id": "costume-172-202",
@@ -2432,15 +2377,15 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cANNIVERSARY.icon.png"
   },
   {
-    "id": "costume-172-203",
+    "id": "costume-172-197",
     "pokemonId": 172,
     "pokemonName": "Pichu",
-    "costumeName": "Sombrero Veraniego",
-    "name": "Pichu · Sombrero Veraniego",
+    "costumeName": "Gorra Original",
+    "name": "Pichu · Gorra Original",
     "region": "Johto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cSUMMER_2018.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pichu03.png"
   },
   {
     "id": "costume-172-204",
@@ -2452,6 +2397,61 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cHALLOWEEN_2017.icon.png"
+  },
+  {
+    "id": "costume-172-203",
+    "pokemonId": 172,
+    "pokemonName": "Pichu",
+    "costumeName": "Sombrero Veraniego",
+    "name": "Pichu · Sombrero Veraniego",
+    "region": "Johto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cSUMMER_2018.icon.png"
+  },
+  {
+    "id": "costume-172-200",
+    "pokemonId": 172,
+    "pokemonName": "Pichu",
+    "costumeName": "Corona de flores",
+    "name": "Pichu · Corona de flores",
+    "region": "Johto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cNOVEMBER_2018.icon.png"
+  },
+  {
+    "id": "costume-172-196",
+    "pokemonId": 172,
+    "pokemonName": "Pichu",
+    "costumeName": "Gorro de lana",
+    "name": "Pichu · Gorro de lana",
+    "region": "Johto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cWINTER_2018.icon.png"
+  },
+  {
+    "id": "costume-172-201",
+    "pokemonId": 172,
+    "pokemonName": "Pichu",
+    "costumeName": "Gorro de Año Nuevo",
+    "name": "Pichu · Gorro de Año Nuevo",
+    "region": "Johto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cCOSTUME_2.icon.png"
+  },
+  {
+    "id": "costume-172-198",
+    "pokemonId": 172,
+    "pokemonName": "Pichu",
+    "costumeName": "Flores de cerezo",
+    "name": "Pichu · Flores de cerezo",
+    "region": "Johto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm172.cSPRING_2023.icon.png"
   },
   {
     "id": "costume-175-205",
