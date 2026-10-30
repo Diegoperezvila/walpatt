@@ -25,15 +25,42 @@ function currentCatalog(){return view==='pokemon'?pokemon:costumes}
 function displayImage(item,list,currentView){if(!list?.shiny)return item.image;if(item.image.includes('/sprites/pokemon/'))return item.image.replace('/sprites/pokemon/','/sprites/pokemon/shiny/');if(currentView!=='costumes')return item.image;if(item.image.startsWith('https://raw.githubusercontent.com/'))return item.image.includes('.s.icon.png')?item.image:item.image.replace('.icon.png','.s.icon.png');if(item.image.startsWith('https://www.pokexperto.net'))return item.image.replace('/disfraz/','/shiny/');return item.image}
 function identity(item){return String(item.id)}
 function render(){if(!user)return;if(view==="events"){renderLists();$("#eventsPanel").classList.remove("hidden");renderEvents();return}$("#eventsPanel").classList.add("hidden");renderCollection()}
-function renderCollection(){if(!user)return;renderLists();const owned=selectedOwned(),list=userData().lists.find(l=>l.id===selectedList);let items=currentCatalog().filter(p=>p.available);if(list?.shiny)items=items.filter(p=>p.shinyAvailable);const q=$('#searchInput').value.trim().toLocaleLowerCase('es'),region=$('#regionFilter').value;if(q)items=items.filter(p=>p.name.toLocaleLowerCase('es').startsWith(q)||(p.pokemonName||'').toLocaleLowerCase('es').startsWith(q)||(p.costumeName||'').toLocaleLowerCase('es').startsWith(q));if(region)items=items.filter(p=>p.region===region);if(filterMode==='owned')items=items.filter(p=>!!owned[identity(p)]);if(filterMode==='missing')items=items.filter(p=>!owned[identity(p)]);$('#listHeading').textContent=list?list.name:'Selecciona una lista';$('#countLabel').textContent=`${items.length} ${view==='pokemon'?'Pokémon':'disfraces'}`;$$('#ownershipFilters [data-filter]').forEach(button=>button.classList.toggle('active',button.dataset.filter===filterMode));const grid=$('#pokemonGrid');grid.replaceChildren();items.forEach(p=>{const key=identity(p),isOwned=!!owned[key],dexId=p.pokemonId||p.id;const tile=document.createElement('button');tile.type='button';tile.disabled=!list;tile.className='pokemon-tile'+(isOwned?' owned':'')+(!list?' unavailable':'');tile.setAttribute('aria-label',`${p.name}, ${isOwned?'marcado':'sin marcar'}`);tile.innerHTML=`<span class="tile-check">✓</span><img loading="lazy" src="${safeUrl(displayImage(p,list,view))}" alt=""><span class="dex">${view==='pokemon'?'#'+String(dexId).padStart(3,'0'):'#'+String(p.pokemonId).padStart(3,'0')}</span><b></b>`;const img=tile.querySelector('img');img.alt=p.name;img.referrerPolicy='no-referrer';img.addEventListener('error',()=>{const base=pokemon.find(mon=>Number(mon.id)===Number(p.pokemonId));if(view==='costumes'&&base&&img.src!==base.image)img.src=safeUrl(displayImage(base,list,view))},{once:true});tile.querySelector('b').textContent=p.name;tile.addEventListener('click',()=>toggle(p));grid.append(tile)});$('#emptyState').classList.toggle('hidden',items.length!==0);grid.classList.toggle('hidden',items.length===0);$('#emptyTitle').textContent=filterMode==='owned'?'Aún no tienes Pokémon marcados aquí':filterMode==='missing'?'¡Has completado esta lista!':'Aquí empieza tu colección';$('#emptyMessage').textContent=filterMode==='owned'?'Marca los que ya tienes y aparecerán en esta vista.':filterMode==='missing'?'Ya no quedan Pokémon pendientes en esta lista.':'Marca los Pokémon que ya tienes y verás crecer tu lista.'}
-function safeUrl(url){try{const u=new URL(url,location.href);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
+function renderCollection(){
+  if(!user)return;
+  renderLists();
+  const owned=selectedOwned(),list=userData().lists.find(item=>item.id===selectedList);
+  let items=currentCatalog().filter(item=>item.available);
+  if(list?.shiny)items=items.filter(item=>item.shinyAvailable);
+  const query=$('#searchInput').value.trim().toLocaleLowerCase('es'),region=$('#regionFilter').value;
+  if(query)items=items.filter(item=>item.name.toLocaleLowerCase('es').startsWith(query)||(item.pokemonName||'').toLocaleLowerCase('es').startsWith(query)||(item.costumeName||'').toLocaleLowerCase('es').startsWith(query));
+  if(region)items=items.filter(item=>item.region===region);
+  if(filterMode==='owned')items=items.filter(item=>!!owned[identity(item)]);
+  if(filterMode==='missing')items=items.filter(item=>!owned[identity(item)]);
+  $('#listHeading').textContent=list?list.name:'Selecciona una lista';
+  $('#countLabel').textContent=`${items.length} ${view==='pokemon'?'Pokémon':'disfraces'}`;
+  $$('#ownershipFilters [data-filter]').forEach(button=>button.classList.toggle('active',button.dataset.filter===filterMode));
+  const grid=$('#pokemonGrid');grid.replaceChildren();
+  items.forEach(item=>{
+    const key=identity(item),isOwned=!!owned[key],dexId=item.pokemonId||item.id;
+    const tile=document.createElement('article');tile.className='pokemon-tile'+(isOwned?' owned':'')+(!list?' unavailable':'');
+    const toggleButton=document.createElement('button');toggleButton.type='button';toggleButton.className='tile-toggle';toggleButton.disabled=!list;toggleButton.setAttribute('aria-pressed',String(isOwned));toggleButton.setAttribute('aria-label',`${item.name}, ${isOwned?'marcado':'sin marcar'}`);tile.append(toggleButton);
+    tile.insertAdjacentHTML('beforeend',`<span class="tile-check">✓</span><img loading="lazy" src="${safeUrl(displayImage(item,list,view))}" alt=""><button type="button" class="tile-zoom" aria-label="Ampliar imagen" title="Ampliar imagen">⤢</button><span class="dex">${view==='pokemon'?'#'+String(dexId).padStart(3,'0'):'#'+String(item.pokemonId).padStart(3,'0')}</span><b></b>`);
+    const img=tile.querySelector('img');img.alt=item.name;img.referrerPolicy='no-referrer';img.addEventListener('error',()=>{const base=pokemon.find(mon=>Number(mon.id)===Number(item.pokemonId));if(view==='costumes'&&base&&img.src!==base.image)img.src=safeUrl(displayImage(base,list,view))},{once:true});
+    tile.querySelector('b').textContent=item.name;
+    const zoomButton=tile.querySelector('.tile-zoom');zoomButton.setAttribute('aria-label',`Ampliar imagen de ${item.name}`);zoomButton.addEventListener('click',()=>openImageViewer(item,displayImage(item,list,view)));
+    toggleButton.addEventListener('click',()=>toggle(item));grid.append(tile);
+  });
+  $('#emptyState').classList.toggle('hidden',items.length!==0);grid.classList.toggle('hidden',items.length===0);
+  $('#emptyTitle').textContent=filterMode==='owned'?'Aún no tienes Pokémon marcados aquí':filterMode==='missing'?'¡Has completado esta lista!':'Aquí empieza tu colección';
+  $('#emptyMessage').textContent=filterMode==='owned'?'Marca los que ya tienes y aparecerán en esta vista.':filterMode==='missing'?'Ya no quedan Pokémon pendientes en esta lista.':'Marca los Pokémon que ya tienes y verás crecer tu lista.';
+}
+function safeUrl(url){try{const parsed=new URL(url,location.href);return ['https:','http:'].includes(parsed.protocol)?parsed.href:''}catch{return ''}}
+function openImageViewer(item,image){const modal=$('#imageModal'),img=$('#imageViewerImage');$('#imageViewerTitle').textContent=item.name;img.src=safeUrl(image||item.image);img.alt=item.name;modal.classList.remove('hidden')}
 function eventDay(value){const match=String(value||'').match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(match)return Date.UTC(Number(match[1]),Number(match[2])-1,Number(match[3]));const parsed=Date.parse(value);if(!Number.isFinite(parsed))return null;const date=new Date(parsed);return Date.UTC(date.getFullYear(),date.getMonth(),date.getDate())}
 function formatEventDate(value){const match=String(value||'').match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(match)return `${match[3].padStart(2,'0')}-${match[2].padStart(2,'0')}-${match[1]}`;const parsed=Date.parse(value);return Number.isFinite(parsed)?new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(parsed)):String(value||'')}
 function eventDateRange(event){const start=formatEventDate(event.startDate),end=formatEventDate(event.endDate);if(start&&end)return `${start} — ${end}`;return start||end||'Fechas pendientes de confirmar'}
 function renderEvents(){
-  const overview=$('#eventsOverview'),detail=$('#eventDetail'),empty=$('#eventsEmpty'),chooser=$('#eventListChooser');
-  overview.replaceChildren();
-  chooser.replaceChildren();
+  const overview=$('#eventsOverview'),detail=$('#eventDetail'),empty=$('#eventsEmpty'),chooser=$('#eventListChooser');overview.replaceChildren();chooser.replaceChildren();
   const lists=userData().lists||[];
   if(!lists.some(list=>list.id===selectedEventListId))selectedEventListId=lists.find(list=>list.id==='shiny')?.id||lists[0]?.id||'';
   const eventList=lists.find(list=>list.id===selectedEventListId);
@@ -43,40 +70,23 @@ function renderEvents(){
   const catalog=new Map([...pokemon,...costumes].map(item=>[String(item.id),item]));
   const itemOwned=item=>!!userData().owned[`${String(item.id).startsWith('costume-')?'costumes':'pokemon'}:${eventList?.id}`]?.[String(item.id)];
   const itemEligible=item=>!eventList?.shiny||!!item.shinyAvailable;
-  const now=new Date(),today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
+  const todayDate=new Date(),today=Date.UTC(todayDate.getFullYear(),todayDate.getMonth(),todayDate.getDate());
   const getIds=event=>new Set((event.sources||[]).flatMap(source=>Array.isArray(source.pokemonIds)?source.pokemonIds.map(String):[]).filter(id=>catalog.has(id)&&itemEligible(catalog.get(id))));
   const stats=event=>{const ids=getIds(event);return{total:ids.size,missing:[...ids].filter(id=>!itemOwned(catalog.get(id))).length}};
   if(!selectedEventId||!events.some((event,index)=>String(event.id??index)===selectedEventId)){
     selectedEventId='';detail.classList.add('hidden');overview.classList.remove('hidden');
     const groups={current:[],upcoming:[],expired:[]};
     events.forEach((event,index)=>{const start=eventDay(event.startDate),end=eventDay(event.endDate),entry={event,index,start,end};if(end!==null&&end<today)groups.expired.push(entry);else if(start!==null&&start>today)groups.upcoming.push(entry);else if(start!==null||end!==null)groups.current.push(entry);else groups.upcoming.push(entry)});
-    groups.current.sort((a,b)=>(a.end??Infinity)-(b.end??Infinity));
-    groups.upcoming.sort((a,b)=>(a.start??Infinity)-(b.start??Infinity));
-    groups.expired.sort((a,b)=>(b.end??-Infinity)-(a.end??-Infinity));
-    const groupLabels=[['current','En curso'],['upcoming','Próximos'],['expired','Expirados']];
-    groupLabels.forEach(([key,label])=>{if(!groups[key].length)return;const section=document.createElement('section');section.className=`event-list-section event-list-${key}`;const heading=document.createElement('h2');heading.textContent=label;section.append(heading);const list=document.createElement('div');list.className='event-list';groups[key].forEach(({event,index})=>{const card=document.createElement('button');card.type='button';card.className='event-list-card';card.addEventListener('click',()=>{selectedEventId=String(event.id??index);renderEvents()});const title=document.createElement('b'),dates=document.createElement('span'),progress=document.createElement('strong'),arrow=document.createElement('i'),counts=stats(event);title.textContent=event.name||event.title||`Evento ${index+1}`;dates.textContent=eventDateRange(event);progress.textContent=`Te faltan ${counts.missing} de ${counts.total} Pokémon`;arrow.textContent='↗';card.append(title,dates,progress,arrow);list.append(card)});section.append(list);overview.append(section)});
+    groups.current.sort((a,b)=>(a.end??Infinity)-(b.end??Infinity));groups.upcoming.sort((a,b)=>(a.start??Infinity)-(b.start??Infinity));groups.expired.sort((a,b)=>(b.end??-Infinity)-(a.end??-Infinity));
+    [['current','En curso'],['upcoming','Próximos'],['expired','Expirados']].forEach(([key,label])=>{if(!groups[key].length)return;const section=document.createElement('section');section.className=`event-list-section event-list-${key}`;const heading=document.createElement('h2');heading.textContent=label;section.append(heading);const list=document.createElement('div');list.className='event-list';groups[key].forEach(({event,index})=>{const card=document.createElement('button');card.type='button';card.className='event-list-card';card.addEventListener('click',()=>{selectedEventId=String(event.id??index);renderEvents()});const title=document.createElement('b'),dates=document.createElement('span'),progress=document.createElement('strong'),arrow=document.createElement('i'),counts=stats(event);title.textContent=event.name||event.title||`Evento ${index+1}`;dates.textContent=eventDateRange(event);progress.textContent=`Te faltan ${counts.missing} de ${counts.total} Pokémon`;arrow.textContent='↗';card.append(title,dates,progress,arrow);list.append(card)});section.append(list);overview.append(section)});
     return;
   }
   const event=events.find((item,index)=>String(item.id??index)===selectedEventId);if(!event){selectedEventId='';renderEvents();return}
-  overview.classList.add('hidden');detail.classList.remove('hidden');
-  $('#eventName').textContent=event.name||event.title||'Evento';
-  $('#eventDescription').textContent=event.description||'';
-  $('#eventDates').textContent=eventDateRange(event);
-  const eventIds=getIds(event),missing=[...eventIds].filter(id=>!itemOwned(catalog.get(id))).length;
-  $('#eventProgress').textContent=`Te faltan ${missing} de ${eventIds.size} Pokémon`;
+  overview.classList.add('hidden');detail.classList.remove('hidden');$('#eventName').textContent=event.name||event.title||'Evento';$('#eventDescription').textContent=event.description||'';$('#eventDates').textContent=eventDateRange(event);
+  const eventIds=getIds(event),missing=[...eventIds].filter(id=>!itemOwned(catalog.get(id))).length;$('#eventProgress').textContent=`Te faltan ${missing} de ${eventIds.size} Pokémon`;
   const holder=$('#eventSources');holder.replaceChildren();
-  (event.sources||[]).forEach(source=>{
-    const ids=[...new Set((Array.isArray(source.pokemonIds)?source.pokemonIds:[]).map(String))];
-    const missingItems=ids.map(id=>catalog.get(id)).filter(item=>item&&itemEligible(item)&&!itemOwned(item));
-    if(!missingItems.length)return;
-    const section=document.createElement('section');section.className='event-source';
-    const heading=document.createElement('div');heading.className='event-source-heading';const title=document.createElement('h3');title.textContent=source.name||source.label||'Otros';
-    const count=document.createElement('span');count.textContent=`${missingItems.length} pendientes`;heading.append(title,count);section.append(heading);
-    const grid=document.createElement('div');grid.className='event-pokemon-grid';
-    missingItems.forEach(item=>{const card=document.createElement('article');card.className='event-pokemon';const img=document.createElement('img');img.loading='lazy';img.src=safeUrl(item.image);img.alt=item.name;img.referrerPolicy='no-referrer';const details=document.createElement('div'),name=document.createElement('b'),dex=document.createElement('small');details.className='event-pokemon-details';name.textContent=item.name;dex.textContent=`#${String(item.pokemonId||item.id).padStart(3,'0')}`;details.append(name,dex);card.append(img,details);grid.append(card)});
-    section.append(grid);holder.append(section);
-  });
-  if(!missing){const note=document.createElement('p');note.className='event-source-empty';note.textContent='Ya tienes marcados todos los Pokémon de este evento.';holder.append(note)}
+  (event.sources||[]).forEach(source=>{const ids=[...new Set((Array.isArray(source.pokemonIds)?source.pokemonIds:[]).map(String))],missingItems=ids.map(id=>catalog.get(id)).filter(item=>item&&itemEligible(item)&&!itemOwned(item));if(!missingItems.length)return;const section=document.createElement('section');section.className='event-source';const heading=document.createElement('div');heading.className='event-source-heading';const title=document.createElement('h3');title.textContent=source.name||source.label||'Otros';const count=document.createElement('span');count.textContent=`${missingItems.length} pendientes`;heading.append(title,count);section.append(heading);const grid=document.createElement('div');grid.className='event-pokemon-grid';missingItems.forEach(item=>{const card=document.createElement('article');card.className='event-pokemon';const img=document.createElement('img');img.loading='lazy';img.src=safeUrl(item.image);img.alt=item.name;img.referrerPolicy='no-referrer';const details=document.createElement('div'),name=document.createElement('b'),dex=document.createElement('small');details.className='event-pokemon-details';name.textContent=item.name;dex.textContent=`#${String(item.pokemonId||item.id).padStart(3,'0')}`;details.append(name,dex);card.append(img,details);grid.append(card)});section.append(grid);holder.append(section)});
+  if(!missing){const note=document.createElement('p');note.className='event-source-empty';note.textContent='Ya tienes marcados todos los Pokémon de esta lista en este evento.';holder.append(note)}
 }
 function toggle(item){const d=userData();if(!d.lists.some(list=>list.id===selectedList)){notify('Selecciona una lista antes de marcar Pokémon.');return}const id=`${view}:${selectedList}`;if(!d.owned[id])d.owned[id]={};const k=identity(item);if(d.owned[id][k])delete d.owned[id][k];else d.owned[id][k]=true;save();render()}
 function notify(msg){const el=$('#toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3200)}
