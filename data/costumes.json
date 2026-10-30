@@ -363,92 +363,48 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm20.cJAN_2020_NOEVOLVE.icon.png"
   },
   {
-    "id": "costume-25-31",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorra de León",
-    "name": "Pikachu · Gorra de León",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_A.icon.png"
-  },
-  {
-    "id": "costume-25-32",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Camiseta de béisbol",
-    "name": "Pikachu · Camiseta de béisbol",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fBB_2026.icon.png"
-  },
-  {
-    "id": "costume-25-33",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de lana",
-    "name": "Pikachu · Gorro de lana",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cWINTER_2018.icon.png"
-  },
-  {
-    "id": "costume-25-34",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Bruno",
-    "name": "Pikachu · Gorro de Bruno",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOTOUR_2023_HAT_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-35",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Disfraz de tarta",
-    "name": "Pikachu · Disfraz de tarta",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cANNIVERSARY_2022_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-36",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorra de Kalm",
-    "name": "Pikachu · Gorra de Kalm",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_C.icon.png"
-  },
-  {
-    "id": "costume-25-37",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorra Trotamundos",
-    "name": "Pikachu · Gorra Trotamundos",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cCOSTUME_1.icon.png"
-  },
-  {
     "id": "costume-25-38",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Añadir",
-    "name": "Pikachu · Cap Pikachu (2020 · W)",
+    "costumeName": "Enmascarada",
+    "name": "Pikachu · Enmascarada",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cCOSTUME_1.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu14.png"
+  },
+  {
+    "id": "costume-25-93",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Pikachu Roquera",
+    "name": "Pikachu · Pikachu Roquera",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu29.png"
+  },
+  {
+    "id": "costume-25-92",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Pikachu Superstar",
+    "name": "Pikachu · Pikachu Superstar",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu28.png"
+  },
+  {
+    "id": "costume-25-91",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Pikachu Erudita",
+    "name": "Pikachu · Pikachu Erudita",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": false,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fDOCTOR.icon.png"
   },
   {
     "id": "costume-25-39",
@@ -462,161 +418,7 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fHORIZONS.icon.png"
   },
   {
-    "id": "costume-25-40",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Charizard",
-    "name": "Pikachu · Gorro de Charizard",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cKANTO_2020_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-41",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Flores de cerezo",
-    "name": "Pikachu · Flores de cerezo",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSPRING_2023.icon.png"
-  },
-  {
-    "id": "costume-25-42",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Clone",
-    "name": "Pikachu · Clone",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fCOPY_2019.icon.png"
-  },
-  {
-    "id": "costume-25-43",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Elegante con detalles azules",
-    "name": "Pikachu · Elegante con detalles azules",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_GOGGLES_BLUE.icon.png"
-  },
-  {
-    "id": "costume-25-44",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Elegante con detalles rojos",
-    "name": "Pikachu · Elegante con detalles rojos",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_GOGGLES_RED.icon.png"
-  },
-  {
-    "id": "costume-25-45",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Elegante con detalles amarillos",
-    "name": "Pikachu · Elegante con detalles amarillos",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_GOGGLES_YELLOW.icon.png"
-  },
-  {
-    "id": "costume-25-46",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Maya",
-    "name": "Pikachu · Gorro de Maya",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_A_02.icon.png"
-  },
-  {
-    "id": "costume-25-47",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorra de detective",
-    "name": "Pikachu · Gorra de detective",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cFEB_2019.icon.png"
-  },
-  {
-    "id": "costume-25-48",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorra de Lucho",
-    "name": "Pikachu · Gorra de Lucho",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2025_A.icon.png"
-  },
-  {
-    "id": "costume-25-49",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Excavador",
-    "name": "Pikachu · Excavador",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFOSSIL_2026.icon.png"
-  },
-  {
-    "id": "costume-25-50",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Explorador",
-    "name": "Pikachu · Explorador",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fADVENTURE_HAT_2020.icon.png"
-  },
-  {
-    "id": "costume-25-51",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Navidad",
-    "name": "Pikachu · Gorro de Navidad",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOLIDAY_2016.icon.png"
-  },
-  {
-    "id": "costume-25-52",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Corona de flores",
-    "name": "Pikachu · Corona de flores",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cNOVEMBER_2018.icon.png"
-  },
-  {
-    "id": "costume-25-53",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Sombrero de flores",
-    "name": "Pikachu · Sombrero de flores",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cAPRIL_2020_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-54",
+    "id": "costume-25-90",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
     "costumeName": "Globos Multicolor",
@@ -638,17 +440,6 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFLYING_5TH_ANNIV.icon.png"
   },
   {
-    "id": "costume-25-56",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Globos Verdes",
-    "name": "Pikachu · Globos Verdes",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFLYING_01.icon.png"
-  },
-  {
     "id": "costume-25-57",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
@@ -658,6 +449,17 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFLYING_OKINAWA.icon.png"
+  },
+  {
+    "id": "costume-25-56",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Globos Verdes",
+    "name": "Pikachu · Globos Verdes",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFLYING_01.icon.png"
   },
   {
     "id": "costume-25-58",
@@ -693,37 +495,488 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFLYING_04.icon.png"
   },
   {
-    "id": "costume-25-61",
+    "id": "costume-25-51",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Formal con detalles azules",
-    "name": "Pikachu · Formal con detalles azules",
+    "costumeName": "Gorro de Navidad",
+    "name": "Pikachu · Gorro de Navidad",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_MONOCLE_BLUE.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOLIDAY_2016.icon.png"
   },
   {
-    "id": "costume-25-62",
+    "id": "costume-25-87",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Formal con detalles rojos",
-    "name": "Pikachu · Formal con detalles rojos",
+    "costumeName": "Gorro de fiesta",
+    "name": "Pikachu · Gorro de fiesta",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_MONOCLE_RED.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cANNIVERSARY.icon.png"
   },
   {
-    "id": "costume-25-63",
+    "id": "costume-25-317",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Formal con detalles amarillos",
-    "name": "Pikachu · Formal con detalles amarillos",
+    "costumeName": "Gorra Original",
+    "name": "Pikachu · Gorra Original",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_MONOCLE_YELLOW.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu03.png"
+  },
+  {
+    "id": "costume-25-120",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Bruja",
+    "name": "Pikachu · Gorro de Bruja",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHALLOWEEN_2017.icon.png"
+  },
+  {
+    "id": "costume-25-109",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Sombrero veraniego",
+    "name": "Pikachu · Sombrero veraniego",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSUMMER_2018.icon.png"
+  },
+  {
+    "id": "costume-25-70",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de diseño de H. F.",
+    "name": "Pikachu · Gorra de diseño de H. F.",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cFALL_2018.icon.png"
+  },
+  {
+    "id": "costume-25-52",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Corona de flores",
+    "name": "Pikachu · Corona de flores",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cNOVEMBER_2018.icon.png"
+  },
+  {
+    "id": "costume-25-47",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de detective",
+    "name": "Pikachu · Gorra de detective",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cFEB_2019.icon.png"
+  },
+  {
+    "id": "costume-25-318",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de detective con animación especial",
+    "name": "Pikachu · Gorra de detective con animación especial",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cFEB_2019.icon.png"
+  },
+  {
+    "id": "costume-25-108",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de paja",
+    "name": "Pikachu · Gorro de paja",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cMAY_2019_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-84",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Disfrazado de Mimikyu",
+    "name": "Pikachu · Disfrazado de Mimikyu",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFALL_2019.icon.png"
+  },
+  {
+    "id": "costume-25-33",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de lana",
+    "name": "Pikachu · Gorro de lana",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cWINTER_2018.icon.png"
+  },
+  {
+    "id": "costume-25-88",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de fiesta rojo",
+    "name": "Pikachu · Gorro de fiesta rojo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cJAN_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-42",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Clon",
+    "name": "Pikachu · Clon",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": false,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fCOPY_2019.icon.png"
+  },
+  {
+    "id": "costume-25-104",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Sombrero vaquero",
+    "name": "Pikachu · Sombrero vaquero",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSAFARI_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-53",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Sombrero de flores",
+    "name": "Pikachu · Sombrero de flores",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cAPRIL_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-40",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Charizard",
+    "name": "Pikachu · Gorro de Charizard",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cKANTO_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-117",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Umbreon",
+    "name": "Pikachu · Gorro de Umbreon",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cJOHTO_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-100",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Rayquaza",
+    "name": "Pikachu · Gorro de Rayquaza",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOENN_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-100",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Rayquaza",
+    "name": "Pikachu · Gorro de Rayquaza",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOENN_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-79",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Lucario",
+    "name": "Pikachu · Gorro de Lucario",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSINNOH_2020_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-319",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Visera de Pikachu",
+    "name": "Pikachu · Visera de Pikachu",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu00.png"
+  },
+  {
+    "id": "costume-25-37",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra Trotamundos",
+    "name": "Pikachu · Gorra Trotamundos",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cCOSTUME_1.icon.png"
+  },
+  {
+    "id": "costume-25-50",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Explorador",
+    "name": "Pikachu · Explorador",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fADVENTURE_HAT_2020.icon.png"
+  },
+  {
+    "id": "costume-25-119",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Disfraz de Navidad",
+    "name": "Pikachu · Disfraz de Navidad",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWINTER_2020.icon.png"
+  },
+  {
+    "id": "costume-25-86",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Año Nuevo",
+    "name": "Pikachu · Gorro de Año Nuevo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cCOSTUME_2.icon.png"
+  },
+  {
+    "id": "costume-25-83",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Meloetta",
+    "name": "Pikachu · Gorro de Meloetta",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOFEST_2021_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-71",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Travesuras de Halloween",
+    "name": "Pikachu · Travesuras de Halloween",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHALLOWEEN_2021_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-76",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Camisa Kariyushi",
+    "name": "Pikachu · Camisa Kariyushi",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fKARIYUSHI.icon.png"
+  },
+  {
+    "id": "costume-25-69",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gracídea",
+    "name": "Pikachu · Gracídea",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOFEST_2022_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-98",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de Pokémon TCG",
+    "name": "Pikachu · Gorra de Pokémon TCG",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cTCG_2022_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-35",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Disfraz de tarta",
+    "name": "Pikachu · Disfraz de tarta",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cANNIVERSARY_2022_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-121",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Disfraz del Mundial 2022",
+    "name": "Pikachu · Disfraz del Mundial 2022",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2022.icon.png"
+  },
+  {
+    "id": "costume-25-122",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Disfraz del Mundial 2023",
+    "name": "Pikachu · Disfraz del Mundial 2023",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2023.icon.png"
+  },
+  {
+    "id": "costume-25-123",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Disfraz del Mundial 2024",
+    "name": "Pikachu · Disfraz del Mundial 2024",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2024.icon.png"
+  },
+  {
+    "id": "costume-25-322",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Disfraz del Mundial 2026",
+    "name": "Pikachu · Disfraz del Mundial 2026",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu95.png"
+  },
+  {
+    "id": "costume-25-107",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Bufanda de Shaymin",
+    "name": "Pikachu · Bufanda de Shaymin",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2022.icon.png"
+  },
+  {
+    "id": "costume-25-82",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Cinta de Aura",
+    "name": "Pikachu · Cinta de Aura",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOTOUR_2023_BANDANA_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-112",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Camiseta Baya Verde",
+    "name": "Pikachu · Camiseta Baya Verde",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fTSHIRT_01.icon.png"
+  },
+  {
+    "id": "costume-25-113",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Camiseta Flores Morada",
+    "name": "Pikachu · Camiseta Flores Morada",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fTSHIRT_02.icon.png"
+  },
+  {
+    "id": "costume-25-114",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Camiseta Baya Azul",
+    "name": "Pikachu · Camiseta Baya Azul",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu51.png"
+  },
+  {
+    "id": "costume-25-115",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Camiseta Batik",
+    "name": "Pikachu · Camiseta Batik",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fTSHIRT_03.icon.png"
+  },
+  {
+    "id": "costume-25-89",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Chistera de fiesta",
+    "name": "Pikachu · Chistera de fiesta",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cJAN_2023_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-41",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Flores de cerezo",
+    "name": "Pikachu · Flores de cerezo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSPRING_2023.icon.png"
   },
   {
     "id": "costume-25-64",
@@ -781,37 +1034,125 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fSUMMER_2023_C.icon.png"
   },
   {
-    "id": "costume-25-69",
+    "id": "costume-25-116",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Gracidea",
-    "name": "Pikachu · Gracidea",
+    "costumeName": "Disfraz de Halloween",
+    "name": "Pikachu · Disfraz de Halloween",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOFEST_2022_NOEVOLVE.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cFALL_2023_NOEVOLVE.icon.png"
   },
   {
-    "id": "costume-25-70",
+    "id": "costume-25-74",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Gorra de diseño de H. F.",
-    "name": "Pikachu · Gorra de diseño de H. F.",
+    "costumeName": "Atuendo festivo",
+    "name": "Pikachu · Atuendo festivo",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cFALL_2018.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOLIDAY_2023.icon.png"
   },
   {
-    "id": "costume-25-71",
+    "id": "costume-25-34",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Travesuras de Halloween",
-    "name": "Pikachu · Travesuras de Halloween",
+    "costumeName": "Gorro de Bruno",
+    "name": "Pikachu · Gorro de Bruno",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHALLOWEEN_2021_NOEVOLVE.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOTOUR_2023_HAT_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-31",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de León",
+    "name": "Pikachu · Gorra de León",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_A.icon.png"
+  },
+  {
+    "id": "costume-25-46",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Maya",
+    "name": "Pikachu · Gorro de Maya",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_A_02.icon.png"
+  },
+  {
+    "id": "costume-25-80",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de Luka",
+    "name": "Pikachu · Gorra de Luka",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_B.icon.png"
+  },
+  {
+    "id": "costume-25-102",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Pañuelo de Kira",
+    "name": "Pikachu · Pañuelo de Kira",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_B_02.icon.png"
+  },
+  {
+    "id": "costume-25-110",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Corona de luna",
+    "name": "Pikachu · Corona de luna",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2024_MTIARA.icon.png"
+  },
+  {
+    "id": "costume-25-111",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Corona de sol",
+    "name": "Pikachu · Corona de sol",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2024_STIARA.icon.png"
+  },
+  {
+    "id": "costume-25-105",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Sari",
+    "name": "Pikachu · Sari",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fDIWALI_2024.icon.png"
+  },
+  {
+    "id": "costume-25-77",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Kurta",
+    "name": "Pikachu · Kurta",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fKURTA.icon.png"
   },
   {
     "id": "costume-25-72",
@@ -836,83 +1177,6 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2025_A_02.icon.png"
   },
   {
-    "id": "costume-25-74",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Atuendo festivo",
-    "name": "Pikachu · Atuendo festivo",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOLIDAY_2023.icon.png"
-  },
-  {
-    "id": "costume-25-75",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Camiseta de la selección de Indonesia",
-    "name": "Pikachu · Camiseta de la selección de Indonesia",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cINDONESIA_2025_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-76",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Camisa Kariyushi",
-    "name": "Pikachu · Camisa Kariyushi",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fKARIYUSHI.icon.png"
-  },
-  {
-    "id": "costume-25-77",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Kurta",
-    "name": "Pikachu · Kurta",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fKURTA.icon.png"
-  },
-  {
-    "id": "costume-25-78",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Sombrero de Hoja",
-    "name": "Pikachu · Sombrero de Hoja",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_A_02.icon.png"
-  },
-  {
-    "id": "costume-25-79",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Lucario",
-    "name": "Pikachu · Gorro de Lucario",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSINNOH_2020_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-80",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorra de Luka",
-    "name": "Pikachu · Gorra de Luka",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_B.icon.png"
-  },
-  {
     "id": "costume-25-81",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
@@ -922,39 +1186,6 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2025_B_02.icon.png"
-  },
-  {
-    "id": "costume-25-82",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Cinta de Aura",
-    "name": "Pikachu · Cinta de Aura",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOTOUR_2023_BANDANA_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-83",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Meloetta",
-    "name": "Pikachu · Gorro de Meloetta",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cGOFEST_2021_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-84",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Disfrazado de Mimikyu",
-    "name": "Pikachu · Disfrazado de Mimikyu",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFALL_2019.icon.png"
   },
   {
     "id": "costume-25-85",
@@ -968,92 +1199,170 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2025_B.icon.png"
   },
   {
-    "id": "costume-25-86",
+    "id": "costume-25-61",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Año Nuevo",
-    "name": "Pikachu · Gorro de Año Nuevo",
+    "costumeName": "Formal con detalles azules",
+    "name": "Pikachu · Formal con detalles azules",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cCOSTUME_2.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_MONOCLE_BLUE.icon.png"
   },
   {
-    "id": "costume-25-87",
+    "id": "costume-25-62",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Gorro de fiesta",
-    "name": "Pikachu · Gorro de fiesta",
+    "costumeName": "Formal con detalles rojos",
+    "name": "Pikachu · Formal con detalles rojos",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cANNIVERSARY.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_MONOCLE_RED.icon.png"
   },
   {
-    "id": "costume-25-88",
+    "id": "costume-25-63",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Gorro de fiesta rojo",
-    "name": "Pikachu · Gorro de fiesta rojo",
+    "costumeName": "Formal con detalles amarillos",
+    "name": "Pikachu · Formal con detalles amarillos",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cJAN_2020_NOEVOLVE.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_MONOCLE_YELLOW.icon.png"
   },
   {
-    "id": "costume-25-89",
+    "id": "costume-25-43",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Chistera de fiesta",
-    "name": "Pikachu · Chistera de fiesta",
+    "costumeName": "Elegante con detalles azules",
+    "name": "Pikachu · Elegante con detalles azules",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cJAN_2023_NOEVOLVE.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_GOGGLES_BLUE.icon.png"
   },
   {
-    "id": "costume-25-90",
+    "id": "costume-25-44",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "añadir",
-    "name": "Pikachu · Pikachu Libre",
+    "costumeName": "Elegante con detalles rojos",
+    "name": "Pikachu · Elegante con detalles rojos",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2025_A_02.icon.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_GOGGLES_RED.icon.png"
   },
   {
-    "id": "costume-25-91",
+    "id": "costume-25-45",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Pikachu Erudita",
-    "name": "Pikachu · Pikachu Erudita",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": false,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fDOCTOR.icon.png"
-  },
-  {
-    "id": "costume-25-92",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Pikachu Superstar",
-    "name": "Pikachu · Pikachu Superstar",
+    "costumeName": "Elegante con detalles amarillos",
+    "name": "Pikachu · Elegante con detalles amarillos",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu28.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2025_GOGGLES_YELLOW.icon.png"
   },
   {
-    "id": "costume-25-93",
+    "id": "costume-25-75",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Pikachu Roquera",
-    "name": "Pikachu · Pikachu Roquera",
+    "costumeName": "Camiseta de la selección de Indonesia",
+    "name": "Pikachu · Camiseta de la selección de Indonesia",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu29.png"
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cINDONESIA_2025_NOEVOLVE.icon.png"
+  },
+  {
+    "id": "costume-25-118",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Chaqueta universitaria",
+    "name": "Pikachu · Chaqueta universitaria",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2025.icon.png"
+  },
+  {
+    "id": "costume-25-101",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Sombrero de Rojo",
+    "name": "Pikachu · Sombrero de Rojo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_A.icon.png"
+  },
+  {
+    "id": "costume-25-78",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Sombrero de Hoja",
+    "name": "Pikachu · Sombrero de Hoja",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_A_02.icon.png"
+  },
+  {
+    "id": "costume-25-48",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de Eco",
+    "name": "Pikachu · Gorra de Eco",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu83.png"
+  }
+  ,
+  {
+    "id": "costume-25-320",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "gorro de Lira",
+    "name": "Pikachu · gorro de Lira",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu84.png"
+  },
+  {
+    "id": "costume-25-36",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorra de Kalm",
+    "name": "Pikachu · Gorra de Kalm",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_C.icon.png"
+  },
+  {
+    "id": "costume-25-106",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Gorro de Serena",
+    "name": "Pikachu · Gorro de Serena",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_C_02.icon.png"
+  },
+  {
+    "id": "costume-25-32",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Camiseta de béisbol",
+    "name": "Pikachu · Camiseta de béisbol",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fBB_2026.icon.png"
   },
   {
     "id": "costume-25-94",
@@ -1065,6 +1374,17 @@
     "available": true,
     "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fVISOR_2026.icon.png"
+  },
+  {
+    "id": "costume-25-49",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "Excavador",
+    "name": "Pikachu · Excavador",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fFOSSIL_2026.icon.png"
   },
   {
     "id": "costume-25-95",
@@ -1100,17 +1420,6 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2026_CAP_RED.icon.png"
   },
   {
-    "id": "costume-25-98",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorra de Pokémon TCG",
-    "name": "Pikachu · Gorra de Pokémon TCG",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cTCG_2022_NOEVOLVE.icon.png"
-  },
-  {
     "id": "costume-25-99",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
@@ -1122,268 +1431,103 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fANNIVERSARY_2026.icon.png"
   },
   {
-    "id": "costume-25-100",
+    "id": "costume-25-321",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Rayquaza",
-    "name": "Pikachu · Gorro de Rayquaza",
+    "costumeName": "Traje espacial de Cosmog",
+    "name": "Pikachu · Traje espacial de Cosmog",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOENN_2020_NOEVOLVE.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu94.png"
   },
   {
-    "id": "costume-25-101",
+    "id": "costume-25-323",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Sombrero de Rojo",
-    "name": "Pikachu · Sombrero de Rojo",
+    "costumeName": "PokéXciting! con pelo de color turquesa",
+    "name": "PokéXciting! con pelo de color turquesa",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_A.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu96.png"
   },
   {
-    "id": "costume-25-102",
+    "id": "costume-25-324",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Pañuelo de Kira",
-    "name": "Pikachu · Pañuelo de Kira",
+    "costumeName": "PokéXciting! con pelo de color rosa",
+    "name": "PokéXciting! con pelo de color rosa",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2024_B_02.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu97.png"
+  },
+  {
+    "id": "costume-25-325",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "PokéXciting! con pelo de color azul",
+    "name": "PokéXciting! con pelo de color azul",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu98.png"
+  },
+  {
+    "id": "costume-25-326",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "PokéXciting! con pelo de color rojo",
+    "name": "PokéXciting! con pelo de color rojo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu99.png"
+  },
+  {
+    "id": "costume-25-327",
+    "pokemonId": 25,
+    "pokemonName": "Pikachu",
+    "costumeName": "PokéXciting! con pelo de color naranja",
+    "name": "PokéXciting! con pelo de color naranja",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu103.png"
   },
   {
     "id": "costume-25-103",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Visera de Nanci",
-    "name": "Pikachu · Visera de Nanci",
+    "costumeName": "Hanbok naranja",
+    "name": "Pikachu · Hanbok naranja",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2025_B_02.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu100.png"
   },
   {
-    "id": "costume-25-104",
+    "id": "costume-25-328",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Sombrero vaquero",
-    "name": "Pikachu · Sombrero vaquero",
+    "costumeName": "Astronauta",
+    "name": "Pikachu · Astronauta",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSAFARI_2020_NOEVOLVE.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu101.png"
   },
   {
-    "id": "costume-25-105",
+    "id": "costume-25-314",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
-    "costumeName": "Sari",
-    "name": "Pikachu · Sari",
+    "costumeName": "Gorro y Escavina",
+    "name": "Pikachu · Gorro y Escavina",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fDIWALI_2024.icon.png"
-  },
-  {
-    "id": "costume-25-106",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Serena",
-    "name": "Pikachu · Gorro de Serena",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOTOUR_2026_C_02.icon.png"
-  },
-  {
-    "id": "costume-25-107",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Bufanda de Shaymin",
-    "name": "Pikachu · Bufanda de Shaymin",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2022.icon.png"
-  },
-  {
-    "id": "costume-25-108",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de paja",
-    "name": "Pikachu · Gorro de paja",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cMAY_2019_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-109",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Sombrero veraniego",
-    "name": "Pikachu · Sombrero veraniego",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cSUMMER_2018.icon.png"
-  },
-  {
-    "id": "costume-25-110",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Corona de luna",
-    "name": "Pikachu · Corona de luna",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2024_MTIARA.icon.png"
-  },
-  {
-    "id": "costume-25-111",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Corona de sol",
-    "name": "Pikachu · Corona de sol",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fGOFEST_2024_STIARA.icon.png"
-  },
-  {
-    "id": "costume-25-112",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Camiseta Baya Verde",
-    "name": "Pikachu · Camiseta Baya Verde",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fTSHIRT_01.icon.png"
-  },
-  {
-    "id": "costume-25-113",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Camiseta Flores Morada",
-    "name": "Pikachu · Camiseta Flores Morada",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fTSHIRT_02.icon.png"
-  },
-  {
-    "id": "costume-25-114",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Camiseta Baya Azul",
-    "name": "Pikachu · Camiseta Baya Azul",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu51.png"
-  },
-  {
-    "id": "costume-25-115",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Camiseta Batik",
-    "name": "Pikachu · Camiseta Batik",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fTSHIRT_03.icon.png"
-  },
-  {
-    "id": "costume-25-116",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Disfraz de Halloween",
-    "name": "Pikachu · Disfraz de Halloween",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cFALL_2023_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-117",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Umbreon",
-    "name": "Pikachu · Gorro de Umbreon",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cJOHTO_2020_NOEVOLVE.icon.png"
-  },
-  {
-    "id": "costume-25-118",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Chaqueta universitaria",
-    "name": "Pikachu · Chaqueta universitaria",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2025.icon.png"
-  },
-  {
-    "id": "costume-25-119",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Disfraz de Navidad",
-    "name": "Pikachu · Disfraz de Navidad",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWINTER_2020.icon.png"
-  },
-  {
-    "id": "costume-25-120",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Bruja",
-    "name": "Pikachu · Gorro de Bruja",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHALLOWEEN_2017.icon.png"
-  },
-  {
-    "id": "costume-25-121",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Disfraz del Mundial 2022",
-    "name": "Pikachu · Disfraz del Mundial 2022",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2022.icon.png"
-  },
-  {
-    "id": "costume-25-122",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Disfraz del Mundial 2023",
-    "name": "Pikachu · Disfraz del Mundial 2023",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2023.icon.png"
-  },
-  {
-    "id": "costume-25-123",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Disfraz del Mundial 2024",
-    "name": "Pikachu · Disfraz del Mundial 2024",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.fWCS_2024.icon.png"
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu102.png"
   },
   {
     "id": "costume-26-124",
@@ -3388,6 +3532,28 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm832.cWINTER_2024.icon.png"
   },
   {
+    "id": "costume-854-315",
+    "pokemonId": 854,
+    "pokemonName": "Sinistea",
+    "costumeName": "Lazo",
+    "name": "Sinistea · Lazo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/sinistea01.png"
+  },
+  {
+    "id": "costume-855-316",
+    "pokemonId": 855,
+    "pokemonName": "Polteageist",
+    "costumeName": "Lazo",
+    "name": "Polteageist · Lazo",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/polteageist01.png"
+  },
+  {
     "id": "costume-870-303",
     "pokemonId": 870,
     "pokemonName": "Falinks",
@@ -3443,36 +3609,14 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm999.fCOIN_A1.icon.png"
   },
   {
-    "id": "costume-25-314",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro y Escavina",
-    "name": "Pikachu · Gorro y Escavina",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/pikachu102.png"
-  },
-  {
-    "id": "costume-854-315",
-    "pokemonId": 854,
-    "pokemonName": "Sinistea",
-    "costumeName": "Lazo",
-    "name": "Sinistea · Lazo",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/sinistea01.png"
-  },
-  {
-    "id": "costume-855-316",
-    "pokemonId": 855,
-    "pokemonName": "Polteageist",
-    "costumeName": "Lazo",
-    "name": "Polteageist · Lazo",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/polteageist01.png"
+    "id": "costume-0-329",
+    "pokemonId": 0,
+    "pokemonName": "",
+    "costumeName": "",
+    "name": "",
+    "region": "",
+    "available": false,
+    "shinyAvailable": false,
+    "image": ""
   }
 ]
