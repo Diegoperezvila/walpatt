@@ -86,6 +86,18 @@ module.exports = async function handler(req, res) {
       return send(res, 200, { ok: true, message: `Solicitud enviada a ${target.username}.` });
     }
 
+    if (body.action === 'remove') {
+      if (!ObjectId.isValid(body.friendId)) return send(res, 400, { error: 'El amigo seleccionado no es válido.' });
+      const friendId = new ObjectId(body.friendId);
+      if (friendId.equals(userId)) return send(res, 400, { error: 'No puedes eliminarte a ti mismo.' });
+      const result = await friendships.deleteOne({
+        status: 'accepted',
+        $or: [{ requesterId: userId, recipientId: friendId }, { requesterId: friendId, recipientId: userId }]
+      });
+      if (!result.deletedCount) return send(res, 404, { error: 'La amistad ya no existe.' });
+      return send(res, 200, { ok: true });
+    }
+
     if (!['accept', 'reject'].includes(body.action) || !ObjectId.isValid(body.requestId)) return send(res, 400, { error: 'La acción o la solicitud no es válida.' });
     const status = body.action === 'accept' ? 'accepted' : 'rejected';
     const result = await friendships.updateOne({ _id: new ObjectId(body.requestId), recipientId: userId, status: 'pending' }, { $set: { status, updatedAt: new Date() } });
