@@ -24,7 +24,7 @@ module.exports = async function handler(req, res) {
       const searchName = typeof req.query?.search === 'string' ? usernameKey(req.query.search) : '';
       if (searchName) {
         if (!/^[a-z0-9_.-]{3,24}$/.test(searchName)) return send(res, 400, { error: 'Escribe un nombre de usuario válido.' });
-        const target = await users.findOne({ usernameNormalized: searchName }, { projection: { username: 1 } });
+        const target = await users.findOne({ usernameNormalized: searchName }, { projection: { username: 1, avatar: 1 } });
         if (!target) return send(res, 404, { error: 'No se encontró ese usuario.' });
         if (target._id.equals(userId)) return send(res, 400, { error: 'Ese es tu propio nombre de usuario.' });
         const [forward, reverse] = await Promise.all([
@@ -33,11 +33,11 @@ module.exports = async function handler(req, res) {
         ]);
         const status = forward?.status === 'accepted' || reverse?.status === 'accepted' ? 'friend' :
           forward?.status === 'pending' ? 'sent' : reverse?.status === 'pending' ? 'received' : 'available';
-        return send(res, 200, { user: { username: target.username }, status });
+        return send(res, 200, { user: { username: target.username, avatar: target.avatar || null }, status });
       }
       const targetName = typeof req.query?.username === 'string' ? usernameKey(req.query.username) : '';
       if (targetName) {
-        const target = await users.findOne({ usernameNormalized: targetName }, { projection: { username: 1 } });
+        const target = await users.findOne({ usernameNormalized: targetName }, { projection: { username: 1, avatar: 1 } });
         if (!target) return send(res, 404, { error: 'No se encontró ese usuario.' });
         if (target._id.equals(userId)) return send(res, 400, { error: 'No puedes ver tu propia colección desde Amigos.' });
         const friendship = await friendships.findOne({ status: 'accepted', $or: [{ requesterId: userId, recipientId: target._id }, { requesterId: target._id, recipientId: userId }] });
@@ -52,7 +52,7 @@ module.exports = async function handler(req, res) {
           pokemon: Object.keys(data.owned?.[`pokemon:${list.id}`] || {}),
           costumes: Object.keys(data.owned?.[`costumes:${list.id}`] || {})
         }));
-        return send(res, 200, { user: { username: target.username }, lists });
+        return send(res, 200, { user: { username: target.username, avatar: target.avatar || null }, lists });
       }
 
       const [incoming, accepted] = await Promise.all([
@@ -60,11 +60,11 @@ module.exports = async function handler(req, res) {
         friendships.find({ status: 'accepted', $or: [{ requesterId: userId }, { recipientId: userId }] }).sort({ updatedAt: -1 }).limit(200).toArray()
       ]);
       const otherIds = [...incoming.map((item) => item.requesterId), ...accepted.map((item) => item.requesterId.equals(userId) ? item.recipientId : item.requesterId)];
-      const profiles = await users.find({ _id: { $in: otherIds } }, { projection: { username: 1 } }).toArray();
-      const profileMap = new Map(profiles.map((profile) => [profile._id.toString(), profile.username]));
+      const profiles = await users.find({ _id: { $in: otherIds } }, { projection: { username: 1, avatar: 1 } }).toArray();
+      const profileMap = new Map(profiles.map((profile) => [profile._id.toString(), { username: profile.username, avatar: profile.avatar || null }]));
       return send(res, 200, {
-        incoming: incoming.filter((item) => profileMap.has(item.requesterId.toString())).map((item) => ({ id: item._id.toString(), username: profileMap.get(item.requesterId.toString()) })),
-        friends: accepted.map((item) => item.requesterId.equals(userId) ? item.recipientId : item.requesterId).filter((id) => profileMap.has(id.toString())).map((id) => ({ id: id.toString(), username: profileMap.get(id.toString()) }))
+        incoming: incoming.filter((item) => profileMap.has(item.requesterId.toString())).map((item) => ({ id: item._id.toString(), ...profileMap.get(item.requesterId.toString()) })),
+        friends: accepted.map((item) => item.requesterId.equals(userId) ? item.recipientId : item.requesterId).filter((id) => profileMap.has(id.toString())).map((id) => ({ id: id.toString(), ...profileMap.get(id.toString()) }))
       });
     }
 

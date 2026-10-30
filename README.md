@@ -13,7 +13,7 @@ Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. I
 - El catálogo de formas se generó con los datos públicos de PokéAPI y añade manualmente los nueve patrones de Spinda de Pokémon GO. Las formas indicadas como disponibles en GO están activadas; el resto se conserva con `available: false` y `shinyAvailable: false` para incorporarlas en el futuro.
 - La sesión iniciada muestra el nombre de usuario y los controles de cuenta; las cuentas sin sesión solo ven la landing. En móvil, las listas se abren en un panel lateral.
 - Cada lista incluye filtros para ver todos, los marcados o los pendientes. Las listas personalizadas se pueden editar y borrar; las predefinidas 100 IV y Shiny no se borran.
-- El perfil permite cambiar usuario, correo y contraseña. El apartado Amigos permite buscar usuarios, enviar y responder solicitudes, y consultar solo las listas marcadas como públicas de amistades aceptadas.
+- El perfil permite cambiar usuario, correo, contraseña e icono Pokémon normal o shiny; si no se elige ninguno se usa el logo de Walpatt. Amigos permite buscar usuarios, buscar amistades existentes, eliminarlas y consultar solo listas públicas de amistades aceptadas.
 
 ## Ejecutar en local
 
