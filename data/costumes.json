@@ -704,17 +704,6 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOENN_2020_NOEVOLVE.icon.png"
   },
   {
-    "id": "costume-25-100",
-    "pokemonId": 25,
-    "pokemonName": "Pikachu",
-    "costumeName": "Gorro de Rayquaza",
-    "name": "Pikachu · Gorro de Rayquaza",
-    "region": "Kanto",
-    "available": true,
-    "shinyAvailable": true,
-    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm25.cHOENN_2020_NOEVOLVE.icon.png"
-  },
-  {
     "id": "costume-25-79",
     "pokemonId": 25,
     "pokemonName": "Pikachu",
@@ -1612,6 +1601,17 @@
     "pokemonName": "Raichu",
     "costumeName": "Gorra de detective",
     "name": "Raichu · Gorra de detective",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm26.cFEB_2019.icon.png"
+  },
+  {
+    "id": "costume-26-329",
+    "pokemonId": 26,
+    "pokemonName": "Raichu",
+    "costumeName": "Gorra de detective con animación especial",
+    "name": "Raichu · Gorra de detective con animación especial",
     "region": "Kanto",
     "available": true,
     "shinyAvailable": true,
@@ -3609,7 +3609,7 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm999.fCOIN_A1.icon.png"
   },
   {
-    "id": "costume-0-329",
+    "id": "costume-0-330",
     "pokemonId": 0,
     "pokemonName": "",
     "costumeName": "",
