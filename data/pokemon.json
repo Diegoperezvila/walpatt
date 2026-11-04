@@ -8043,7 +8043,7 @@
     "name": "Greavard",
     "region": "Paldea",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png"
   },
   {
@@ -8051,7 +8051,7 @@
     "name": "Houndstone",
     "region": "Paldea",
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png"
   },
   {

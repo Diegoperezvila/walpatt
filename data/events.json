@@ -9,5 +9,40 @@
         { "id": "salvajes", "name": "Salvajes", "pokemonIds": ["costume-40-311", "costume-40-312", "costume-169-313", 355, 356, 477, "costume-393-249", "costume-426-252", 710,"form-10128", "form-10127", "form-10126", 711, "form-10131", "form-10130", "form-10129", "costume-714-293", "costume-715-294"] },
         { "id": "incursiones", "name": "Incursiones", "pokemonIds": ["costume-25-314", "costume-854-315", "costume-855-316"] }
       ]
+    }, 
+    {
+      "id": "Halloween-2026-2",
+      "name": "Halloween 2026 (Parte 2)",
+      "description": "",
+      "startDate": "2026-11-1",
+      "endDate": "2026-11-5",
+      "sources": [
+        { "id": "salvajes", "name": "Salvajes", "pokemonIds": [607, 608, 609, "costume-722-295", "costume-723-296", "costume-724-297", 971, 972, "costume-94-159"] },
+        { "id": "incursiones", "name": "Incursiones", "pokemonIds": ["costume-25-314", "costume-854-315", "costume-855-316"] }, 
+        { "id": "misiones", "name": "Misiones", "pokemonIds": ["costume-25-314", "costume-854-315", "costume-855-316", 971, 972, 769, 770, "costume-656-277", "costume-657-278", "costume-658-279", "costume-722-295", "costume-723-296", "costume-724-297", 607, 608, 609] }
+      ]
+    },
+    {
+      "id": "hora-destacada",
+      "name": "Hora Destacada",
+      "description": "",
+      "startDate": "2026-11-5",
+      "endDate": "2026-11-5",
+      "sources": [
+        { "id": "salvajes", "name": "Salvajes", "pokemonIds": [216, 217] }
+      ]
+    },
+    {
+      "id": "hacia-lo-silvestre",
+      "name": "Hacia lo silvestre",
+      "description": "",
+      "startDate": "2026-11-9",
+      "endDate": "2026-11-13",
+      "sources": [
+        { "id": "dinamax", "name": "Dinamax", "pokemonIds": [280, 281, 282, 475, 66, 67, 68] },
+        { "id": "incursiones", "name": "Incursiones", "pokemonIds": [621, 968, "form-10357", "form-10358"] },
+        { "id": "incursiones-oscuras", "name": "Incursiones Oscuras", "pokemonIds": [379, 895, 380, 381] },
+        { "id": "especiales", "name": "Especiales", "pokemonIds": [808, 809,999, 1000] }
+      ]
     }
 ]
