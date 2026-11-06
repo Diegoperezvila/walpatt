@@ -73,3 +73,13 @@ body.pwa-mode .topbar,body.pwa-mode .footer{display:none!important}body.pwa-mode
 .profile-page-overlay{position:relative;inset:auto;z-index:auto;display:flex;min-height:100dvh;align-items:flex-start;justify-content:center;overflow:visible;padding:23px 16px calc(94px + env(safe-area-inset-bottom));background:transparent;backdrop-filter:none}.profile-page-overlay .profile-modal{width:min(100%,680px);max-height:none;overflow:visible;padding:25px 24px;border:1px solid var(--line);border-radius:8px;background:#fff;box-shadow:none}.profile-page-overlay .profile-close{position:static;width:auto;height:auto;margin:0 0 22px;padding:0;border:0;border-radius:0;background:none;color:#66705c;font-size:12px;font-weight:700}.profile-page-overlay .profile-modal h2{margin-top:8px}.profile-page-overlay .profile-logout{margin-top:17px}
 @media(max-width:640px){body.pwa-mode .collection{padding:22px 15px 40px}body.pwa-mode .collection-top{align-items:center}body.pwa-mode .collection-tools{gap:9px}body.pwa-mode .pokemon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}body.pwa-mode .friends-page-columns{grid-template-columns:1fr}body.pwa-mode .profile-page-overlay{padding:17px 12px calc(88px + env(safe-area-inset-bottom))}body.pwa-mode .profile-page-overlay .profile-modal{padding:22px 17px}body.pwa-mode .avatar-editor{align-items:flex-start}}
 .install-app-button.hidden{display:none!important}.profile-page-overlay.hidden{display:none!important}
+.collection-type-switch{display:none}
+body.pwa-mode .collection-type-switch{display:flex;gap:5px;margin:14px 0 0;padding:4px;border:1px solid #e7eae2;border-radius:9px;background:#f5f6f2}
+body.pwa-mode .collection-type-switch button{display:flex;flex:1;align-items:center;justify-content:center;gap:7px;min-height:39px;border:0;border-radius:6px;background:transparent;color:#777d73;font-size:11px;font-weight:600}
+body.pwa-mode .collection-type-switch button>span{font-size:15px}
+body.pwa-mode .collection-type-switch button.active{background:#fff;color:#30392a;box-shadow:0 1px 3px #20241e12}
+body.pwa-mode .pwa-bottom-nav button>svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pwa-profile-avatar{display:grid;width:24px;height:24px;overflow:hidden;place-items:center;border:1px solid #dfe4d7;border-radius:50%;background:#fff}
+.pwa-profile-avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}
+body.pwa-mode .pwa-bottom-nav button.active .pwa-profile-avatar{border-color:#9fb875;box-shadow:0 0 0 2px #e6efd8}
+body.pwa-mode #app.no-sidebar .collection-type-switch,body.pwa-mode #app.no-sidebar .collection-top .mobile-lists-toggle{display:none!important}
