@@ -61,3 +61,5 @@
 .mobile-nav-panel .logout-mobile-text{display:inline-flex;align-items:center;gap:8px}
 .mobile-nav-panel .logout-mobile-text i{font-size:17px;font-style:normal}
 }
+
+@media(max-width:640px){.app-shell.sidebar-open .sidebar{z-index:42}.sidebar-backdrop:not(.hidden){z-index:41}}
