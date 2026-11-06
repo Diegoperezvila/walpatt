@@ -13,7 +13,14 @@ function validData(data) {
     if (list.isPublic !== undefined && typeof list.isPublic !== 'boolean') return false;
     ids.add(list.id);
   }
-  return Object.keys(data.owned).length <= 100;
+  if (Object.keys(data.owned).length > 100) return false;
+  if (data.trading !== undefined) {
+    const { offers, wanted } = data.trading || {};
+    if (!Array.isArray(offers) || offers.length > 500 || !Array.isArray(wanted) || wanted.length > 500) return false;
+    if (offers.some(item => !item || typeof item.id !== 'string' || item.id.length > 80 || (item.quantity != null && (!Number.isInteger(item.quantity) || item.quantity < 1 || item.quantity > 999)))) return false;
+    if (wanted.some(id => typeof id !== 'string' || id.length > 80)) return false;
+  }
+  return true;
 }
 
 module.exports = async function handler(req, res) {

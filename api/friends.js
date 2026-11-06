@@ -42,7 +42,7 @@ module.exports = async function handler(req, res) {
         if (target._id.equals(userId)) return send(res, 400, { error: 'No puedes ver tu propia colección desde Amigos.' });
         const friendship = await friendships.findOne({ status: 'accepted', $or: [{ requesterId: userId, recipientId: target._id }, { requesterId: target._id, recipientId: userId }] });
         if (!friendship) return send(res, 403, { error: 'Solo puedes ver listas de usuarios que hayas agregado.' });
-        const record = await collections.findOne({ userId: target._id }, { projection: { 'data.lists': 1, 'data.owned': 1 } });
+        const record = await collections.findOne({ userId: target._id }, { projection: { 'data.lists': 1, 'data.owned': 1, 'data.trading': 1 } });
         const data = record?.data || {};
         const lists = (Array.isArray(data.lists) ? data.lists : []).filter((list) => list?.isPublic === true).map((list) => ({
           id: list.id,
@@ -52,7 +52,10 @@ module.exports = async function handler(req, res) {
           pokemon: Object.keys(data.owned?.[`pokemon:${list.id}`] || {}),
           costumes: Object.keys(data.owned?.[`costumes:${list.id}`] || {})
         }));
-        return send(res, 200, { user: { username: target.username, avatar: target.avatar || null }, lists });
+        const trading = data.trading || {};
+        const offers = Array.isArray(trading.offers) ? trading.offers.filter(item => item && typeof item.id === 'string').slice(0, 500).map(item => ({ id: item.id, quantity: Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : null })) : [];
+        const wanted = Array.isArray(trading.wanted) ? trading.wanted.filter(id => typeof id === 'string').slice(0, 500) : [];
+        return send(res, 200, { user: { username: target.username, avatar: target.avatar || null }, lists, trading: { offers, wanted } });
       }
 
       const [incoming, accepted] = await Promise.all([
