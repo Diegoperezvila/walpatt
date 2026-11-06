@@ -53,8 +53,9 @@ module.exports = async function handler(req, res) {
           costumes: Object.keys(data.owned?.[`costumes:${list.id}`] || {})
         }));
         const trading = data.trading || {};
-        const offers = Array.isArray(trading.offers) ? trading.offers.filter(item => item && typeof item.id === 'string').slice(0, 500).map(item => ({ id: item.id, quantity: Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : null })) : [];
-        const wanted = Array.isArray(trading.wanted) ? trading.wanted.filter(id => typeof id === 'string').slice(0, 500) : [];
+        const normalizeTradeItem = item => typeof item === 'string' ? { id: item, kind: 'pokemon', shiny: false } : ({ id: item.id, kind: item.kind === 'costume' ? 'costume' : 'pokemon', shiny: item.shiny === true, quantity: Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : null });
+        const offers = Array.isArray(trading.offers) ? trading.offers.filter(item => (typeof item === 'string' && item.length <= 80) || (item && typeof item.id === 'string' && item.id.length <= 80)).slice(0, 500).map(normalizeTradeItem) : [];
+        const wanted = Array.isArray(trading.wanted) ? trading.wanted.filter(item => (typeof item === 'string' && item.length <= 80) || (item && typeof item.id === 'string' && item.id.length <= 80)).slice(0, 500).map(normalizeTradeItem) : [];
         return send(res, 200, { user: { username: target.username, avatar: target.avatar || null }, lists, trading: { offers, wanted } });
       }
 

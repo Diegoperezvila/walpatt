@@ -17,8 +17,9 @@ function validData(data) {
   if (data.trading !== undefined) {
     const { offers, wanted } = data.trading || {};
     if (!Array.isArray(offers) || offers.length > 500 || !Array.isArray(wanted) || wanted.length > 500) return false;
-    if (offers.some(item => !item || typeof item.id !== 'string' || item.id.length > 80 || (item.quantity != null && (!Number.isInteger(item.quantity) || item.quantity < 1 || item.quantity > 999)))) return false;
-    if (wanted.some(id => typeof id !== 'string' || id.length > 80)) return false;
+    const validItem = item => item && typeof item === 'object' && typeof item.id === 'string' && item.id.length <= 80 && (item.kind === undefined || ['pokemon', 'costume'].includes(item.kind)) && (item.shiny === undefined || typeof item.shiny === 'boolean');
+    if (offers.some(item => !validItem(item) || (item.quantity != null && (!Number.isInteger(item.quantity) || item.quantity < 1 || item.quantity > 999)))) return false;
+    if (wanted.some(item => !(typeof item === 'string' && item.length <= 80) && !validItem(item))) return false;
   }
   return true;
 }
