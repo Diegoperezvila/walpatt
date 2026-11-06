@@ -7,6 +7,7 @@ Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. I
 - Interfaz estática HTML, CSS y JavaScript.
 - Funciones serverless Node.js en `api/`, ejecutadas localmente con Vercel CLI y desplegadas en Vercel.
 - MongoDB Atlas guarda cuentas y colecciones por usuario.
+- La web incluye una WebApp instalable (PWA) con manifiesto y service worker. En modo instalado oculta la cabecera, usa navegación inferior y muestra el perfil como pantalla independiente; la colección y el resto del contenido son los mismos.
 - Las cuentas se registran con nombre de usuario único (no distingue mayúsculas), correo y contraseña. El inicio de sesión se hace con el nombre de usuario y la contraseña.
 - Las contraseñas se guardan con scrypt. La sesión usa una cookie firmada, `HttpOnly`, `SameSite=Lax` y `Secure` en producción.
 - `data/pokemon.json` contiene las 1.025 especies y sus formas predeterminadas; `data/pokemon-forms.json` añade 561 formas alternativas con identificador, región, disponibilidad e imagen propia; `data/costumes.json` contiene 307 disfraces.

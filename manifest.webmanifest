@@ -1,0 +1,25 @@
+{
+  "name": "Walpatt — Tu colección Pokémon GO",
+  "short_name": "Walpatt",
+  "description": "Organiza tu colección, tus intercambios y tus eventos de Pokémon GO.",
+  "start_url": "/?source=installed-app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f6f2",
+  "theme_color": "#f5f6f2",
+  "icons": [
+    {
+      "src": "/assets/walpatt-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/walpatt-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

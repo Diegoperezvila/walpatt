@@ -1687,8 +1687,8 @@
     "formIdentifier": "darmanitan-galar-zen",
     "name": "Darmanitan · Galar",
     "region": "Galar",
-    "available": true,
-    "shinyAvailable": true,
+    "available": false,
+    "shinyAvailable": false,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10178.png"
   },
   {
