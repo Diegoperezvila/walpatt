@@ -1827,6 +1827,17 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm55.cHOLIDAY_2023.icon.png"
   },
   {
+    "id": "costume-68-330",
+    "pokemonId": 68,
+    "pokemonName": "Machamp",
+    "costumeName": "Chaqueta moderna",
+    "name": "Machamp · Chaqueta moderna",
+    "region": "Kanto",
+    "available": true,
+    "shinyAvailable": true,
+    "image": "https://www.pokexperto.net/pokemongo/pokemon/disfraz/machamp01.png"
+  },
+  {
     "id": "costume-77-149",
     "pokemonId": 77,
     "pokemonName": "Ponyta",
@@ -3609,7 +3620,7 @@
     "image": "https://raw.githubusercontent.com/NOTFWOC/pogo-data/refs/heads/master/pokemon/pm999.fCOIN_A1.icon.png"
   },
   {
-    "id": "costume-0-330",
+    "id": "costume-0-331",
     "pokemonId": 0,
     "pokemonName": "",
     "costumeName": "",
