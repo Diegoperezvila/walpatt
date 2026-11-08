@@ -15,7 +15,7 @@ Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. I
 - La sesión iniciada muestra el nombre de usuario y los controles de cuenta; las cuentas sin sesión solo ven la landing. En móvil, las listas se abren en un panel lateral.
 - Cada lista incluye filtros para ver todos, los marcados o los pendientes. Las listas personalizadas se pueden editar y borrar; las predefinidas 100 IV y Shiny no se borran.
 - El perfil permite cambiar usuario, correo, contraseña e icono Pokémon normal o shiny; si no se elige ninguno se usa el logo de Walpatt. Amigos permite buscar usuarios, buscar amistades existentes, eliminarlas y consultar solo listas públicas de amistades aceptadas.
-- Telegram se conecta desde Perfil mediante un código de un solo uso. En un chat privado, el bot puede mostrar listas, consultar Pokémon que tienes o te faltan y marcarlos como obtenidos.
+- Telegram se conecta desde Perfil mediante un código de un solo uso. En un chat privado, el bot puede consultar y marcar Pokémon y disfraces en tus listas.
 
 ## Ejecutar en local
 
@@ -63,7 +63,8 @@ Comandos disponibles en un chat privado:
 
 - `/ayuda` y `/listas`.
 - `/tengo "100 IV" Pikachu` consulta los Pokémon que tienes; `/faltan "Shiny"` muestra los pendientes.
-- `/anadir "100 IV" Pikachu` marca un Pokémon como obtenido y lo guarda en MongoDB.
+- `/tengo "100 IV" disfraces Pikachu` y `/faltan "100 IV" disfraces Pikachu` consultan los disfraces que tienes o te faltan. Omite `Pikachu` para consultar todos los disfraces de esa lista.
+- `/anadir "100 IV" Pikachu` marca un Pokémon; `/anadir "100 IV" Pikachu disfraz "Gorro de fiesta"` marca ese disfraz. Ambas marcas se guardan en MongoDB en la lista indicada.
 - `/desvincular` desconecta el Telegram actual. También puedes hacerlo desde Perfil.
 
 Las listas con espacios se escriben entre comillas. Las consultas sin búsqueda muestran hasta 35 nombres; puedes añadir un término para acotar, por ejemplo `/faltan "100 IV" castform`. La configuración usa un webhook HTTPS de Telegram y valida el encabezado secreto `X-Telegram-Bot-Api-Secret-Token`.

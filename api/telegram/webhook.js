@@ -4,6 +4,7 @@ const { getDatabase } = require('../lib/db');
 const { send, methodNotAllowed, readBody } = require('../lib/http');
 const basePokemon = require('../../data/pokemon.json');
 const pokemonForms = require('../../data/pokemon-forms.json');
+const costumesCatalog = require('../../data/costumes.json');
 
 const pokemonCatalog = [...basePokemon, ...pokemonForms];
 const defaultLists = [
@@ -36,28 +37,16 @@ async function reply(chatId, text) {
 }
 
 function commandParts(text) {
-  const match = String(text || '').trim().match(/^\/([a-z0-9_]+)(?:@[^\s]+)?(?:\s+([\s\S]*))?$/i);
-  return match ? { command: match[1].toLowerCase(), args: (match[2] || '').trim() } : null;
-}
-
-function parseListAndQuery(args, lists) {
-  const quoted = args.match(/^"([^"]+)"(?:\s+([\s\S]*))?$/);
-  if (quoted) {
-    const target = normalize(quoted[1]);
-    return { list: lists.find(item => normalize(item.name) === target), query: (quoted[2] || '').trim() };
-  }
-  const ordered = [...lists].sort((a, b) => b.name.length - a.name.length);
-  for (const list of ordered) {
-    const prefix = args.slice(0, list.name.length);
-    if (normalize(prefix) === normalize(list.name) && (args.length === list.name.length || /\s/.test(args[list.name.length]))) {
-      return { list, query: args.slice(list.name.length).trim() };
-    }
-  }
-  return { list: null, query: '' };
+  const match = String(text || '').trim().match(/^\/([^\s@]+)(?:@[^\s]+)?(?:\s+([\s\S]*))?$/i);
+  return match ? { command: normalize(match[1]).replace(/[^a-z0-9_]/g, ''), args: (match[2] || '').trim() } : null;
 }
 
 function eligibleForList(list) {
   return pokemonCatalog.filter(item => item.available && (!list.shiny || item.shinyAvailable));
+}
+
+function eligibleCostumesForList(list) {
+  return costumesCatalog.filter(item => item.available && (!list.shiny || item.shinyAvailable));
 }
 
 function findPokemon(query, list) {
@@ -65,6 +54,36 @@ function findPokemon(query, list) {
   if (!term) return [];
   return eligibleForList(list).filter(item => [item.name, item.pokemonName, item.formName]
     .some(name => name && normalize(name).includes(term)));
+}
+
+function findCostumes(query, list) {
+  const term = normalize(query);
+  if (!term) return [];
+  return eligibleCostumesForList(list).filter(item => [item.name, item.pokemonName, item.costumeName]
+    .some(name => name && normalize(name).includes(term)));
+}
+
+function parseListAndRest(args, lists) {
+  const quoted = args.match(/^"([^"]+)"(?:\s+([\s\S]*))?$/);
+  if (quoted) {
+    const target = normalize(quoted[1]);
+    return { list: lists.find(item => normalize(item.name) === target), rest: (quoted[2] || '').trim() };
+  }
+  const ordered = [...lists].sort((a, b) => b.name.length - a.name.length);
+  for (const list of ordered) {
+    const prefix = args.slice(0, list.name.length);
+    if (normalize(prefix) === normalize(list.name) && (args.length === list.name.length || /\s/.test(args[list.name.length]))) {
+      return { list, rest: args.slice(list.name.length).trim() };
+    }
+  }
+  return { list: null, rest: '' };
+}
+
+function splitCostumeAddQuery(query) {
+  const marker = query.match(/^(.*?)\s+disfraz\s+([\s\S]+)$/i);
+  if (!marker) return null;
+  const cleanPart = value => value.trim().replace(/^"|"$/g, '');
+  return { pokemon: cleanPart(marker[1]), costume: cleanPart(marker[2]) };
 }
 
 async function connectTelegram(db, message, code) {
@@ -120,31 +139,32 @@ async function handleLinkedCommand(db, message, linkedUser, parsed) {
   const lists = Array.isArray(data.lists) && data.lists.length ? data.lists : defaultLists;
 
   if (parsed.command === 'listas') {
-    await reply(chatId, `Tus listas de Walpatt:\n${lists.map(list => `• ${list.name}${list.shiny ? ' · shiny' : ''}`).join('\n')}\n\nConsulta: /tengo "Nombre de lista" [búsqueda]`);
+    await reply(chatId, `Tus listas de Walpatt:\n${lists.map(list => `• ${list.name}${list.shiny ? ' · shiny' : ''}`).join('\n')}\n\nPokémon: /tengo "Nombre de lista" [búsqueda]\nDisfraces: /tengo "Nombre de lista" disfraces [Pokémon]`);
     return;
   }
 
   if (parsed.command === 'tengo' || parsed.command === 'faltan' || parsed.command === 'anadir') {
-    const { list, query } = parseListAndQuery(parsed.args, lists);
+    const { list, rest } = parseListAndRest(parsed.args, lists);
     if (!list) {
       await reply(chatId, 'No reconozco esa lista. Usa /listas para ver los nombres y escribe el nombre entre comillas. Ejemplo: /faltan "100 IV" Pikachu');
       return;
     }
-    const eligible = eligibleForList(list);
-    const ownedMap = data.owned?.[`pokemon:${list.id}`] || {};
-    const matches = query ? eligible.filter(item => [item.name, item.pokemonName, item.formName].some(name => name && normalize(name).includes(normalize(query)))) : eligible;
-    const owned = matches.filter(item => !!ownedMap[String(item.id)]);
-    const missing = matches.filter(item => !ownedMap[String(item.id)]);
     if (parsed.command === 'anadir') {
-      if (!query) {
-        await reply(chatId, 'Indica qué Pokémon quieres añadir. Ejemplo: /anadir "100 IV" Pikachu');
-        return;
+      const costumeQuery = splitCostumeAddQuery(rest);
+      const isCostume = !!costumeQuery;
+      const ownedMap = data.owned?.[`${isCostume ? 'costumes' : 'pokemon'}:${list.id}`] || {};
+      let choices;
+      if (isCostume) {
+        choices = costumeQuery.pokemon && costumeQuery.costume ? findCostumes(costumeQuery.costume, list).filter(item =>
+          [item.pokemonName, item.name].some(name => name && normalize(name).includes(normalize(costumeQuery.pokemon)))
+        ) : [];
+      } else {
+        choices = findPokemon(rest, list);
       }
-      const candidates = findPokemon(query, list);
-      const exact = candidates.filter(item => normalize(item.name) === normalize(query));
-      const choices = exact.length ? exact : candidates;
-      if (!choices.length) {
-        await reply(chatId, `No encontré un Pokémon disponible que coincida con «${query}» en la lista «${list.name}».`);
+      if (!rest || !choices.length) {
+        await reply(chatId, isCostume
+          ? 'No encontré ese disfraz. Usa /anadir "100 IV" Pikachu disfraz "Gorro de fiesta".'
+          : 'Indica el Pokémon que quieres añadir. Ejemplo: /anadir "100 IV" Pikachu');
         return;
       }
       if (choices.length > 1) {
@@ -156,22 +176,35 @@ async function handleLinkedCommand(db, message, linkedUser, parsed) {
         await reply(chatId, `${item.name} ya está marcado en «${list.name}».`);
         return;
       }
-      const ownershipKey = `pokemon:${list.id}`;
+      const ownershipKey = `${isCostume ? 'costumes' : 'pokemon'}:${list.id}`;
       await collection.updateOne({ userId: linkedUser._id }, { $set: { [`data.owned.${ownershipKey}.${String(item.id)}`]: true, updatedAt: new Date() } });
       await reply(chatId, `Añadido: ${item.name} → «${list.name}».`);
       return;
     }
 
+    const costumeCommand = rest.match(/^disfraces?(?:\s+([\s\S]*))?$/i);
+    const isCostume = !!costumeCommand;
+    const query = isCostume ? (costumeCommand[1] || '').trim() : rest;
+    const catalog = isCostume ? eligibleCostumesForList(list) : eligibleForList(list);
+    const ownershipKey = `${isCostume ? 'costumes' : 'pokemon'}:${list.id}`;
+    const ownedMap = data.owned?.[ownershipKey] || {};
+    const matches = query
+      ? catalog.filter(item => [item.name, item.pokemonName, item.formName, item.costumeName]
+        .some(name => name && normalize(name).includes(normalize(query))))
+      : catalog;
+    const owned = matches.filter(item => !!ownedMap[String(item.id)]);
+    const missing = matches.filter(item => !ownedMap[String(item.id)]);
+
     const selected = parsed.command === 'tengo' ? owned : missing;
     const title = parsed.command === 'tengo' ? 'Tienes' : 'Te faltan';
-    const heading = `${title} ${selected.length} de ${matches.length} en «${list.name}»${query ? ` para «${query}»` : ''}.`;
+    const heading = `${title} ${selected.length} de ${matches.length} ${isCostume ? 'disfraces' : 'Pokémon'} en «${list.name}»${query ? ` para «${query}»` : ''}.`;
     if (!selected.length) {
-      await reply(chatId, `${heading}\n${parsed.command === 'tengo' ? 'Todavía no hay Pokémon marcados.' : '¡Lista completada para esa búsqueda!'}`);
+      await reply(chatId, `${heading}\n${parsed.command === 'tengo' ? `Todavía no hay ${isCostume ? 'disfraces' : 'Pokémon'} marcados.` : '¡Lista completada para esa búsqueda!'}`);
       return;
     }
     const limit = 35;
     const names = selected.slice(0, limit).map(item => `• ${item.name}`).join('\n');
-    const tail = selected.length > limit ? `\n… y ${selected.length - limit} más. Refina la búsqueda: /${parsed.command} "${list.name}" nombre` : '';
+    const tail = selected.length > limit ? `\n… y ${selected.length - limit} más. Refina la búsqueda: /${parsed.command} "${list.name}" ${isCostume ? 'disfraces ' : ''}nombre` : '';
     await reply(chatId, `${heading}\n${names}${tail}`);
     return;
   }
@@ -206,7 +239,7 @@ async function handleMessage(db, message) {
     return;
   }
   if (parsed.command === 'ayuda' || parsed.command === 'start') {
-    await reply(message.chat.id, 'Walpatt en Telegram\n\n/vincular CODIGO — conectar tu cuenta\n/listas — ver tus listas\n/tengo "100 IV" [búsqueda] — ver lo que tienes\n/faltan "Shiny" [búsqueda] — ver lo pendiente\n/anadir "100 IV" Pikachu — marcar Pokémon como obtenido\n\nSi tu lista tiene otro nombre, sustituye el texto entre comillas.');
+    await reply(message.chat.id, 'Walpatt en Telegram\n\n/vincular CODIGO — conectar tu cuenta\n/listas — ver tus listas\n/tengo "100 IV" [Pokémon] — consultar Pokémon\n/faltan "Shiny" [Pokémon] — consultar Pokémon pendientes\n/tengo "100 IV" disfraces [Pokémon] — consultar disfraces\n/faltan "100 IV" disfraces [Pokémon] — consultar disfraces pendientes\n/anadir "100 IV" Pikachu — marcar un Pokémon\n/anadir "100 IV" Pikachu disfraz "Gorro de fiesta" — marcar un disfraz\n\nSi tu lista tiene otro nombre, sustituye el texto entre comillas. Los nombres de Pokémon y disfraz pueden ser parciales; si hay varias coincidencias, el bot te mostrará opciones.');
     return;
   }
   if (parsed.command === 'desvincular') {
