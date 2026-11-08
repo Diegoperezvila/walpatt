@@ -185,7 +185,12 @@ async function handleMessage(db, message) {
     await reply(message.chat.id, 'Por privacidad, usa Walpatt conmigo en un chat privado.');
     return;
   }
-  const parsed = commandParts(message.text);
+  const rawText = String(message.text || '').trim();
+  if (/^[A-F0-9]{32}$/i.test(rawText)) {
+    await connectTelegram(db, message, rawText);
+    return;
+  }
+  const parsed = commandParts(rawText);
   if (!parsed) {
     await reply(message.chat.id, 'Usa /ayuda para ver los comandos disponibles.');
     return;
