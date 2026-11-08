@@ -45,13 +45,14 @@ try {
         @{ command = 'faltan'; description = 'Consultar Pokémon o disfraces pendientes' }
         @{ command = 'anadir'; description = 'Marcar un Pokémon o disfraz' }
         @{ command = 'desvincular'; description = 'Desconectar tu cuenta de Telegram' }
-    ) | ConvertTo-Json -Compress
+    )
+    $commandsPayload = @{ commands = $commands } | ConvertTo-Json -Depth 4 -Compress
 
     try {
         $menuResult = Invoke-RestMethod -Method Post `
             -Uri "https://api.telegram.org/bot$botToken/setMyCommands" `
             -ContentType 'application/json' `
-            -Body $commands
+            -Body $commandsPayload
     } catch {
         throw 'El webhook quedó configurado, pero Telegram no pudo guardar el menú de comandos.'
     }
@@ -59,7 +60,20 @@ try {
     if (-not $menuResult.ok) {
         throw "El webhook quedó configurado, pero Telegram rechazó el menú: $($menuResult.description)"
     }
-    Write-Host 'Menú de comandos configurado. En Telegram, pulsa el botón / junto al campo de mensaje.'
+    $buttonPayload = @{ menu_button = @{ type = 'commands' } } | ConvertTo-Json -Compress
+    try {
+        $buttonResult = Invoke-RestMethod -Method Post `
+            -Uri "https://api.telegram.org/bot$botToken/setChatMenuButton" `
+            -ContentType 'application/json' `
+            -Body $buttonPayload
+    } catch {
+        throw 'Los comandos se guardaron, pero Telegram no pudo activar el botón del menú.'
+    }
+
+    if (-not $buttonResult.ok) {
+        throw "Los comandos se guardaron, pero Telegram rechazó el botón del menú: $($buttonResult.description)"
+    }
+    Write-Host 'Webhook, comandos y botón de menú configurados. Abre el chat del bot y pulsa Menú o / junto al campo de mensaje.'
 } finally {
     [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($tokenPointer)
     [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($secretPointer)
@@ -67,4 +81,6 @@ try {
     $webhookSecret = $null
     $payload = $null
     $commands = $null
+    $commandsPayload = $null
+    $buttonPayload = $null
 }
