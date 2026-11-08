@@ -239,7 +239,7 @@ async function handleMessage(db, message) {
     return;
   }
   if (parsed.command === 'ayuda' || parsed.command === 'start') {
-    await reply(message.chat.id, 'Walpatt en Telegram\n\n/vincular CODIGO — conectar tu cuenta\n/listas — ver tus listas\n/tengo "100 IV" [Pokémon] — consultar Pokémon\n/faltan "Shiny" [Pokémon] — consultar Pokémon pendientes\n/tengo "100 IV" disfraces [Pokémon] — consultar disfraces\n/faltan "100 IV" disfraces [Pokémon] — consultar disfraces pendientes\n/anadir "100 IV" Pikachu — marcar un Pokémon\n/anadir "100 IV" Pikachu disfraz "Gorro de fiesta" — marcar un disfraz\n\nSi tu lista tiene otro nombre, sustituye el texto entre comillas. Los nombres de Pokémon y disfraz pueden ser parciales; si hay varias coincidencias, el bot te mostrará opciones.');
+    await reply(message.chat.id, 'Walpatt en Telegram\n\n/vincular <CODIGO> — conectar tu cuenta\n/listas — ver tus listas\n/tengo <lista> [disfraces] [pokemon] — consultar Pokémon\n/faltan <lista> [disfraces] [pokemon] — consultar Pokémon pendientes\n/anadir <lista> [pokemon] [disfraz <nombre disfraz>] — marcar un Pokémon o disfraz\n\nSi tu lista tiene otro nombre, sustituye el texto entre comillas. Los nombres de Pokémon y disfraz pueden ser parciales; si hay varias coincidencias, el bot te mostrará opciones.');
     return;
   }
   if (parsed.command === 'desvincular') {

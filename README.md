@@ -55,9 +55,8 @@ Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. Tamb
    - `TELEGRAM_BOT_USERNAME`: username del bot sin `@`.
    - `TELEGRAM_WEBHOOK_SECRET`: crea uno con `openssl rand -hex 32`.
 3. Vuelve a desplegar para que las funciones de Vercel reciban las variables.
-4. En PowerShell, desde la carpeta del proyecto, ejecuta ` .\scripts\set-telegram-webhook.ps1`. El script pedirá el token y el secreto de forma oculta, además del dominio HTTPS de Vercel, y registrará `https://<dominio>/api/telegram/webhook` en Telegram.
-5. Opcionalmente, en BotFather usa `/setcommands` para añadir los comandos de abajo al menú del bot.
-6. En Walpatt, abre **Perfil → Generar código de vinculación** y pulsa **Abrir bot y vincular**, o copia el código y envíaselo al bot en un mensaje privado. El código solo sirve una vez y caduca en 10 minutos.
+4. En PowerShell, desde la carpeta del proyecto, ejecuta ` .\scripts\set-telegram-webhook.ps1`. El script pedirá el token y el secreto de forma oculta y el dominio HTTPS de Vercel; registrará el webhook y configurará el menú de comandos del bot. En Telegram, el menú aparece al pulsar `/` junto al campo de mensaje.
+5. En Walpatt, abre **Perfil → Generar código de vinculación** y pulsa **Abrir bot y vincular**, o copia el código y envíaselo al bot en un mensaje privado. El código solo sirve una vez y caduca en 10 minutos.
 
 Comandos disponibles en un chat privado:
 
