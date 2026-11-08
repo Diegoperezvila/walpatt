@@ -15,6 +15,7 @@ Aplicación responsive para organizar Pokémon de Pokémon GO y sus disfraces. I
 - La sesión iniciada muestra el nombre de usuario y los controles de cuenta; las cuentas sin sesión solo ven la landing. En móvil, las listas se abren en un panel lateral.
 - Cada lista incluye filtros para ver todos, los marcados o los pendientes. Las listas personalizadas se pueden editar y borrar; las predefinidas 100 IV y Shiny no se borran.
 - El perfil permite cambiar usuario, correo, contraseña e icono Pokémon normal o shiny; si no se elige ninguno se usa el logo de Walpatt. Amigos permite buscar usuarios, buscar amistades existentes, eliminarlas y consultar solo listas públicas de amistades aceptadas.
+- Telegram se conecta desde Perfil mediante un código de un solo uso. En un chat privado, el bot puede mostrar listas, consultar Pokémon que tienes o te faltan y marcarlos como obtenidos.
 
 ## Ejecutar en local
 
@@ -45,6 +46,27 @@ Requiere Node.js 22 o superior y una cuenta/base de datos de MongoDB Atlas. Tamb
 5. Guarda las variables y vuelve a desplegar.
 
 `SESSION_SECRET` debe ser una cadena aleatoria de al menos 32 caracteres. Puedes generar una con `openssl rand -base64 48`. Define un secreto distinto para cada entorno y no lo publiques.
+
+## Crear y conectar el bot de Telegram
+
+1. En Telegram abre **@BotFather**, envía `/newbot`, elige un nombre y un username que termine en `bot`. Guarda el token que te entrega; funciona como una contraseña del bot.
+2. En Vercel, añade estas variables en **Project → Settings → Environment Variables**:
+   - `TELEGRAM_BOT_TOKEN`: token de BotFather.
+   - `TELEGRAM_BOT_USERNAME`: username del bot sin `@`.
+   - `TELEGRAM_WEBHOOK_SECRET`: crea uno con `openssl rand -hex 32`.
+3. Vuelve a desplegar para que las funciones de Vercel reciban las variables.
+4. En PowerShell, desde la carpeta del proyecto, ejecuta `.scripts\set-telegram-webhook.ps1`. El script pedirá el token y el secreto de forma oculta, además del dominio HTTPS de Vercel, y registrará `https://<dominio>/api/telegram/webhook` en Telegram.
+5. Opcionalmente, en BotFather usa `/setcommands` para añadir los comandos de abajo al menú del bot.
+6. En Walpatt, abre **Perfil → Generar código de vinculación** y pulsa **Abrir bot y vincular**. El código solo sirve una vez y caduca en 10 minutos.
+
+Comandos disponibles en un chat privado:
+
+- `/ayuda` y `/listas`.
+- `/tengo "100 IV" Pikachu` consulta los Pokémon que tienes; `/faltan "Shiny"` muestra los pendientes.
+- `/anadir "100 IV" Pikachu` marca un Pokémon como obtenido y lo guarda en MongoDB.
+- `/desvincular` desconecta el Telegram actual. También puedes hacerlo desde Perfil.
+
+Las listas con espacios se escriben entre comillas. Las consultas sin búsqueda muestran hasta 35 nombres; puedes añadir un término para acotar, por ejemplo `/faltan "100 IV" castform`. La configuración usa un webhook HTTPS de Telegram y valida el encabezado secreto `X-Telegram-Bot-Api-Secret-Token`.
 
 ## Datos y catálogo
 
