@@ -4879,8 +4879,8 @@
     "formIdentifier": "duraludon-gmax",
     "name": "Duraludon · Gmax",
     "region": "Galar",
-    "available": false,
-    "shinyAvailable": false,
+    "available": true,
+    "shinyAvailable": true,
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10225.png"
   },
   {
