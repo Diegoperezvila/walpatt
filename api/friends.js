@@ -4,6 +4,10 @@ const { send, methodNotAllowed, readBody } = require('./lib/http');
 const { currentSession } = require('./lib/session');
 
 const usernameKey = (value) => String(value || '').trim().toLocaleLowerCase('en-US');
+const tradeItemKey = (item) => {
+  const value = typeof item === 'string' ? { id: item } : item || {};
+  return `${value.kind === 'costume' ? 'costume' : 'pokemon'}:${value.id}:${value.shiny === true ? 'shiny' : 'normal'}`;
+};
 
 module.exports = async function handler(req, res) {
   if (!['GET', 'POST'].includes(req.method)) return methodNotAllowed(res, 'GET, POST');
@@ -15,10 +19,12 @@ module.exports = async function handler(req, res) {
     const users = db.collection('users');
     const friendships = db.collection('friendships');
     const collections = db.collection('collections');
+    const tradeLikes = db.collection('tradeLikes');
     const userId = new ObjectId(session.sub);
     await friendships.createIndex({ requesterId: 1, recipientId: 1 }, { unique: true });
     await friendships.createIndex({ recipientId: 1, status: 1 });
     await friendships.createIndex({ requesterId: 1, status: 1 });
+    await tradeLikes.createIndex({ ownerId: 1, friendId: 1, itemKey: 1 }, { unique: true });
 
     if (req.method === 'GET') {
       const searchName = typeof req.query?.search === 'string' ? usernameKey(req.query.search) : '';
@@ -56,7 +62,11 @@ module.exports = async function handler(req, res) {
         const normalizeTradeItem = item => typeof item === 'string' ? { id: item, kind: 'pokemon', shiny: false } : ({ id: item.id, kind: item.kind === 'costume' ? 'costume' : 'pokemon', shiny: item.shiny === true, quantity: Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : null });
         const offers = Array.isArray(trading.offers) ? trading.offers.filter(item => (typeof item === 'string' && item.length <= 80) || (item && typeof item.id === 'string' && item.id.length <= 80)).slice(0, 500).map(normalizeTradeItem) : [];
         const wanted = Array.isArray(trading.wanted) ? trading.wanted.filter(item => (typeof item === 'string' && item.length <= 80) || (item && typeof item.id === 'string' && item.id.length <= 80)).slice(0, 500).map(normalizeTradeItem) : [];
-        return send(res, 200, { user: { username: target.username, avatar: target.avatar || null }, lists, trading: { offers, wanted } });
+        const offerKeys = offers.map(tradeItemKey);
+        const myLikes = offerKeys.length ? await tradeLikes.find({ ownerId: target._id, friendId: userId, itemKey: { $in: offerKeys } }, { projection: { itemKey: 1 } }).toArray() : [];
+        const likedKeys = new Set(myLikes.map(like => like.itemKey));
+        const offersWithLikeState = offers.map(item => ({ ...item, itemKey: tradeItemKey(item), likedByMe: likedKeys.has(tradeItemKey(item)) }));
+        return send(res, 200, { user: { username: target.username, avatar: target.avatar || null }, lists, trading: { offers: offersWithLikeState, wanted } });
       }
 
       const [incoming, accepted] = await Promise.all([
@@ -64,11 +74,21 @@ module.exports = async function handler(req, res) {
         friendships.find({ status: 'accepted', $or: [{ requesterId: userId }, { recipientId: userId }] }).sort({ updatedAt: -1 }).limit(200).toArray()
       ]);
       const otherIds = [...incoming.map((item) => item.requesterId), ...accepted.map((item) => item.requesterId.equals(userId) ? item.recipientId : item.requesterId)];
+      const acceptedFriendIds = accepted.map(item => item.requesterId.equals(userId) ? item.recipientId : item.requesterId);
       const profiles = await users.find({ _id: { $in: otherIds } }, { projection: { username: 1, avatar: 1 } }).toArray();
       const profileMap = new Map(profiles.map((profile) => [profile._id.toString(), { username: profile.username, avatar: profile.avatar || null }]));
+      const ownLikes = acceptedFriendIds.length ? await tradeLikes.find({ ownerId: userId, friendId: { $in: acceptedFriendIds } }).limit(2000).toArray() : [];
+      const likesByOffer = new Map();
+      ownLikes.forEach(like => {
+        const friend = profileMap.get(like.friendId.toString());
+        if (!friend) return;
+        if (!likesByOffer.has(like.itemKey)) likesByOffer.set(like.itemKey, []);
+        likesByOffer.get(like.itemKey).push(friend.username);
+      });
       return send(res, 200, {
         incoming: incoming.filter((item) => profileMap.has(item.requesterId.toString())).map((item) => ({ id: item._id.toString(), ...profileMap.get(item.requesterId.toString()) })),
-        friends: accepted.map((item) => item.requesterId.equals(userId) ? item.recipientId : item.requesterId).filter((id) => profileMap.has(id.toString())).map((id) => ({ id: id.toString(), ...profileMap.get(id.toString()) }))
+        friends: acceptedFriendIds.filter((id) => profileMap.has(id.toString())).map((id) => ({ id: id.toString(), ...profileMap.get(id.toString()) })),
+        tradeLikes: [...likesByOffer].map(([itemKey, usernames]) => ({ itemKey, usernames }))
       });
     }
 
@@ -99,7 +119,28 @@ module.exports = async function handler(req, res) {
         $or: [{ requesterId: userId, recipientId: friendId }, { requesterId: friendId, recipientId: userId }]
       });
       if (!result.deletedCount) return send(res, 404, { error: 'La amistad ya no existe.' });
+      await tradeLikes.deleteMany({ $or: [{ ownerId: userId, friendId }, { ownerId: friendId, friendId: userId }] });
       return send(res, 200, { ok: true });
+    }
+
+    if (body.action === 'setTradeLike') {
+      const targetName = usernameKey(body.username);
+      if (!/^[a-z0-9_.-]{3,24}$/.test(targetName) || typeof body.itemKey !== 'string' || body.itemKey.length > 120 || typeof body.liked !== 'boolean') {
+        return send(res, 400, { error: 'El Pokémon o la acción de me gusta no son válidos.' });
+      }
+      const target = await users.findOne({ usernameNormalized: targetName }, { projection: { username: 1 } });
+      if (!target || target._id.equals(userId)) return send(res, 404, { error: 'No se encontró ese amigo.' });
+      const friendship = await friendships.findOne({ status: 'accepted', $or: [{ requesterId: userId, recipientId: target._id }, { requesterId: target._id, recipientId: userId }] });
+      if (!friendship) return send(res, 403, { error: 'Solo puedes marcar ofertas de tus amigos.' });
+      const record = await collections.findOne({ userId: target._id }, { projection: { 'data.trading.offers': 1 } });
+      const offers = Array.isArray(record?.data?.trading?.offers) ? record.data.trading.offers : [];
+      if (!offers.some(item => tradeItemKey(item) === body.itemKey)) return send(res, 404, { error: 'Esa oferta ya no está disponible.' });
+      if (body.liked) {
+        await tradeLikes.updateOne({ ownerId: target._id, friendId: userId, itemKey: body.itemKey }, { $setOnInsert: { ownerId: target._id, friendId: userId, itemKey: body.itemKey, createdAt: new Date() } }, { upsert: true });
+      } else {
+        await tradeLikes.deleteOne({ ownerId: target._id, friendId: userId, itemKey: body.itemKey });
+      }
+      return send(res, 200, { ok: true, liked: body.liked });
     }
 
     if (!['accept', 'reject'].includes(body.action) || !ObjectId.isValid(body.requestId)) return send(res, 400, { error: 'La acción o la solicitud no es válida.' });

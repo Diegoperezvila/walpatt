@@ -24,6 +24,11 @@ function validData(data) {
   return true;
 }
 
+function tradeItemKey(item) {
+  const value = typeof item === 'string' ? { id: item } : item || {};
+  return `${value.kind === 'costume' ? 'costume' : 'pokemon'}:${value.id}:${value.shiny === true ? 'shiny' : 'normal'}`;
+}
+
 module.exports = async function handler(req, res) {
   if (!['GET', 'PUT'].includes(req.method)) return methodNotAllowed(res, 'GET, PUT');
   const session = currentSession(req);
@@ -43,6 +48,13 @@ module.exports = async function handler(req, res) {
     }
     const body = await readBody(req);
     if (!validData(body.data)) return send(res, 400, { error: 'Los datos de la colección no tienen un formato válido.' });
+    const previous = await collection.findOne({ userId }, { projection: { 'data.trading.offers': 1 } });
+    const oldOfferKeys = new Set((previous?.data?.trading?.offers || []).map(tradeItemKey));
+    const newOfferKeys = new Set((body.data.trading?.offers || []).map(tradeItemKey));
+    const removedOfferKeys = [...oldOfferKeys].filter(key => !newOfferKeys.has(key));
+    if (removedOfferKeys.length) {
+      await db.collection('tradeLikes').deleteMany({ ownerId: userId, itemKey: { $in: removedOfferKeys } });
+    }
     await collection.updateOne({ userId }, { $set: { data: body.data, updatedAt: new Date() } }, { upsert: true });
     return send(res, 200, { ok: true });
   } catch (error) {
